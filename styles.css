@@ -1,0 +1,48 @@
+body {
+  background: black;
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  overflow: hidden;
+  height: 100vh;
+}
+
+h1 {
+  color: white;
+  font-family: sans-serif;
+  font-size: 1rem;
+  font-weight: 200;
+  text-align: center;
+}
+
+a {
+  color: white;
+}
+
+#videos {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  overflow-y: scroll;
+  margin-top: 2rem;
+}
+
+iframe {
+  border: none;
+}
+.video {
+  margin: 2rem;
+  width: 420px;
+}
+
+.location {
+  color: #bbbbbb;
+  font-family: sans-serif;
+  margin-top: 1rem;
+}
+
+.description {
+  color: #bbbbbb;
+  font-family: sans-serif;
+  margin-top: 1rem;
+}
