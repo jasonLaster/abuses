@@ -32,12 +32,14 @@ h1 {
 a {
   color: white;
 }
+#scrollable {
+  overflow-y: scroll;
+}
 
 #videos {
   display: flex;
   justify-content: space-evenly;
   flex-wrap: wrap;
-  overflow-y: scroll;
   margin-top: 2rem;
 }
 
@@ -63,4 +65,9 @@ iframe {
 
 .content {
   margin-left: 1rem;
+}
+
+#primary-video {
+  justify-content: center;
+  display: flex;
 }

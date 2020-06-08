@@ -78,17 +78,22 @@ function page(videos) {
             
          </div>
         </header>
-            <div id="videos">
-            ${videos
-              .slice(0, 5)
-              .map((v) => card(v, false))
-              .join("\n")}
-            ${videos
-              .slice(6)
-              .map((v) => card(v, true))
-              .join("\n")}
+          <div id="scrollable"> 
+            <div id="primary-video">
+              <iframe width="630" height="472"  src="https://www.youtube.com/embed/VVSJ5Y-FTik" ></iframe>
             </div>
 
+                <div id="videos">
+                ${videos
+                  .slice(0, 5)
+                  .map((v) => card(v, false))
+                  .join("\n")}
+                ${videos
+                  .slice(6)
+                  .map((v) => card(v, true))
+                  .join("\n")}
+                </div>
+            </div>
             <script>
             document.querySelectorAll('iframe').forEach(e => {
                 e.onload = videoLoad; 
