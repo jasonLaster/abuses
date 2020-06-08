@@ -54,13 +54,11 @@ function page(videos) {
         
         <!-- Open Graph data -->
         <meta property="og:title" content="${title}" />
-        <meta property="og:type" content="article" />
-        <meta property="og:url" content="http://police-accountability.netlify./" />
+        <meta property="og:site_name" content="${title}" /> 
+        <meta property="og:url" content="http://police-accountability.netlify.app/" />
         <meta property="og:image" content="${seoImage}" />
         <meta property="og:description" content="Over 200 videos of police brutality shared on twitter" />
         
-        <meta property="og:title" content="${title}" /> 
-        <meta property="og:site_name" content="${title}" /> 
         <meta property="og:image" content="${seoImage}" /> 
         <meta property="og:image:width" content="602" />
         <meta property="og:image:height" content="602" /> 
