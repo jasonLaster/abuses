@@ -35,6 +35,8 @@ function card(video, defer) {
   </div>`;
 }
 
+const tweet = `Please share a link to videos/photos here + any information about the incident + the city/state where this happened. \n @jasonemiller  #policeAbuses`;
+
 function page(videos) {
   return `
     <html>
@@ -64,12 +66,16 @@ function page(videos) {
         <header>  
         <img src="police.png" />
         <div class="content">
-           <h1>GeorgeFloyd Protest - police brutality videos on Twitter</h1> 
+           <h1>PoliceAbuses: Police Brutality Videos From The George Floyd Protests</h1> 
            <div>
-             <a href="https://docs.google.com/spreadsheets/d/1YmZeSxpz52qT-10tkCjWOwOGkQqle7Wd1P7ZM1wMW0E/edit#gid=0">Sheet</a> 
+             <a href="https://docs.google.com/spreadsheets/d/1YmZeSxpz52qT-10tkCjWOwOGkQqle7Wd1P7ZM1wMW0E/edit#gid=0">Google Sheet</a> 
+             - <a href="https://twitter.com/intent/tweet?text=${encodeURIComponent(
+               tweet
+             )}">Submit Video</a>
              - <a href="https://twitter.com/greg_doucette">Creator</a>
-             - <a href="https://twitter.com/jasonemiller">Curator</a>
             </div>
+
+            
          </div>
         </header>
             <div id="videos">
