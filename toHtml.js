@@ -41,7 +41,7 @@ function page(videos) {
         <head>
         <link href="styles.css" rel="stylesheet" />
         <script src="script.js"> </script>
-
+        <title>400+ videos of police brutality</title>
         </head>
 
         <body>
