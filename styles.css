@@ -70,4 +70,5 @@ iframe {
 #primary-video {
   justify-content: center;
   display: flex;
+  margin: 2rem 0;
 }
