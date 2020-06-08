@@ -41,7 +41,7 @@ function page(videos) {
         <head>
         <link href="styles.css" rel="stylesheet" />
         <script src="script.js"> </script>
-        <title>400+ videos of police brutality</title>
+        <title>200+ videos of police brutality</title>
         <!-- Twitter Card data -->
         <meta name="twitter:card" content="summary">
         <meta name="twitter:site" content="http://policeabuses.com">
@@ -52,7 +52,7 @@ function page(videos) {
         <!-- Open Graph data -->
         <meta property="og:title" content="200+ videos of police brutality" />
         <meta property="og:type" content="article" />
-        <meta property="og:url" content="http://policeabuses.com/" />
+        <meta property="og:url" content="http://police-accountability.netlify./" />
         <meta property="og:image" content="http://police-accountability.netlify.app/police-seo.png" />
         <meta property="og:description" content="Over 200 videos of police brutality shared on twitter" />
         
