@@ -45,21 +45,24 @@ function page(videos) {
         </head>
 
         <body>
-        <header>    
-         <h1>GeorgeFloyd Protest - police brutality videos on Twitter</div> 
-         <div>
-         <a href="https://docs.google.com/spreadsheets/d/1YmZeSxpz52qT-10tkCjWOwOGkQqle7Wd1P7ZM1wMW0E/edit#gid=0">Sheet</a> 
-         - <a href="https://twitter.com/greg_doucette">Creator</a>
-         - <a href="https://twitter.com/jasonemiller">Curator</a>
+        <header>  
+        <img src="police.png" />
+        <div class="content">
+           <h1>GeorgeFloyd Protest - police brutality videos on Twitter</h1> 
+           <div>
+             <a href="https://docs.google.com/spreadsheets/d/1YmZeSxpz52qT-10tkCjWOwOGkQqle7Wd1P7ZM1wMW0E/edit#gid=0">Sheet</a> 
+             - <a href="https://twitter.com/greg_doucette">Creator</a>
+             - <a href="https://twitter.com/jasonemiller">Curator</a>
+            </div>
          </div>
         </header>
             <div id="videos">
             ${videos
-              .slice(0, 10)
+              .slice(0, 5)
               .map((v) => card(v, false))
               .join("\n")}
             ${videos
-              .slice(10)
+              .slice(6)
               .map((v) => card(v, true))
               .join("\n")}
             </div>

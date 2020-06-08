@@ -4,16 +4,15 @@ function videoLoad(e) {
   console.log(`loaded`, index);
   index++;
 
-  if (index > 5) {
-    loadVideo();
-  }
+  loadVideo();
 }
 
 window.addEventListener("load", (event) => {
   console.log("page is fully loaded");
 });
 
-function loadVideo() {
+async function loadVideo() {
+  await new Promise((r) => setTimeout(r, index * 20));
   const el = document.querySelector(".video[data-video]");
   if (!el) {
     return;
