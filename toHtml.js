@@ -72,7 +72,7 @@ function page(videos) {
         <header>  
         <img src="police.png" />
         <div class="content">
-           <h1>PoliceAbuses: Police Brutality Videos From The George Floyd Protests</h1> 
+           <h1>${title}</h1> 
            <div>
              <a href="https://docs.google.com/spreadsheets/d/1YmZeSxpz52qT-10tkCjWOwOGkQqle7Wd1P7ZM1wMW0E/edit#gid=0">Google Sheet</a> 
              - <a href="https://twitter.com/intent/tweet?text=${encodeURIComponent(
