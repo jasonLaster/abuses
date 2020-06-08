@@ -51,7 +51,7 @@ function page(videos) {
         <meta name="twitter:site" content="http://policeabuses.com">
         <meta name="twitter:title" content="${title}">
         <meta name="twitter:description" content="${metaDescription}">
-        <meta name="twitter:image" content="${seoImage}">
+        <meta name="twitter:image" content="http://police-accountability.netlify.app/police-twitter.png">
         <meta name="twitter:card" content="summary_large_image" />
 
         <!-- Open Graph data -->
