@@ -42,6 +42,15 @@ function page(videos) {
         <link href="styles.css" rel="stylesheet" />
         <script src="script.js"> </script>
         <title>400+ videos of police brutality</title>
+        <!-- Twitter Card data -->
+        <meta name="twitter:card" content="summary">
+        <meta name="twitter:site" content="policeabuses.com">
+        <meta name="twitter:title" content="200+ videos of police brutality">
+        <meta name="twitter:description" content="Over 200 videos of police brutality shared on twitter">
+        <-- Twitter Summary card images must be at least 120x120px -->
+        <meta name="twitter:image" content="https://police-accountability.netlify.app/police.png">
+
+
         </head>
 
         <body>
