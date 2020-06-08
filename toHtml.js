@@ -36,29 +36,35 @@ function card(video, defer) {
 }
 
 const tweet = `Please share a link to videos/photos here + any information about the incident + the city/state where this happened. \n @jasonemiller  #policeAbuses`;
-
+const title = `200+ Police Brutality Videos From George Floyd Protests`;
+const seoImage = `http://police-accountability.netlify.app/police-seo.png`;
 function page(videos) {
   return `
     <html>
         <head>
         <link href="styles.css" rel="stylesheet" />
         <script src="script.js"> </script>
-        <title>200+ videos of police brutality</title>
+        <title>${title}</title>
         <!-- Twitter Card data -->
         <meta name="twitter:card" content="summary">
         <meta name="twitter:site" content="http://policeabuses.com">
-        <meta name="twitter:title" content="200+ videos of police brutality">
+        <meta name="twitter:title" content="${title}">
         <meta name="twitter:description" content="Over 200 videos of police brutality shared on twitter">
-        <meta name="twitter:image" content="http://police-accountability.netlify.app/police-seo.png">
+        <meta name="twitter:image" content="${seoImage}">
         
         <!-- Open Graph data -->
-        <meta property="og:title" content="200+ videos of police brutality" />
+        <meta property="og:title" content="${title}" />
         <meta property="og:type" content="article" />
         <meta property="og:url" content="http://police-accountability.netlify./" />
-        <meta property="og:image" content="http://police-accountability.netlify.app/police-seo.png" />
+        <meta property="og:image" content="${seoImage}" />
         <meta property="og:description" content="Over 200 videos of police brutality shared on twitter" />
         
-        
+        <meta property="og:title" content="${title}" /> 
+        <meta property="og:site_name" content="${title}" /> 
+        <meta property="og:image" content="${seoImage}" /> 
+        <meta property="og:image:width" content="602" />
+        <meta property="og:image:height" content="602" /> 
+        <meta name="twitter:card" content="summary_large_image" />
 
         </head>
 
