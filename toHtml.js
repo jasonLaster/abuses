@@ -2,14 +2,16 @@ let videos = require("./videos.json");
 const fs = require("fs");
 const _ = require("lodash");
 videos = videos
-  .filter((v) => v.YouTube.includes("http"))
+  .filter((v) => v.YouTube && v.YouTube.includes("http"))
   .map((v) => ({
     ...v,
-    youtube: `https://www.youtube.com/embed/${v.YouTube.split("/").slice(-1)}`,
+    youtube: `https://www.youtube.com/embed/${v.YouTube.split("/").slice(
+      -1
+    )}?showinfo=0`,
   }))
   .filter((v) => v.youtube);
 
-videos = _.sortBy(videos, (v) => v.State);
+videos = _.sortBy(videos, (v) => +v.TGD);
 
 const stats = {
   count: videos.length,
@@ -25,13 +27,24 @@ console.log(stats);
 function card(video, defer) {
   return `
   <div class="video" ${defer ? `data-video=${video.youtube}` : ""}>
-    ${
-      !defer
-        ? `<iframe width="420" height="315"  src=${video.youtube}></iframe>`
-        : ""
-    }
-    <div class="location"><b>${video.State}</b>  ${video.City}</div>
-    <div class="description">${video["Doucette Text"]}</div>
+    <h3><span class="tgd">${
+      video["TGD"]
+    } </span>&nbsp;  <div class="location">${video.State}, ${
+    video.City
+  }</div></h3>
+
+    <div class="video-container">
+     ${
+       !defer
+         ? `<iframe width="420" height="315"  src=${video.youtube}></iframe>`
+         : ""
+     }
+    </div>
+
+
+    <div class="description">${video["Doucette Text"]}  <a href="${
+    video["Tweet URL"]
+  }">Tweet</a></div>
   </div>`;
 }
 
@@ -76,7 +89,7 @@ function page(videos) {
         <header>  
         <img src="police.png" />
         <div class="content">
-           <h1>${title}</h1> 
+           <h1>${title}</h1>
            <div>
              <a href="https://docs.google.com/spreadsheets/d/1YmZeSxpz52qT-10tkCjWOwOGkQqle7Wd1P7ZM1wMW0E/edit#gid=0">Google Sheet</a> 
              - <a href="https://twitter.com/intent/tweet?text=${encodeURIComponent(
@@ -99,7 +112,7 @@ function page(videos) {
                   .map((v) => card(v, false))
                   .join("\n")}
                 ${videos
-                  .slice(6)
+                  .slice(6, 20)
                   .map((v) => card(v, true))
                   .join("\n")}
                 </div>

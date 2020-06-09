@@ -14,6 +14,7 @@ window.addEventListener("load", (event) => {
 async function loadVideo() {
   await new Promise((r) => setTimeout(r, index * 20));
   const el = document.querySelector(".video[data-video]");
+  const container = el.querySelector(".video-container");
   if (!el) {
     return;
   }
@@ -23,5 +24,5 @@ async function loadVideo() {
   iframe.src = el.dataset.video;
   iframe.onload = videoLoad;
   el.removeAttribute("data-video");
-  el.prepend(iframe);
+  container.prepend(iframe);
 }

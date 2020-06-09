@@ -1,5 +1,5 @@
 body {
-  background: black;
+  background: white;
   display: flex;
   width: 100%;
   flex-direction: column;
@@ -12,25 +12,25 @@ header {
   max-width: 600px;
   font-family: sans-serif;
   align-items: center;
+  padding-bottom: 1rem;
 }
 
 img {
   width: 50px;
 }
 
-a {
+header a {
   text-decoration: none;
 }
 
 h1 {
-  color: white;
   font-family: sans-serif;
   font-size: 1rem;
   font-weight: 200;
 }
 
 a {
-  color: white;
+  color: #515151;
 }
 #scrollable {
   overflow-y: scroll;
@@ -51,16 +51,20 @@ iframe {
   width: 420px;
 }
 
-.location {
-  color: #bbbbbb;
+h3 {
+  display: flex;
   font-family: sans-serif;
-  margin-top: 1rem;
+}
+.location {
+  font-weight: normal;
 }
 
 .description {
-  color: #bbbbbb;
   font-family: sans-serif;
   margin-top: 1rem;
+  line-height: 1.5rem;
+  font-size: 1.1rem;
+  color: #515151;
 }
 
 .content {
@@ -71,4 +75,23 @@ iframe {
   justify-content: center;
   display: flex;
   margin: 2rem 0;
+}
+
+@media only screen and (max-width: 500px) {
+  #videos {
+    justify-content: center;
+  }
+  #primary-video iframe {
+    width: 80vw;
+    height: calc(80vw * 0.75);
+  }
+
+  header img {
+    display: none;
+  }
+
+  header h1 {
+    font-size: 1.25rem;
+    line-height: 1.5rem;
+  }
 }
