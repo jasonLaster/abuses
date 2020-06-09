@@ -22,13 +22,7 @@ function mobileCheck() {
   return check;
 }
 
-window.addEventListener("load", (event) => {
-  console.log("page is fully loaded");
-
-  if (mobileCheck()) {
-    document.body.classList.add("mobile");
-  }
-});
+window.addEventListener("load", (event) => {});
 
 async function loadVideo() {
   await new Promise((r) => setTimeout(r, index * 20));

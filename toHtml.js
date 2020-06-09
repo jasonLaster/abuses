@@ -101,7 +101,10 @@ function page(videos) {
 
         <body>
 
-
+        <script>
+          const isMobile = mobileCheck();
+          document.body.classList.add(isMobile ? "mobile" : "desktop");
+        </script>      
         <header>
         <img src="police.png" />
         <div class="content">

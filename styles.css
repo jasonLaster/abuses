@@ -37,7 +37,7 @@ a {
 }
 
 #videos {
-  display: flex;
+  display: none;
   justify-content: space-evenly;
   flex-wrap: wrap;
   margin-top: 2rem;
@@ -78,6 +78,9 @@ h3 {
   margin: 2rem 0;
 }
 
+.desktop #videos {
+  display: flex;
+}
 .mobile {
   font-size: 18px;
 }
