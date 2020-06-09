@@ -77,6 +77,15 @@ h3 {
   margin: 2rem 0;
 }
 
+.single-column #videos {
+  display: block;
+  width: 100%;
+}
+
+.single-column .video {
+  margin: 4rem auto;
+}
+
 @media only screen and (max-width: 700px) {
   #videos {
     justify-content: center;
