@@ -61,7 +61,7 @@ h3 {
 
 .description {
   font-family: sans-serif;
-  margin-top: 1rem;
+  margin: 1rem 0;
   line-height: 1.5rem;
   font-size: 1.1rem;
   color: #515151;
@@ -77,13 +77,9 @@ h3 {
   margin: 2rem 0;
 }
 
-@media only screen and (max-width: 500px) {
+@media only screen and (max-width: 700px) {
   #videos {
     justify-content: center;
-  }
-  #primary-video iframe {
-    width: 80vw;
-    height: calc(80vw * 0.75);
   }
 
   header img {
@@ -93,5 +89,12 @@ h3 {
   header h1 {
     font-size: 1.25rem;
     line-height: 1.5rem;
+  }
+}
+
+@media (max-width: 800) {
+  #primary-video iframe {
+    width: 80vw;
+    height: calc(80vw * 0.75);
   }
 }

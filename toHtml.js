@@ -32,6 +32,10 @@ function card(video, defer) {
     } </span>&nbsp;  <div class="location">${video.State}, ${
     video.City
   }</div></h3>
+    <div class="description">${video["Doucette Text"]}  <a href="${
+    video["Tweet URL"]
+  } target="_blank"
+  ">Tweet</a></div>
 
     <div class="video-container">
      ${
@@ -42,14 +46,11 @@ function card(video, defer) {
     </div>
 
 
-    <div class="description">${video["Doucette Text"]}  <a href="${
-    video["Tweet URL"]
-  }">Tweet</a></div>
   </div>`;
 }
 
 const tweet = `Please share a link to videos/photos here + any information about the incident + the city/state where this happened. \n @jasonemiller  #policeAbuses`;
-const title = `200+ Police Brutality Videos From George Floyd Protests`;
+const title = `200+ Videos of Police Brutality From George Floyd Protests`;
 const seoImage = `http://police-accountability.netlify.app/police-seo.png`;
 const metaDescription = `A compilation of all of the police brutality incidents during the George Floyd protests. Share videos, find videos, and help hold police officers accountable.`;
 function page(videos) {
@@ -91,11 +92,9 @@ function page(videos) {
         <div class="content">
            <h1>${title}</h1>
            <div>
-             <a href="https://docs.google.com/spreadsheets/d/1YmZeSxpz52qT-10tkCjWOwOGkQqle7Wd1P7ZM1wMW0E/edit#gid=0">Google Sheet</a> 
-             - <a href="https://twitter.com/intent/tweet?text=${encodeURIComponent(
-               tweet
-             )}">Submit Video</a>
-             - <a href="https://twitter.com/greg_doucette">Creator</a>
+             <a href="https://docs.google.com/spreadsheets/d/1YmZeSxpz52qT-10tkCjWOwOGkQqle7Wd1P7ZM1wMW0E/edit#gid=0">Google Sheet</a>
+             - <a href="https://docs.google.com/forms/d/e/1FAIpQLSc9xv3H271xFPKEBOxCgdmkIE-4biyVRaePa4sModaApY-1eg/viewform}">Submit Video</a>
+             - <a href="https://slate.com/news-and-politics/2020/06/george-floyd-public-spreadsheet-police-violence-videos.html">About</a>
             </div>
 
             
@@ -112,7 +111,7 @@ function page(videos) {
                   .map((v) => card(v, false))
                   .join("\n")}
                 ${videos
-                  .slice(6, 20)
+                  .slice(6)
                   .map((v) => card(v, true))
                   .join("\n")}
                 </div>
