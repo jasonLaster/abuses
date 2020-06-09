@@ -35,10 +35,10 @@ function card(video, defer) {
     } </span>&nbsp;  <div class="location">${video.State}, ${
     video.City
   }</div></h3>
-    <div class="description">${video["Doucette Text"]}  <a href="${
-    video["Tweet URL"]
-  } target="_blank"
-  ">Tweet</a></div>
+    <div class="description">${
+      video["Doucette Text"]
+    }  <a target="_blank" href="${video["Tweet URL"]}"
+  >Original Tweet</a></div>
 
     <div class="video-container">
      ${
@@ -53,7 +53,7 @@ function card(video, defer) {
 }
 
 const tweet = `Please share a link to videos/photos here + any information about the incident + the city/state where this happened. \n @jasonemiller  #policeAbuses`;
-const title = `200+ Videos of Police Brutality From George Floyd Protests`;
+const title = `PoliceAbuses: 200+ Videos of Police Brutality From George Floyd Protests`;
 const seoImage = `http://police-accountability.netlify.app/police-seo.png`;
 const metaDescription = `A compilation of all of the police brutality incidents during the George Floyd protests. Share videos, find videos, and help hold police officers accountable.`;
 function page(videos) {
