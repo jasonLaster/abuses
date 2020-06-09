@@ -24,6 +24,9 @@ console.log(stats);
 //www.youtube.com/embed/a2jN0VEGvBs
 // </iframe>
 
+// submit video
+//  <a href="https://docs.google.com/forms/d/e/1FAIpQLSc9xv3H271xFPKEBOxCgdmkIE-4biyVRaePa4sModaApY-1eg/viewform}">Submit Video</a>
+
 function card(video, defer) {
   return `
   <div class="video" ${defer ? `data-video=${video.youtube}` : ""}>
@@ -87,13 +90,15 @@ function page(videos) {
         </head>
 
         <body>
-        <header>  
+
+
+        <header>
         <img src="police.png" />
         <div class="content">
            <h1>${title}</h1>
            <div>
              <a href="https://docs.google.com/spreadsheets/d/1YmZeSxpz52qT-10tkCjWOwOGkQqle7Wd1P7ZM1wMW0E/edit#gid=0">Google Sheet</a>
-             - <a href="https://docs.google.com/forms/d/e/1FAIpQLSc9xv3H271xFPKEBOxCgdmkIE-4biyVRaePa4sModaApY-1eg/viewform}">Submit Video</a>
+
              - <a href="https://slate.com/news-and-politics/2020/06/george-floyd-public-spreadsheet-police-violence-videos.html">About</a>
             </div>
 

@@ -65,6 +65,7 @@ h3 {
   line-height: 1.5rem;
   font-size: 1.1rem;
   color: #515151;
+  text-transform: capitalize;
 }
 
 .content {
@@ -78,7 +79,7 @@ h3 {
 }
 
 .mobile {
-  font-size: 16px;
+  font-size: 18px;
 }
 .mobile #videos {
   display: block;
@@ -92,6 +93,19 @@ h3 {
 .mobile header h1 {
   font-size: 1.5rem;
   line-height: 2rem;
+}
+
+.mobile h3 {
+  font-size: 1rem;
+}
+
+.mobile .video {
+  width: 80vw;
+}
+
+.mobile iframe {
+  width: 80vw;
+  height: calc(80vw * 0.75);
 }
 
 @media only screen and (max-width: 700px) {
