@@ -26,7 +26,7 @@ window.addEventListener("load", (event) => {
   console.log("page is fully loaded");
 
   if (mobileCheck()) {
-    document.body.classList.add("single-column");
+    document.body.classList.add("mobile");
   }
 });
 
