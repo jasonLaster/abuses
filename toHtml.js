@@ -86,6 +86,17 @@ function page(videos) {
         <script data-cfasync="false" async src="https://cdn.shareaholic.net/assets/pub/shareaholic.js"></script>
         <!-- END SHAREAHOLIC CODE -->
 
+        <!-- Global site tag (gtag.js) - Google Analytics -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=UA-57905986-10"></script>
+        <script>
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+          gtag('config', 'UA-57905986-10');
+        </script>
+
+
+
         </head>
 
         <body>
