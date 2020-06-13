@@ -1,0 +1,14 @@
+{
+  "toys": [
+    {
+      "name": "test",
+      "body": "test"
+    }
+  ],
+  "videos": [
+    {
+      "title": "test",
+      "description": "testafadasdsa"
+    }
+  ]
+}

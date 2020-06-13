@@ -1,0 +1,5 @@
+ol,
+ul {
+  margin: 0 0 var(--spacing-s);
+  padding-left: var(--spacing-s);
+}

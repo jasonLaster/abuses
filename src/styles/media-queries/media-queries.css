@@ -1,0 +1,10 @@
+@custom-media --dark-mode (prefers-color-scheme: dark);
+@custom-media --viewport-xs (width >= 375px);
+@custom-media --viewport-sm (width >= 640px);
+@custom-media --viewport-md (width >= 768px);
+@custom-media --viewport-lg (width >= 1024px);
+@custom-media --viewport-xlg (width >= 1240px);
+@custom-media --portrait (orientation: portrait);
+@custom-media --landscape (orientation: landscape);
+@custom-media --navigation-md (width >= 768px);
+@custom-media --navigation-lg (width >= 1024px);

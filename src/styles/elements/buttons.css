@@ -1,0 +1,77 @@
+button {
+  border: none;
+  margin: 0;
+  padding: 0;
+  width: auto;
+  overflow: visible;
+  background: transparent;
+  color: inherit;
+  font: inherit;
+  line-height: normal;
+  -webkit-font-smoothing: inherit;
+  -moz-osx-font-smoothing: inherit;
+  -webkit-appearance: none;
+  text-decoration: none;
+  cursor: pointer;
+
+  &[disabled] {
+    cursor: not-allowed;
+    opacity: 0.5;
+  }
+}
+
+.read-more,
+a {
+  color: inherit;
+  text-decoration: none;
+  box-shadow: 0 1px 0 0 currentColor;
+  transition: box-shadow 0.2s ease-out;
+
+  &:active,
+  &:hover {
+    box-shadow: 0 2px 0 0 currentColor;
+  }
+}
+
+.read-more {
+  &:hover svg {
+    margin-left: var(--spacing-xxs);
+  }
+
+  & svg {
+    transition: margin 0.2s ease-out;
+    transform: translate3d(2px, 2px, 0);
+  }
+}
+
+.btn {
+  text-align: center;
+  border-radius: var(--spacing-xxs);
+  display: block;
+  text-decoration: none;
+  padding: var(--spacing-xs) var(--spacing-s);
+  font-family: var(--font-family-headings);
+  transition: background-color 0.1s ease-in-out;
+  border: 1px solid var(--color-white);
+  background: transparent;
+  max-width: 20em;
+  color: var(--color-white);
+  box-shadow: none;
+
+  &:active,
+  &:hover {
+    background: var(--color-white);
+    color: var(--color-primary);
+    text-decoration: none;
+  }
+
+  &:disabled {
+    background: transparent;
+    color: var(--color-white);
+    border: 2px dashed var(--color-white);
+
+    &:hover {
+      background: transparent;
+    }
+  }
+}

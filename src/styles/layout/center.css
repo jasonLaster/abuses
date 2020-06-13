@@ -1,0 +1,14 @@
+.center {
+  max-width: 74rem;
+  margin: 0 auto;
+  padding-left: var(--gutter);
+  padding-right: var(--gutter);
+}
+
+.center-md {
+  max-width: 60rem;
+}
+
+.center-sm {
+  max-width: 50rem;
+}

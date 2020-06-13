@@ -1,0 +1,5 @@
+:root {
+  --notch-left: env(safe-area-inset-left);
+  --notch-right: env(safe-area-inset-right);
+  --notch-top: env(safe-area-inset-top);
+}

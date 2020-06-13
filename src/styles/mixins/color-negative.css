@@ -1,0 +1,9 @@
+@define-mixin color-negative {
+  background: var(--color-primary);
+  color: var(--color-white);
+
+  & ::selection {
+    background: var(--color-white);
+    color: var(--color-primary);
+  }
+}

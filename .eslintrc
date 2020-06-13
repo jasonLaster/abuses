@@ -1,0 +1,21 @@
+{
+  "root": true,
+  "env": {
+    "browser": true,
+    "node": true
+  },
+  "parserOptions": {
+    "parser": "babel-eslint"
+  },
+  "extends": [
+    "plugin:vue/recommended",
+    "@vue/airbnb",
+    "plugin:prettier/recommended",
+    "prettier/vue"
+  ],
+  "plugins": ["prettier"],
+  "rules": {
+    "vue/component-name-in-template-casing": ["error", "kebab-case"],
+    "vue/no-deprecated-slot-scope-attribute": 1
+  }
+}
