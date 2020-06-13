@@ -65,7 +65,7 @@ export default {
   position: sticky;
   padding: 1em 0 0.25em;
   z-index: 9;
-  top: 0;
+  top: 96px;
   border-bottom: 2px solid var(--color-white);
 }
 

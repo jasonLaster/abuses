@@ -28,6 +28,9 @@ export default {
 header {
   @mixin color-negative;
 
+  top: 0;
+  position: sticky;
+  z-index: 10;
   text-align: center;
   padding: 1em 0 0;
 }
