@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+    <link rel="icon" href="<%= BASE_URL %>favicon.ico">
+    <title>Police Abuses: Hundreds of Videos of Police Brutality from George Floyd Protests</title>
+    <!-- Twitter Card data -->
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:site" content="http://policeabuses.com">
+    <meta name="twitter:title" content="PoliceAbuses: 200+ Videos of Police Brutality From George Floyd Protests">
+    <meta name="twitter:description" content="A compilation of all of the police brutality incidents during the George Floyd protests. Share videos, find videos, and help hold police officers accountable.">
+    <meta name="twitter:image" content="http://police-accountability.netlify.app/police-twitter.png">
+    <meta name="twitter:card" content="summary_large_image" />
+
+    <!-- Open Graph data -->
+    <meta property="og:title" content="PoliceAbuses: 200+ Videos of Police Brutality From George Floyd Protests" />
+    <meta property="og:site_name" content="PoliceAbuses: 200+ Videos of Police Brutality From George Floyd Protests" />
+    <meta property="og:url" content="http://police-accountability.netlify.app/" />
+    <meta property="og:image" content="http://police-accountability.netlify.app/police-seo.png" />
+    <meta property="og:description" content="A compilation of all of the police brutality incidents during the George Floyd protests. Share videos, find videos, and help hold police officers accountable." />
+    <meta property="og:image:width" content="602" />
+    <meta property="og:image:height" content="602" />
+    <link href="https://fonts.googleapis.com/css2?family=Bungee&family=Open+Sans&display=swap" rel="stylesheet">
+
+  </head>
+  <body>
+    <noscript>
+      <strong>We're sorry but <%= htmlWebpackPlugin.options.title %> doesn't work properly without JavaScript enabled. Please enable it to continue.</strong>
+    </noscript>
+    <div id="app"></div>
+    <!-- built files will be auto injected -->
+
+<script>
+  if (window.netlifyIdentity) {
+    window.netlifyIdentity.on("init", user => {
+      if (!user) {
+        window.netlifyIdentity.on("login", () => {
+          document.location.href = "/admin/";
+        });
+      }
+    });
+  }
+</script>
+  </body>
+</html>

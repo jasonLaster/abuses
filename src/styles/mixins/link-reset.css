@@ -1,0 +1,7 @@
+@define-mixin link-reset {
+  &,
+  &:hover,
+  &:focus {
+    box-shadow: none;
+  }
+}
