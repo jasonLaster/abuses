@@ -22,9 +22,20 @@
           >
             <header :class="$style.header">
               <!-- eslint-disable-next-line vue/no-v-html -->
-              <h1 :class="$style.title" v-html="title" />
+              <h2 :class="$style.title" v-html="title" />
               <!-- eslint-enable vue/no-v-html -->
               <button :class="$style.close" type="button" @click.stop="close">
+                <svg
+                  :class="$style.icon"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 1792 1792"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M1490 1322q0 40-28 68l-136 136q-28 28-68 28t-68-28l-294-294-294 294q-28 28-68 28t-68-28l-136-136q-28-28-28-68t28-68l294-294-294-294q-28-28-28-68t28-68l136-136q28-28 68-28t68 28l294 294 294-294q28-28 68-28t68 28l136 136q28 28 28 68t-28 68l-294 294 294 294q28 28 28 68z"
+                  />
+                </svg>
                 <span class="sr-only">Close</span>
               </button>
             </header>
@@ -140,8 +151,8 @@ export default {
   right: 0;
   bottom: 0;
   left: 0;
-  padding: var(--spacing-xs);
   z-index: var(--z-modal);
+  padding: var(--spacing-xs);
 }
 
 .notch {
@@ -151,8 +162,12 @@ export default {
 .wrapper {
   background: var(--color-primary);
   max-width: var(--container-width-md);
-  margin: 3em auto 8em;
   color: var(--color-white);
+  margin: 1em auto 8em;
+
+  @media (--viewport-md) {
+    margin-top: 3em;
+  }
 }
 
 .large {
@@ -162,16 +177,22 @@ export default {
 .header {
   display: flex;
   align-items: self-start;
-  border-bottom: 1px solid var(--color-gray);
+  border-bottom: 1px solid var(--color-white);
   padding: var(--spacing-s) var(--gutter);
 }
 
 .close {
-  margin-top: var(--spacing-xxs);
+  border-radius: 50%;
+  width: 1.75em;
+  height: 1.75em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 
   &:hover,
   &:focus {
-    background: var(--color-gray-light);
+    background: var(--color-white);
+    color: var(--color-primary);
   }
 }
 

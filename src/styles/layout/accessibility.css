@@ -2,10 +2,6 @@
   @mixin sr-only;
 }
 
-*:focus {
-  outline: 1px dashed var(--color-white);
-}
-
 .visuallyhidden {
   display: none;
 }

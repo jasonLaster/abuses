@@ -4,6 +4,8 @@
       <youtube
         ref="youtube"
         class="player"
+        :width="560"
+        :height="315"
         :video-id="video.youtube"
         :player-vars="playerVars"
         :fit-parent="true"
@@ -54,6 +56,15 @@ export default {
       return this.video !== null
     },
   },
+  watch: {
+    video(value) {
+      if (!value) return
+      this.$nextTick(() => {
+        const { player } = this.$refs.youtube
+        player.playVideo()
+      })
+    },
+  },
 
   methods: {
     closeModal() {
@@ -71,10 +82,6 @@ export default {
   justify-content: space-around;
   align-items: flex-start;
   padding-bottom: 0.5em;
-}
-
-.text {
-  text-align: center;
 }
 
 >>> iframe {
