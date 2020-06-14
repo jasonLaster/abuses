@@ -41,7 +41,6 @@ export default {
         rel: 0,
         playsinline: 1,
       },
-      isPlayingVideo: false,
     }
   },
   computed: {
@@ -53,15 +52,6 @@ export default {
     },
     hasVideo() {
       return this.video !== null
-    },
-  },
-  watch: {
-    video(value) {
-      if (!value) return
-      this.$nextTick(() => {
-        const { player } = this.$refs.youtube
-        player.playVideo()
-      })
     },
   },
 
