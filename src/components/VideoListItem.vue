@@ -16,7 +16,6 @@
             id: video.youtube,
           },
         }"
-        @click="playVideo"
       >
         <span class="title">Incident #{{ video.id }} — {{ video.city }}, {{ video.state }}</span>
         {{ video.text }}
@@ -54,9 +53,9 @@ export default {
       type: Object,
       required: true,
     },
-    currentVideoId: {
-      type: String,
-      required: true,
+    currentVideo: {
+      type: Object,
+      default: () => {},
     },
   },
   data() {
@@ -66,7 +65,7 @@ export default {
   },
   computed: {
     isPlaying() {
-      return this.currentVideoId === this.video.videoId
+      return this.currentVideo && this.currentVideo.Id === this.video.videoId
     },
   },
   methods: {

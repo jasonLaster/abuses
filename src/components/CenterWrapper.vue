@@ -28,7 +28,7 @@ export default {
 }
 
 .wrapper {
-  /* max-width: var(--container-width-xlg); */
+  max-width: var(--container-width-xlg);
   width: 100%;
   padding-left: var(--gutter);
   padding-right: var(--gutter);

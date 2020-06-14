@@ -28,8 +28,12 @@ export default {
 header {
   @mixin color-negative;
 
+  position: sticky;
+  top: 0;
   text-align: center;
-  padding: 1em 0 0;
+  padding: 1.5em 0;
+  z-index: var(--z-header);
+  border-bottom: 1px solid var(--color-white);
 }
 
 p {

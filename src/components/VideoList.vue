@@ -5,7 +5,7 @@
         v-for="video in videos"
         :key="video.video"
         :video="video"
-        :current-video-id="currentVideoId"
+        :current-video="currentVideo"
       />
     </ul>
   </center-wrapper>
@@ -25,9 +25,9 @@ export default {
       type: Array,
       required: true,
     },
-    currentVideoId: {
-      type: String,
-      required: true,
+    currentVideo: {
+      type: Object,
+      default: () => {},
     },
   },
 }
@@ -42,7 +42,7 @@ export default {
   margin-top: 1em;
 
   @media (--viewport-sm) {
-    grid-template-columns: repeat(auto-fit, minmax(22em, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(25em, 1fr));
   }
 }
 </style>

@@ -1,38 +1,38 @@
 <template>
-  <div class="video-wrapper">
-    <center-wrapper>
-      <p>Now Playing: Incident #{{ video.id }} — {{ video.city }}, {{ video.state }}</p>
-      <youtube
-        ref="youtube"
-        class="player"
-        :video-id="video.youtube"
-        :player-vars="playerVars"
-        :fit-parent="true"
-        :resize-delay="10"
-        :resize="true"
-      />
+  <app-modal :show="hasVideo" :large="true" :title="title" @close="closeModal">
+    <div v-if="video">
+      <div class="video-container">
+        <youtube
+          ref="youtube"
+          class="player"
+          :width="560"
+          :height="315"
+          :video-id="video.youtube"
+          :player-vars="playerVars"
+        />
+      </div>
       <p class="text">{{ video.text }}</p>
 
       <div class="buttons">
         <a ref="tweet" class="btn" :href="video.tweet" rel="noopener" target="_blank">
-          Go to source
+          View original tweet
         </a>
       </div>
-    </center-wrapper>
-  </div>
+    </div>
+  </app-modal>
 </template>
 
 <script>
-import CenterWrapper from '@/components/CenterWrapper.vue'
+import AppModal from '@/components/AppModal.vue'
 
 export default {
   components: {
-    CenterWrapper,
+    AppModal,
   },
   props: {
     video: {
       type: Object,
-      required: true,
+      default: () => {},
     },
   },
   data() {
@@ -44,12 +44,31 @@ export default {
       isPlayingVideo: false,
     }
   },
-
+  computed: {
+    title() {
+      if (this.hasVideo) {
+        return `Incident #${this.video.id} — ${this.video.city}, ${this.video.state}`
+      }
+      return ''
+    },
+    hasVideo() {
+      return this.video !== null
+    },
+  },
   watch: {
-    video() {
-      const { player } = this.$refs.youtube
+    video(value) {
+      if (!value) return
       this.$nextTick(() => {
+        const { player } = this.$refs.youtube
         player.playVideo()
+      })
+    },
+  },
+
+  methods: {
+    closeModal() {
+      this.$router.push({
+        name: 'VideoDetails',
       })
     },
   },
@@ -57,18 +76,6 @@ export default {
 </script>
 
 <style scoped lang="postcss">
-.video-wrapper {
-  @mixin color-negative;
-
-  width: 100%;
-  margin: 0;
-  position: sticky;
-  padding: 1em 0 0.25em;
-  z-index: 9;
-  top: 0;
-  border-bottom: 2px solid var(--color-white);
-}
-
 .buttons {
   display: flex;
   justify-content: space-around;
@@ -76,19 +83,18 @@ export default {
   padding-bottom: 0.5em;
 }
 
-.text {
-  display: none;
-  text-align: center;
-
-  @media (--viewport-sm) {
-    display: block;
-  }
+.video-container {
+  position: relative;
+  padding-bottom: 56.25%; /* 16:9 */
+  height: 0;
+  margin-bottom: var(--spacing-s);
 }
 
 >>> iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
   width: 100%;
-  margin-bottom: 0.5em;
-  display: block;
-  position: relative;
+  height: 100%;
 }
 </style>

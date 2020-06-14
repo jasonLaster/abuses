@@ -1,7 +1,7 @@
 <template>
   <div class="wrapper">
     <video-player :video="currentVideo" />
-    <video-list :videos="videos.list" :current-video-id="currentVideo.youtube" />
+    <video-list :videos="videos.list" :current-video="currentVideo" />
   </div>
 </template>
 
@@ -29,24 +29,8 @@ export default {
           return currentVideo
         }
       }
-      return list[0]
+      return null
     },
   },
 }
 </script>
-
-<style scoped lang="postcss">
-.wrapper {
-  @media (--landscape) and (--viewport-md) {
-    grid-gap: 1em 0;
-    position: relative;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    align-items: start;
-  }
-
-  @media (--landscape) and (--viewport-lg) {
-    grid-template-columns: 2fr 1fr;
-  }
-}
-</style>
