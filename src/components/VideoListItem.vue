@@ -1,11 +1,5 @@
 <template>
-  <li
-    v-if="video.youtube"
-    class="item"
-    :class="{ active: isPlaying }"
-    @mousedown.left="mouseDown"
-    @mouseup.left="mouseUp"
-  >
+  <li v-if="video.youtube" class="item" @mousedown.left="mouseDown" @mouseup.left="mouseUp">
     <div class="text">
       <router-link
         ref="link"
@@ -31,7 +25,6 @@
         class="image"
       />
       <svg
-        v-if="!isPlaying"
         width="1792"
         height="1792"
         class="icon"
@@ -53,21 +46,13 @@ export default {
       type: Object,
       required: true,
     },
-    currentVideo: {
-      type: Object,
-      default: () => {},
-    },
   },
   data() {
     return {
       down: null,
     }
   },
-  computed: {
-    isPlaying() {
-      return this.currentVideo && this.currentVideo.Id === this.video.videoId
-    },
-  },
+
   methods: {
     mouseUp(event) {
       if (event.target === this.$refs.link.$el) return
@@ -105,10 +90,6 @@ export default {
     & .title {
       text-decoration: underline;
     }
-  }
-
-  &.active {
-    opacity: 0.5;
   }
 }
 
