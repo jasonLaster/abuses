@@ -29,7 +29,7 @@ header {
   @mixin color-negative;
 
   text-align: center;
-  padding: 1em 0 0;
+  padding: 1.5em 0;
 }
 
 p {

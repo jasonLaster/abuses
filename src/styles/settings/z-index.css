@@ -1,5 +1,6 @@
 :root {
-  --error-handler: 9;
+  --z-modal: 7;
+  --z-player: 4;
   --mobile-navigation: 2;
   --main-navigation: 1;
 }

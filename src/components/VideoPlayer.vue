@@ -1,7 +1,6 @@
 <template>
-  <div class="video-wrapper">
-    <center-wrapper>
-      <p>Now Playing: Incident #{{ video.id }} — {{ video.city }}, {{ video.state }}</p>
+  <app-modal :show="hasVideo" :large="true" :title="title" @close="closeModal">
+    <div v-if="video">
       <youtube
         ref="youtube"
         class="player"
@@ -15,24 +14,24 @@
 
       <div class="buttons">
         <a ref="tweet" class="btn" :href="video.tweet" rel="noopener" target="_blank">
-          Go to source
+          View original tweet
         </a>
       </div>
-    </center-wrapper>
-  </div>
+    </div>
+  </app-modal>
 </template>
 
 <script>
-import CenterWrapper from '@/components/CenterWrapper.vue'
+import AppModal from '@/components/AppModal.vue'
 
 export default {
   components: {
-    CenterWrapper,
+    AppModal,
   },
   props: {
     video: {
       type: Object,
-      required: true,
+      default: () => {},
     },
   },
   data() {
@@ -44,12 +43,22 @@ export default {
       isPlayingVideo: false,
     }
   },
+  computed: {
+    title() {
+      if (this.hasVideo) {
+        return `Incident #${this.video.id} — ${this.video.city}, ${this.video.state}`
+      }
+      return ''
+    },
+    hasVideo() {
+      return this.video !== null
+    },
+  },
 
-  watch: {
-    video() {
-      const { player } = this.$refs.youtube
-      this.$nextTick(() => {
-        player.playVideo()
+  methods: {
+    closeModal() {
+      this.$router.push({
+        name: 'VideoDetails',
       })
     },
   },
@@ -57,18 +66,6 @@ export default {
 </script>
 
 <style scoped lang="postcss">
-.video-wrapper {
-  @mixin color-negative;
-
-  width: 100%;
-  margin: 0;
-  position: sticky;
-  padding: 1em 0 0.25em;
-  z-index: 9;
-  top: 0;
-  border-bottom: 2px solid var(--color-white);
-}
-
 .buttons {
   display: flex;
   justify-content: space-around;
@@ -77,12 +74,7 @@ export default {
 }
 
 .text {
-  display: none;
   text-align: center;
-
-  @media (--viewport-sm) {
-    display: block;
-  }
 }
 
 >>> iframe {
