@@ -1,6 +1,4 @@
 :root {
-  --z-modal: 7;
-  --z-player: 4;
-  --mobile-navigation: 2;
-  --main-navigation: 1;
+  --z-modal: 2;
+  --z-header: 1;
 }

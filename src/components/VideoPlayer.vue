@@ -1,17 +1,16 @@
 <template>
   <app-modal :show="hasVideo" :large="true" :title="title" @close="closeModal">
     <div v-if="video">
-      <youtube
-        ref="youtube"
-        class="player"
-        :width="560"
-        :height="315"
-        :video-id="video.youtube"
-        :player-vars="playerVars"
-        :fit-parent="true"
-        :resize-delay="10"
-        :resize="true"
-      />
+      <div class="video-container">
+        <youtube
+          ref="youtube"
+          class="player"
+          :width="560"
+          :height="315"
+          :video-id="video.youtube"
+          :player-vars="playerVars"
+        />
+      </div>
       <p class="text">{{ video.text }}</p>
 
       <div class="buttons">
@@ -84,10 +83,18 @@ export default {
   padding-bottom: 0.5em;
 }
 
->>> iframe {
-  width: 100%;
-  margin-bottom: 0.5em;
-  display: block;
+.video-container {
   position: relative;
+  padding-bottom: 56.25%; /* 16:9 */
+  height: 0;
+  margin-bottom: var(--spacing-s);
+}
+
+>>> iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
 }
 </style>
