@@ -54,7 +54,6 @@ export default {
       return this.video !== null
     },
   },
-
   methods: {
     closeModal() {
       this.$router.push({
