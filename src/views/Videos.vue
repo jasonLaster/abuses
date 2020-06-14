@@ -1,7 +1,7 @@
 <template>
   <div class="wrapper">
     <video-player :video="currentVideo" />
-    <video-list :videos="videos.list" :current-video="currentVideo" />
+    <video-list :videos="videos.list" />
   </div>
 </template>
 
