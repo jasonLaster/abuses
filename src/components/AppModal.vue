@@ -163,11 +163,7 @@ export default {
   background: var(--color-primary);
   max-width: var(--container-width-md);
   color: var(--color-white);
-  margin: 1em auto 8em;
-
-  @media (--viewport-md) {
-    margin-top: 3em;
-  }
+  margin: 3em auto 8em;
 }
 
 .large {
@@ -188,6 +184,7 @@ export default {
   display: flex;
   align-items: center;
   justify-content: center;
+  transform: translateY(-0.25em);
 
   &:hover,
   &:focus {
