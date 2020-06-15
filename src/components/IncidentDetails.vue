@@ -1,5 +1,10 @@
 <template>
-  <app-modal :show="incident" :large="true" :title="getIncidentTitle(incident)" @close="closeModal">
+  <app-modal
+    :show="incident !== null"
+    :large="true"
+    :title="getIncidentTitle(incident)"
+    @close="closeModal"
+  >
     <div v-if="incident">
       <div class="video-container">
         <youtube

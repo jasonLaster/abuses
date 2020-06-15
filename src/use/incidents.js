@@ -1,11 +1,9 @@
-import { reactive, computed } from '@vue/composition-api'
+import { ref, computed } from '@vue/composition-api'
 import incidents from '@/data/incidents.json'
 
 export default () => {
-  const state = reactive({
-    list: incidents.filter((incident) => incident.youtube.length),
-    total: computed(() => state.list.length),
-  })
+  const list = ref(incidents.filter((incident) => incident.youtube.length))
+  const total = computed(() => list.value.length)
 
   const getIncidentTitle = (incident) => {
     if (!incident) return ''
@@ -13,16 +11,13 @@ export default () => {
   }
 
   const getIncidentByID = (ID) => {
-    const { list } = state
-    const currentIncident = list.find((incident) => incident.youtube === ID)
-    if (currentIncident) {
-      return currentIncident
-    }
-    return null
+    const currentIncident = list.value.find((incident) => incident.youtube === ID)
+    return currentIncident || null
   }
 
   return {
-    state,
+    list,
+    total,
     getIncidentTitle,
     getIncidentByID,
   }
