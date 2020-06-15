@@ -7,7 +7,7 @@ module.exports = {
     appleMobileWebAppStatusBarStyle: 'black-translucent',
     workboxPluginMode: 'InjectManifest',
     manifestOptions: {
-      start_url: 'https://deploy-preview-10--police-accountability.netlify.app/',
+      start_url: '/#/',
     },
     workboxOptions: {
       swSrc: 'service-worker.js',
