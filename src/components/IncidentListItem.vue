@@ -1,23 +1,23 @@
 <template>
-  <li v-if="video.youtube" class="item" @mousedown.left="mouseDown" @mouseup.left="mouseUp">
+  <li class="item" @mousedown.left="mouseDown" @mouseup.left="mouseUp">
     <div class="text">
       <router-link
         ref="link"
         class="link"
         :to="{
-          name: 'VideoDetails',
+          name: 'IncidentDetails',
           params: {
-            id: video.youtube,
+            id: incident.youtube,
           },
         }"
       >
-        <span class="title">Incident #{{ video.id }} — {{ video.city }}, {{ video.state }}</span>
-        {{ video.text }}
+        <span class="title">{{ getIncidentTitle(incident) }}</span>
+        {{ incident.text }}
       </router-link>
     </div>
     <div class="image-wrapper">
       <img
-        :src="`https://img.youtube.com/vi/${video.youtube}/hqdefault.jpg`"
+        :src="`https://img.youtube.com/vi/${incident.youtube}/hqdefault.jpg`"
         width="480"
         height="360"
         loading="lazy"
@@ -40,9 +40,15 @@
 </template>
 
 <script>
+import useIncidents from '@/use/incidents'
+
 export default {
+  setup() {
+    const { getIncidentTitle } = useIncidents()
+    return { getIncidentTitle }
+  },
   props: {
-    video: {
+    incident: {
       type: Object,
       required: true,
     },
@@ -59,17 +65,17 @@ export default {
 
       const up = +new Date()
       if (up - this.down < 200) {
-        this.playVideo()
+        this.showIncidentDetails()
       }
     },
     mouseDown() {
       this.down = +new Date()
     },
-    playVideo() {
+    showIncidentDetails() {
       this.$router.push({
-        name: 'VideoDetails',
+        name: 'IncidentDetails',
         params: {
-          id: this.video.youtube,
+          id: this.incident.youtube,
         },
       })
     },

@@ -1,20 +1,20 @@
 <template>
-  <app-modal :show="hasVideo" :large="true" :title="title" @close="closeModal">
-    <div v-if="video">
+  <app-modal :show="incident" :large="true" :title="getIncidentTitle(incident)" @close="closeModal">
+    <div v-if="incident">
       <div class="video-container">
         <youtube
           ref="youtube"
           class="player"
           :width="560"
           :height="315"
-          :video-id="video.youtube"
+          :video-id="incident.youtube"
           :player-vars="playerVars"
         />
       </div>
-      <p class="text">{{ video.text }}</p>
+      <p class="text">{{ incident.text }}</p>
 
       <div class="buttons">
-        <a ref="tweet" class="btn" :href="video.tweet" rel="noopener" target="_blank">
+        <a ref="tweet" class="btn" :href="incident.tweet" rel="noopener" target="_blank">
           View original tweet
         </a>
       </div>
@@ -24,16 +24,15 @@
 
 <script>
 import AppModal from '@/components/AppModal.vue'
+import useIncidents from '@/use/incidents'
 
 export default {
+  setup() {
+    const { getIncidentTitle, getIncidentByID } = useIncidents()
+    return { getIncidentTitle, getIncidentByID }
+  },
   components: {
     AppModal,
-  },
-  props: {
-    video: {
-      type: Object,
-      default: () => {},
-    },
   },
   data() {
     return {
@@ -43,21 +42,17 @@ export default {
       },
     }
   },
+
   computed: {
-    title() {
-      if (this.hasVideo) {
-        return `Incident #${this.video.id} — ${this.video.city}, ${this.video.state}`
-      }
-      return ''
-    },
-    hasVideo() {
-      return this.video !== null
+    incident() {
+      const { id } = this.$route.params
+      return this.getIncidentByID(id)
     },
   },
   methods: {
     closeModal() {
       this.$router.push({
-        name: 'VideoDetails',
+        name: 'IncidentDetails',
       })
     },
   },
@@ -85,5 +80,15 @@ export default {
   left: 0;
   width: 100%;
   height: 100%;
+}
+
+.icon {
+  width: 5em;
+  height: 5em;
+  fill: white;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin: -2.5em 0 0 -2.5em;
 }
 </style>

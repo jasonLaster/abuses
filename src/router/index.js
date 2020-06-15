@@ -1,14 +1,14 @@
 import Vue from 'vue'
 import VueRouter from 'vue-router'
-import Videos from '../views/Videos.vue'
+import Incidents from '../views/Incidents.vue'
 
 Vue.use(VueRouter)
 
 const routes = [
   {
     path: '/:id?',
-    name: 'VideoDetails',
-    component: Videos,
+    name: 'IncidentDetails',
+    component: Incidents,
   },
 ]
 
