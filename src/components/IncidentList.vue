@@ -1,23 +1,23 @@
 <template>
   <center-wrapper>
     <ul class="list">
-      <video-list-item v-for="video in state.list" :key="video.video" :video="video" />
+      <incident-list-item v-for="video in state.list" :key="video.video" :video="video" />
     </ul>
   </center-wrapper>
 </template>
 
 <script>
-import VideoListItem from '@/components/VideoListItem.vue'
+import IncidentListItem from '@/components/IncidentListItem.vue'
 import CenterWrapper from '@/components/CenterWrapper.vue'
-import useVideos from '@/use/videos'
+import useIncidents from '@/use/incidents'
 
 export default {
   setup() {
-    const { state } = useVideos()
+    const { state } = useIncidents()
     return { state }
   },
   components: {
-    VideoListItem,
+    IncidentListItem,
     CenterWrapper,
   },
 }

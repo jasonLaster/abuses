@@ -9,11 +9,11 @@
 
 <script>
 import CenterWrapper from '@/components/CenterWrapper.vue'
-import useVideos from '@/use/videos'
+import useIncidents from '@/use/incidents'
 
 export default {
   setup() {
-    const { state } = useVideos()
+    const { state } = useIncidents()
     return { state }
   },
 

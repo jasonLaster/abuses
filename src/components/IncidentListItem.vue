@@ -5,13 +5,13 @@
         ref="link"
         class="link"
         :to="{
-          name: 'VideoDetails',
+          name: 'IncidentDetails',
           params: {
             id: video.youtube,
           },
         }"
       >
-        <span class="title">{{ getVideoTitle(video) }}</span>
+        <span class="title">{{ getIncidentTitle(video) }}</span>
         {{ video.text }}
       </router-link>
     </div>
@@ -40,12 +40,12 @@
 </template>
 
 <script>
-import useVideos from '@/use/videos'
+import useIncidents from '@/use/incidents'
 
 export default {
   setup() {
-    const { getVideoTitle } = useVideos()
-    return { getVideoTitle }
+    const { getIncidentTitle } = useIncidents()
+    return { getIncidentTitle }
   },
   props: {
     video: {
@@ -73,7 +73,7 @@ export default {
     },
     playVideo() {
       this.$router.push({
-        name: 'VideoDetails',
+        name: 'IncidentDetails',
         params: {
           id: this.video.youtube,
         },
