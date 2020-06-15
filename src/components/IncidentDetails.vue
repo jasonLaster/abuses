@@ -1,11 +1,6 @@
 <template>
-  <app-modal
-    :show="hasIncident"
-    :large="true"
-    :title="getIncidentTitle(incident)"
-    @close="closeModal"
-  >
-    <div v-if="hasIncident">
+  <app-modal :show="incident" :large="true" :title="getIncidentTitle(incident)" @close="closeModal">
+    <div v-if="incident">
       <div class="video-container">
         <youtube
           ref="youtube"
@@ -52,10 +47,6 @@ export default {
     incident() {
       const { id } = this.$route.params
       return this.getIncidentByID(id)
-    },
-
-    hasIncident() {
-      return this.incident !== null
     },
   },
   methods: {
