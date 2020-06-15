@@ -1,7 +1,7 @@
 <template>
   <center-wrapper>
     <ul class="list">
-      <incident-list-item v-for="video in state.list" :key="video.video" :video="video" />
+      <incident-list-item v-for="incident in state.list" :key="incident.id" :incident="incident" />
     </ul>
   </center-wrapper>
 </template>

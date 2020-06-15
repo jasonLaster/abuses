@@ -7,17 +7,17 @@
         :to="{
           name: 'IncidentDetails',
           params: {
-            id: video.youtube,
+            id: incident.youtube,
           },
         }"
       >
-        <span class="title">{{ getIncidentTitle(video) }}</span>
-        {{ video.text }}
+        <span class="title">{{ getIncidentTitle(incident) }}</span>
+        {{ incident.text }}
       </router-link>
     </div>
     <div class="image-wrapper">
       <img
-        :src="`https://img.youtube.com/vi/${video.youtube}/hqdefault.jpg`"
+        :src="`https://img.youtube.com/vi/${incident.youtube}/hqdefault.jpg`"
         width="480"
         height="360"
         loading="lazy"
@@ -48,7 +48,7 @@ export default {
     return { getIncidentTitle }
   },
   props: {
-    video: {
+    incident: {
       type: Object,
       required: true,
     },
@@ -65,17 +65,17 @@ export default {
 
       const up = +new Date()
       if (up - this.down < 200) {
-        this.playVideo()
+        this.showIncidentDetails()
       }
     },
     mouseDown() {
       this.down = +new Date()
     },
-    playVideo() {
+    showIncidentDetails() {
       this.$router.push({
         name: 'IncidentDetails',
         params: {
-          id: this.video.youtube,
+          id: this.incident.youtube,
         },
       })
     },

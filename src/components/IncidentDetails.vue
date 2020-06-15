@@ -1,20 +1,25 @@
 <template>
-  <app-modal :show="hasVideo" :large="true" :title="getIncidentTitle(video)" @close="closeModal">
-    <div v-if="video">
+  <app-modal
+    :show="hasIncident"
+    :large="true"
+    :title="getIncidentTitle(incident)"
+    @close="closeModal"
+  >
+    <div v-if="hasIncident">
       <div class="video-container">
         <youtube
           ref="youtube"
           class="player"
           :width="560"
           :height="315"
-          :video-id="video.youtube"
+          :video-id="incident.youtube"
           :player-vars="playerVars"
         />
       </div>
-      <p class="text">{{ video.text }}</p>
+      <p class="text">{{ incident.text }}</p>
 
       <div class="buttons">
-        <a ref="tweet" class="btn" :href="video.tweet" rel="noopener" target="_blank">
+        <a ref="tweet" class="btn" :href="incident.tweet" rel="noopener" target="_blank">
           View original tweet
         </a>
       </div>
@@ -44,13 +49,13 @@ export default {
   },
 
   computed: {
-    video() {
+    incident() {
       const { id } = this.$route.params
       return this.getIncidentByID(id)
     },
 
-    hasVideo() {
-      return this.video !== null
+    hasIncident() {
+      return this.incident !== null
     },
   },
   methods: {

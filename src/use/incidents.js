@@ -8,10 +8,8 @@ export default () => {
   })
 
   const getIncidentTitle = (incident) => {
-    if (incident) {
-      return `Incident #${incident.id} — ${incident.city}, ${incident.state}`
-    }
-    return ''
+    if (!incident) return ''
+    return `Incident #${incident.id} — ${incident.city}, ${incident.state}`
   }
 
   const getIncidentByID = (ID) => {
