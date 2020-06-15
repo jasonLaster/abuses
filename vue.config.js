@@ -6,11 +6,9 @@ module.exports = {
     appleMobileWebAppCapable: 'yes',
     appleMobileWebAppStatusBarStyle: 'black-translucent',
     workboxPluginMode: 'InjectManifest',
-    manifestOptions: {
-      start_url: '/#/',
-    },
     workboxOptions: {
       swSrc: 'service-worker.js',
+      navigateFallback: '/index.html',
     },
   },
 }
