@@ -1,12 +1,7 @@
 <template>
   <center-wrapper>
     <ul class="list">
-      <video-list-item
-        v-for="video in videos"
-        :key="video.video"
-        :video="video"
-        :current-video="currentVideo"
-      />
+      <video-list-item v-for="video in state.list" :key="video.video" :video="video" />
     </ul>
   </center-wrapper>
 </template>
@@ -14,21 +9,16 @@
 <script>
 import VideoListItem from '@/components/VideoListItem.vue'
 import CenterWrapper from '@/components/CenterWrapper.vue'
+import useVideos from '@/use/videos'
 
 export default {
+  setup() {
+    const { state } = useVideos()
+    return { state }
+  },
   components: {
     VideoListItem,
     CenterWrapper,
-  },
-  props: {
-    videos: {
-      type: Array,
-      required: true,
-    },
-    currentVideo: {
-      type: Object,
-      default: () => {},
-    },
   },
 }
 </script>

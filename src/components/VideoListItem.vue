@@ -1,5 +1,5 @@
 <template>
-  <li v-if="video.youtube" class="item" @mousedown.left="mouseDown" @mouseup.left="mouseUp">
+  <li class="item" @mousedown.left="mouseDown" @mouseup.left="mouseUp">
     <div class="text">
       <router-link
         ref="link"
@@ -11,7 +11,7 @@
           },
         }"
       >
-        <span class="title">Incident #{{ video.id }} — {{ video.city }}, {{ video.state }}</span>
+        <span class="title">{{ getVideoTitle(video) }}</span>
         {{ video.text }}
       </router-link>
     </div>
@@ -40,7 +40,13 @@
 </template>
 
 <script>
+import useVideos from '@/use/videos'
+
 export default {
+  setup() {
+    const { getVideoTitle } = useVideos()
+    return { getVideoTitle }
+  },
   props: {
     video: {
       type: Object,

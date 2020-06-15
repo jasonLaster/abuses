@@ -1,5 +1,5 @@
 <template>
-  <app-modal :show="hasVideo" :large="true" :title="title" @close="closeModal">
+  <app-modal :show="hasVideo" :large="true" :title="getVideoTitle(video)" @close="closeModal">
     <div v-if="video">
       <div class="video-container">
         <youtube
@@ -24,16 +24,15 @@
 
 <script>
 import AppModal from '@/components/AppModal.vue'
+import useVideos from '@/use/videos'
 
 export default {
+  setup() {
+    const { getVideoTitle, getVideoByID } = useVideos()
+    return { getVideoTitle, getVideoByID }
+  },
   components: {
     AppModal,
-  },
-  props: {
-    video: {
-      type: Object,
-      default: () => {},
-    },
   },
   data() {
     return {
@@ -43,13 +42,13 @@ export default {
       },
     }
   },
+
   computed: {
-    title() {
-      if (this.hasVideo) {
-        return `Incident #${this.video.id} — ${this.video.city}, ${this.video.state}`
-      }
-      return ''
+    video() {
+      const { id } = this.$route.params
+      return this.getVideoByID(id)
     },
+
     hasVideo() {
       return this.video !== null
     },
@@ -85,5 +84,15 @@ export default {
   left: 0;
   width: 100%;
   height: 100%;
+}
+
+.icon {
+  width: 5em;
+  height: 5em;
+  fill: white;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin: -2.5em 0 0 -2.5em;
 }
 </style>
