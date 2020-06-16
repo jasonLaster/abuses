@@ -1,9 +1,11 @@
 <template>
-  <center-wrapper>
-    <ul class="list">
-      <incident-list-item v-for="incident in list" :key="incident.id" :incident="incident" />
-    </ul>
-  </center-wrapper>
+  <div :class="$style.wrapper">
+    <center-wrapper>
+      <ul :class="$style.list">
+        <incident-list-item v-for="incident in list" :key="incident.id" :incident="incident" />
+      </ul>
+    </center-wrapper>
+  </div>
 </template>
 
 <script>
@@ -23,16 +25,20 @@ export default {
 }
 </script>
 
-<style scoped lang="postcss">
+<style module lang="postcss">
 .list {
   @mixin list-reset;
 
   display: grid;
   grid-gap: 0.75em 1em;
-  margin-top: 1em;
 
   @media (--viewport-sm) {
     grid-template-columns: repeat(auto-fit, minmax(25em, 1fr));
   }
+}
+
+.wrapper {
+  background: var(--color-white);
+  padding: 1.5em 0;
 }
 </style>

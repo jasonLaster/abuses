@@ -1,6 +1,6 @@
 <template>
   <header>
-    <center-wrapper>
+    <center-wrapper :top="true">
       <h1>Police Abuses</h1>
       <p>{{ total }} Videos of Police Brutality From George Floyd Protests</p>
     </center-wrapper>

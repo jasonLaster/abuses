@@ -160,9 +160,9 @@ export default {
 }
 
 .wrapper {
-  background: var(--color-primary);
+  @mixin color-negative;
+
   max-width: var(--container-width-md);
-  color: var(--color-white);
   margin: 3em auto 8em;
 }
 

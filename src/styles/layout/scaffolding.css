@@ -16,7 +16,7 @@ html {
 }
 
 body {
-  background: var(--color-white);
+  background: var(--color-primary);
   margin: 0;
 }
 
