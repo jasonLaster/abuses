@@ -2,11 +2,7 @@
   <div :class="$style.wrapper">
     <center-wrapper>
       <ul :class="$style.list">
-        <incident-list-item
-          v-for="incident in state.list"
-          :key="incident.id"
-          :incident="incident"
-        />
+        <incident-list-item v-for="incident in list" :key="incident.id" :incident="incident" />
       </ul>
     </center-wrapper>
   </div>
@@ -19,8 +15,8 @@ import useIncidents from '@/use/incidents'
 
 export default {
   setup() {
-    const { state } = useIncidents()
-    return { state }
+    const { list } = useIncidents()
+    return { list }
   },
   components: {
     IncidentListItem,

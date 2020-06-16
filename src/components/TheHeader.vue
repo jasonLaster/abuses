@@ -2,7 +2,7 @@
   <header>
     <center-wrapper :top="true">
       <h1>Police Abuses</h1>
-      <p>{{ state.total }} Videos of Police Brutality From George Floyd Protests</p>
+      <p>{{ total }} Videos of Police Brutality From George Floyd Protests</p>
     </center-wrapper>
   </header>
 </template>
@@ -13,8 +13,8 @@ import useIncidents from '@/use/incidents'
 
 export default {
   setup() {
-    const { state } = useIncidents()
-    return { state }
+    const { total } = useIncidents()
+    return { total }
   },
 
   components: {
