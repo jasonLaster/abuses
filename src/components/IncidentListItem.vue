@@ -1,19 +1,20 @@
 <template>
   <li class="item" @mousedown.left="mouseDown" @mouseup.left="mouseUp">
+    <router-link
+      ref="link"
+      class="link"
+      :to="{
+        name: 'IncidentDetails',
+        params: {
+          id: incident.youtube,
+        },
+      }"
+    >
+      <span class="title"> Incident #{{ incident.id }}</span>
+      <span class="location">{{ incident.city }}, {{ incident.state }}</span>
+    </router-link>
     <div class="text">
-      <router-link
-        ref="link"
-        class="link"
-        :to="{
-          name: 'IncidentDetails',
-          params: {
-            id: incident.youtube,
-          },
-        }"
-      >
-        <span class="title">{{ getIncidentTitle(incident) }}</span>
-        {{ incident.text }}
-      </router-link>
+      {{ incident.text }}
     </div>
     <div class="image-wrapper">
       <img
@@ -85,14 +86,17 @@ export default {
 
 <style scoped lang="postcss">
 .item {
+  transition: border-color 0.2s ease-out;
   cursor: pointer;
-  border-bottom: 1px solid var(--color-primary);
-  padding-bottom: 0.75em;
+  border: 1px solid var(--color-gray);
+  padding: var(--spacing-s);
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
+  border-radius: 0.25em;
 
-  &:focus,
+  &:focus-within,
   &:hover {
+    border-color: var(--color-black);
     & .title {
       text-decoration: underline;
     }
@@ -101,11 +105,10 @@ export default {
 
 .image-wrapper {
   order: -1;
-  flex: 0 0 10em;
-  margin-right: 0.75em;
   position: relative;
   align-self: flex-start;
   display: none;
+  margin-bottom: var(--spacing-xs);
 
   @media (--viewport-xs) {
     display: block;
@@ -121,13 +124,19 @@ export default {
 .link {
   @mixin link-reset;
 
-  padding: 0.25em 0 0.5em;
+  display: block;
+  margin-bottom: var(--spacing-xs);
 }
 
+.location,
 .title {
   display: block;
-  color: var(--color-primary);
   text-transform: uppercase;
+}
+
+.location,
+.text {
+  font-size: 0.85em;
 }
 
 .icon {
@@ -138,12 +147,5 @@ export default {
   top: 50%;
   left: 50%;
   margin: -1.5em 0 0 -1.5em;
-}
-
-.text {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  justify-content: space-between;
 }
 </style>
