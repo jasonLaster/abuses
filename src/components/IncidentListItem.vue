@@ -41,13 +41,7 @@
 </template>
 
 <script>
-import useIncidents from '@/use/incidents'
-
 export default {
-  setup() {
-    const { getIncidentTitle } = useIncidents()
-    return { getIncidentTitle }
-  },
   props: {
     incident: {
       type: Object,
