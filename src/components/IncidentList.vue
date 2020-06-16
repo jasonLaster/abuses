@@ -31,10 +31,7 @@ export default {
 
   display: grid;
   grid-gap: var(--spacing-m);
-
-  @media (--viewport-sm) {
-    grid-template-columns: repeat(auto-fit, minmax(15em, 1fr));
-  }
+  grid-template-columns: repeat(auto-fit, minmax(12em, 1fr));
 }
 
 .wrapper {

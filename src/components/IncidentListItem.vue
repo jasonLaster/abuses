@@ -107,12 +107,7 @@ export default {
   order: -1;
   position: relative;
   align-self: flex-start;
-  display: none;
   margin-bottom: var(--spacing-xs);
-
-  @media (--viewport-xs) {
-    display: block;
-  }
 }
 
 .image {
