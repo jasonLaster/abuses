@@ -1,7 +1,7 @@
 <template>
   <div :class="$style.filter">
     <select :class="$style['filter-select']" @input="input" aria-label="Filter by location">
-      <option :value="null" selected>FILTER BY LOCATION</option>
+      <option :value="''" selected>FILTER BY LOCATION</option>
       <option v-for="option in options" :key="option" :value="option">{{ option }}</option>
     </select>
   </div>

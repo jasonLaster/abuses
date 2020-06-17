@@ -34,13 +34,13 @@ export default {
       [...list.value.reduce((s, i) => s.add(i.city), new Set()).values()].sort(),
     )
 
-    const selectedCity = ref(null)
+    const selectedCity = ref('')
     const selectedCityName = computed(() =>
-      selectedCity.value == null ? 'all cities' : selectedCity.value,
+      selectedCity.value === '' ? 'all cities' : selectedCity.value,
     )
 
     const filteredList = computed(() =>
-      list.value.filter((i) => selectedCity.value == null || i.city === selectedCity.value),
+      list.value.filter((i) => selectedCity.value === '' || i.city === selectedCity.value),
     )
 
     return { filteredList, selectedCity, selectedCityName, allCities }
