@@ -1,24 +1,52 @@
 <template>
   <div :class="$style.wrapper">
     <center-wrapper>
+      <incident-filter v-model="selectedCity" :options="allCities" />
+
+      <div :class="$style['filter-description']">
+        Showing {{ filteredList.length }} incidents in {{ selectedCityName }}
+      </div>
+
       <ul :class="$style.list">
-        <incident-list-item v-for="incident in list" :key="incident.id" :incident="incident" />
+        <incident-list-item
+          v-for="incident in filteredList"
+          :key="incident.id"
+          :incident="incident"
+        />
       </ul>
     </center-wrapper>
   </div>
 </template>
 
 <script>
+import { ref, computed } from '@vue/composition-api'
+
 import IncidentListItem from '@/components/IncidentListItem.vue'
+import IncidentFilter from '@/components/IncidentFilter.vue'
 import CenterWrapper from '@/components/CenterWrapper.vue'
 import useIncidents from '@/use/incidents'
 
 export default {
   setup() {
     const { list } = useIncidents()
-    return { list }
+
+    const allCities = computed(() =>
+      [...list.value.reduce((s, i) => s.add(i.city), new Set()).values()].sort(),
+    )
+
+    const selectedCity = ref(null)
+    const selectedCityName = computed(() =>
+      selectedCity.value == null ? 'all cities' : selectedCity.value,
+    )
+
+    const filteredList = computed(() =>
+      list.value.filter((i) => selectedCity.value == null || i.city === selectedCity.value),
+    )
+
+    return { filteredList, selectedCity, selectedCityName, allCities }
   },
   components: {
+    IncidentFilter,
     IncidentListItem,
     CenterWrapper,
   },
@@ -40,5 +68,12 @@ export default {
 .wrapper {
   background: var(--color-white);
   padding: 1.5em 0;
+}
+
+.filter-description {
+  text-align: center;
+  margin-bottom: 1em;
+  margin-top: 0.75em;
+  font-size: 18px;
 }
 </style>

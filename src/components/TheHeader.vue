@@ -1,8 +1,9 @@
 <template>
   <header>
     <center-wrapper :top="true">
+      <div class="leadin">A video archive of</div>
       <h1>Police Abuses</h1>
-      <p>{{ total }} Videos of Police Brutality From George Floyd Protests</p>
+      <div class="leadout">{{ total }} Videos</div>
     </center-wrapper>
   </header>
 </template>
@@ -29,9 +30,17 @@ header {
 
   position: sticky;
   top: 0;
-  text-align: center;
-  padding: 1.5em 0 1em;
+  padding: 0.5em 0 2em;
   z-index: var(--z-header);
   border-bottom: 1px solid var(--color-white);
+}
+.leadin {
+  font-size: 18px;
+  line-height: 1;
+}
+.leadout {
+  font-size: 14px;
+  line-height: 1;
+  text-transform: uppercase;
 }
 </style>
