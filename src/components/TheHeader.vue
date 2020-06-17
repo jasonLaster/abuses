@@ -35,11 +35,11 @@ header {
   border-bottom: 1px solid var(--color-white);
 }
 .leadin {
-  font-size: 18px;
+  font-size: 1.125em;
   line-height: 1;
 }
 .leadout {
-  font-size: 14px;
+  font-size: 0.875em;
   line-height: 1;
   text-transform: uppercase;
 }
