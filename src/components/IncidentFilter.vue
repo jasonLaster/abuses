@@ -1,15 +1,13 @@
 <template>
-  <div :class="$style.filter">
-    <select
-      :class="$style['filter-select']"
-      aria-label="Filter by location"
-      :value="value"
-      @input="input"
-    >
-      <option :value="''">FILTER BY LOCATION</option>
-      <option v-for="option in options" :key="option" :value="option">{{ option }}</option>
-    </select>
-  </div>
+  <select
+    :class="$style['filter-select']"
+    aria-label="Filter by location"
+    :value="value"
+    @input="input"
+  >
+    <option :value="''">FILTER BY LOCATION</option>
+    <option v-for="option in options" :key="option" :value="option">{{ option }}</option>
+  </select>
 </template>
 
 <script>
@@ -38,25 +36,9 @@ export default {
 </script>
 
 <style module lang="postcss">
-.filter {
-  z-index: var(--z-header);
-
-  position: fixed;
-  /**
-   * TODO(dmnd): These values for top are extremely coupled to the
-   * implementation of the header, so the filter should probably move to the
-   * header even though that's a little odd from a data flow perspective.
-   */
-  top: 5.75em;
-  @media (--viewport-xs) {
-    top: 6em;
-  }
-  @media (--viewport-sm) {
-    top: 7em;
-  }
-}
-
-.filter > select {
+select {
+  position: absolute;
+  margin-top: 1em;
   appearance: none;
   padding: 0.75em 4em 0.75em 1.5em;
   color: var(--color-primary);

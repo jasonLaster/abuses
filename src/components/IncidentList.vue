@@ -1,8 +1,6 @@
 <template>
   <div :class="$style.wrapper">
     <center-wrapper>
-      <incident-filter :value="city" :options="allCities" />
-
       <div :class="$style['filter-description']">
         Showing {{ filteredList.length }} incidents in {{ selectedCityName }}
       </div>
@@ -22,13 +20,11 @@
 import { computed } from '@vue/composition-api'
 
 import IncidentListItem from '@/components/IncidentListItem.vue'
-import IncidentFilter from '@/components/IncidentFilter.vue'
 import CenterWrapper from '@/components/CenterWrapper.vue'
 import useIncidents from '@/use/incidents'
 
 export default {
   components: {
-    IncidentFilter,
     IncidentListItem,
     CenterWrapper,
   },
@@ -43,10 +39,6 @@ export default {
   setup(props) {
     const { list } = useIncidents()
 
-    const allCities = computed(() =>
-      [...list.value.reduce((s, i) => s.add(i.city), new Set()).values()].sort(),
-    )
-
     const selectedCityName = computed(() => {
       return props.city === '' ? 'all cities' : props.city
     })
@@ -55,7 +47,7 @@ export default {
       list.value.filter((i) => props.city === '' || i.city === props.city),
     )
 
-    return { filteredList, selectedCityName, allCities }
+    return { filteredList, selectedCityName }
   },
 }
 </script>
