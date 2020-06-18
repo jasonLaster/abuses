@@ -56,9 +56,13 @@ export default {
   },
   methods: {
     closeModal() {
-      this.$router.push({
-        name: 'IncidentDetails',
-      })
+      if (!Object.keys(this.$route.params).includes('city')) {
+        this.$router.push({ name: 'Root' })
+        return
+      }
+
+      const { city } = this.$route.params
+      this.$router.push({ name: 'City', params: { city } })
     },
   },
 }
