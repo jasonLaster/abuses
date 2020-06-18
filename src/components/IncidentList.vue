@@ -2,7 +2,8 @@
   <div :class="$style.wrapper">
     <center-wrapper>
       <div :class="$style['filter-description']">
-        Showing {{ filteredList.length }} incidents in {{ selectedCityName }}
+        Showing {{ pluralize(filteredList.length, 'incident', 'incidents') }} in
+        {{ selectedCityName }}
       </div>
 
       <ul :class="$style.list">
@@ -22,6 +23,10 @@ import { computed } from '@vue/composition-api'
 import IncidentListItem from '@/components/IncidentListItem.vue'
 import CenterWrapper from '@/components/CenterWrapper.vue'
 import useIncidents from '@/use/incidents'
+
+function pluralize(n, singular, plural) {
+  return `${n} ${n === 1 ? singular : plural}`
+}
 
 export default {
   components: {
@@ -47,7 +52,7 @@ export default {
       list.value.filter((i) => props.city === '' || i.city === props.city),
     )
 
-    return { filteredList, selectedCityName }
+    return { filteredList, selectedCityName, pluralize }
   },
 }
 </script>
