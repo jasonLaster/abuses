@@ -1,7 +1,12 @@
 <template>
   <div :class="$style.filter">
-    <select :class="$style['filter-select']" @input="input" aria-label="Filter by location">
-      <option :value="''" selected>FILTER BY LOCATION</option>
+    <select
+      :class="$style['filter-select']"
+      aria-label="Filter by location"
+      :value="value"
+      @input="input"
+    >
+      <option :value="''">FILTER BY LOCATION</option>
       <option v-for="option in options" :key="option" :value="option">{{ option }}</option>
     </select>
   </div>
@@ -10,12 +15,23 @@
 <script>
 export default {
   props: {
-    options: Array,
-    value: String,
+    options: {
+      type: Array,
+      default: () => [],
+    },
+    value: {
+      type: String,
+      value: '',
+    },
   },
   methods: {
     input(e) {
-      this.$emit('input', e.target.value)
+      const city = e.target.value
+      if (city === '') {
+        this.$router.push({ name: 'Root' })
+      } else {
+        this.$router.push({ name: 'City', params: { city } })
+      }
     },
   },
 }

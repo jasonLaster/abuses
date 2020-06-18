@@ -1,7 +1,7 @@
 <template>
   <div class="wrapper">
     <incident-details />
-    <incident-list />
+    <incident-list :city="city" />
   </div>
 </template>
 
@@ -13,6 +13,12 @@ export default {
   components: {
     IncidentDetails,
     IncidentList,
+  },
+  props: {
+    city: {
+      type: String,
+      default: '',
+    },
   },
 }
 </script>

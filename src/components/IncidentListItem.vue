@@ -5,10 +5,8 @@
         ref="link"
         class="link"
         :to="{
-          name: 'IncidentDetails',
-          params: {
-            id: incident.youtube,
-          },
+          path: `incident/${incident.youtube}`,
+          append: true,
         }"
       >
         <span class="title">{{ getIncidentTitle(incident) }}</span>
@@ -42,6 +40,18 @@
 <script>
 import useIncidents from '@/use/incidents'
 
+function isChildOf(child, parent) {
+  if (child === parent) {
+    return true
+  }
+
+  if (child.parentElement == null) {
+    return false
+  }
+
+  return isChildOf(child.parentElement, parent)
+}
+
 export default {
   setup() {
     const { getIncidentTitle } = useIncidents()
@@ -61,7 +71,7 @@ export default {
 
   methods: {
     mouseUp(event) {
-      if (event.target === this.$refs.link.$el) return
+      if (isChildOf(event.target, this.$refs.link.$el)) return
 
       const up = +new Date()
       if (up - this.down < 200) {
@@ -73,10 +83,8 @@ export default {
     },
     showIncidentDetails() {
       this.$router.push({
-        name: 'IncidentDetails',
-        params: {
-          id: this.incident.youtube,
-        },
+        path: `incident/${this.incident.youtube}`,
+        append: true,
       })
     },
   },
