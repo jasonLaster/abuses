@@ -62,10 +62,10 @@ export default {
   @mixin list-reset;
 
   display: grid;
-  grid-gap: 0.75em 1em;
+  grid-gap: var(--spacing-m);
 
   @media (--viewport-sm) {
-    grid-template-columns: repeat(auto-fit, minmax(25em, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(15em, 1fr));
   }
 }
 

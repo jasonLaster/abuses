@@ -3,5 +3,6 @@
   --color-white: #fff;
   --color-primary: #021e48;
   --color-primary-dark: #000;
-  --text-color: #000;
+  --color-gray: #c4c4c4;
+  --text-color: var(--color-primary);
 }
