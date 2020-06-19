@@ -1,24 +1,40 @@
 <template>
   <header>
     <center-wrapper :top="true">
+      <div class="leadin">A video archive of</div>
       <h1>Police Abuses</h1>
-      <p>{{ total }} Videos of Police Brutality From George Floyd Protests</p>
+      <div class="leadout">{{ total }} Videos</div>
+      <incident-filter :value="city" :options="allCities" />
     </center-wrapper>
   </header>
 </template>
 
 <script>
+import { computed } from '@vue/composition-api'
+
 import CenterWrapper from '@/components/CenterWrapper.vue'
 import useIncidents from '@/use/incidents'
+import IncidentFilter from '@/components/IncidentFilter.vue'
 
 export default {
-  setup() {
-    const { total } = useIncidents()
-    return { total }
-  },
-
   components: {
     CenterWrapper,
+    IncidentFilter,
+  },
+
+  props: {
+    city: {
+      type: String,
+      default: '',
+    },
+  },
+
+  setup() {
+    const { list, total } = useIncidents()
+
+    const allCities = computed(() => [...new Set([...list.value.map((i) => i.city)])].sort())
+
+    return { total, allCities }
   },
 }
 </script>
@@ -29,9 +45,17 @@ header {
 
   position: sticky;
   top: 0;
-  text-align: center;
-  padding: 1.5em 0 1em;
+  padding: 0.5em 0 2em;
   z-index: var(--z-header);
   border-bottom: 1px solid var(--color-white);
+}
+.leadin {
+  font-size: 1.125em;
+  line-height: 1;
+}
+.leadout {
+  font-size: 0.875em;
+  line-height: 1;
+  text-transform: uppercase;
 }
 </style>

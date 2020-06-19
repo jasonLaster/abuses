@@ -4,10 +4,8 @@
       ref="link"
       class="link"
       :to="{
-        name: 'IncidentDetails',
-        params: {
-          id: incident.youtube,
-        },
+        path: `incident/${incident.youtube}`,
+        append: true,
       }"
     >
       <span class="title"> Incident #{{ incident.id }}</span>
@@ -16,6 +14,7 @@
     <div class="text">
       {{ incident.text }}
     </div>
+
     <div class="image-wrapper">
       <img
         :src="`https://img.youtube.com/vi/${incident.youtube}/hqdefault.jpg`"
@@ -41,6 +40,18 @@
 </template>
 
 <script>
+function isChildOf(child, parent) {
+  if (child === parent) {
+    return true
+  }
+
+  if (child.parentElement == null) {
+    return false
+  }
+
+  return isChildOf(child.parentElement, parent)
+}
+
 export default {
   props: {
     incident: {
@@ -56,7 +67,7 @@ export default {
 
   methods: {
     mouseUp(event) {
-      if (event.target === this.$refs.link.$el) return
+      if (isChildOf(event.target, this.$refs.link.$el)) return
 
       const up = +new Date()
       if (up - this.down < 200) {
@@ -68,10 +79,8 @@ export default {
     },
     showIncidentDetails() {
       this.$router.push({
-        name: 'IncidentDetails',
-        params: {
-          id: this.incident.youtube,
-        },
+        path: `incident/${this.incident.youtube}`,
+        append: true,
       })
     },
   },
