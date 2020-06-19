@@ -65,7 +65,7 @@ export default {
   grid-gap: var(--spacing-m);
 
   @media (--viewport-sm) {
-    grid-template-columns: repeat(auto-fit, minmax(15em, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(15em, 1fr));
   }
 }
 
