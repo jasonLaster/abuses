@@ -21,8 +21,8 @@ base('GeorgeFloyd')
         const f = record.fields
         recs.push({
           id: f['TGD number'] || null,
-          city: f.City || 'unknown',
-          state: f.State || '??',
+          city: f.City || null,
+          state: f.State || null,
           tweet: f['Tweet URL'],
           youtube: f.YouTube,
           text: f['Doucette Text'],
