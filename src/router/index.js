@@ -31,9 +31,9 @@ const routes = [
           // effect of defining a new route for this is that we have two urls
           // for each incident.
           {
-            path: 'incident/:id',
+            path: '/incident/:id',
             name: 'CityIncident',
-            component: Incidents,
+            component: IncidentDetails,
           },
         ],
       },

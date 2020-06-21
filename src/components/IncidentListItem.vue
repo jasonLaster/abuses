@@ -4,8 +4,10 @@
       ref="link"
       class="link"
       :to="{
-        path: `incident/${incident.youtube}`,
-        append: true,
+        name: 'IncidentDetails',
+        params: {
+          id: incident.youtube,
+        },
       }"
     >
       <span class="title"> Incident #{{ incident.id }}</span>
@@ -79,8 +81,10 @@ export default {
     },
     showIncidentDetails() {
       this.$router.push({
-        path: `incident/${this.incident.youtube}`,
-        append: true,
+        name: 'IncidentDetails',
+        params: {
+          id: this.incident.youtube,
+        },
       })
     },
   },
