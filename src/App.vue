@@ -1,6 +1,6 @@
 <template>
   <div id="app" :class="$style.page">
-    <the-header :city="city" />
+    <the-header />
     <main :class="$style.main">
       <router-view />
     </main>
