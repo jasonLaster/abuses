@@ -1,11 +1,6 @@
 <template>
-  <app-modal
-    :show="incident !== null"
-    :large="true"
-    :title="getIncidentTitle(incident)"
-    @close="closeModal"
-  >
-    <div v-if="incident">
+  <div v-if="incident">
+    <center-wrapper>
       <div class="video-container">
         <youtube
           ref="youtube"
@@ -23,21 +18,29 @@
           View original tweet
         </a>
       </div>
-    </div>
-  </app-modal>
+    </center-wrapper>
+  </div>
 </template>
 
 <script>
-import AppModal from '@/components/AppModal.vue'
 import useIncidents from '@/use/incidents'
+import CenterWrapper from '@/components/CenterWrapper.vue'
 
 export default {
   setup() {
-    const { getIncidentTitle, getIncidentByID } = useIncidents()
-    return { getIncidentTitle, getIncidentByID }
+    const { getIncidentTitle } = useIncidents()
+    return { getIncidentTitle }
   },
+
   components: {
-    AppModal,
+    CenterWrapper,
+  },
+
+  props: {
+    incident: {
+      type: Object,
+      required: true,
+    },
   },
   data() {
     return {
@@ -46,13 +49,6 @@ export default {
         playsinline: 1,
       },
     }
-  },
-
-  computed: {
-    incident() {
-      const { id } = this.$route.params
-      return this.getIncidentByID(id)
-    },
   },
   methods: {
     closeModal() {

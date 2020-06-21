@@ -1,10 +1,16 @@
 import Vue from 'vue'
 import VueRouter from 'vue-router'
 import Incidents from '../views/Incidents.vue'
+import IncidentDetails from '../views/IncidentDetails.vue'
 
 Vue.use(VueRouter)
 
 const routes = [
+  {
+    path: '/incident/:id',
+    name: 'IncidentDetails',
+    component: IncidentDetails,
+  },
   {
     path: '/',
     name: 'Root',
@@ -29,11 +35,6 @@ const routes = [
             component: Incidents,
           },
         ],
-      },
-      {
-        path: 'incident/:id',
-        name: 'Incident',
-        component: Incidents,
       },
     ],
   },
