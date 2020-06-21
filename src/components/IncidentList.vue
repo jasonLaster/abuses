@@ -1,10 +1,11 @@
 <template>
-  <center-wrapper>
+  <div>
     <div :class="$style['filter-description']">
-      Showing {{ pluralize(filteredList.length, 'incident', 'incidents') }} in
+      Showing
+      {{ pluralize(filteredList.length, 'incident', 'incidents') }}
+      in
       {{ selectedCityName }}
     </div>
-
     <ul :class="$style.list">
       <incident-list-item
         v-for="incident in filteredList"
@@ -12,30 +13,28 @@
         :incident="incident"
       />
     </ul>
-  </center-wrapper>
+  </div>
 </template>
 
 <script>
 import { computed } from '@vue/composition-api'
 
 import IncidentListItem from '@/components/IncidentListItem.vue'
-import CenterWrapper from '@/components/CenterWrapper.vue'
 import useIncidents from '@/use/incidents'
-
-function pluralize(n, singular, plural) {
-  return `${n} ${n === 1 ? singular : plural}`
-}
 
 export default {
   components: {
     IncidentListItem,
-    CenterWrapper,
   },
 
   props: {
     city: {
       type: String,
       default: '',
+    },
+    excludeId: {
+      type: Number,
+      default: 0,
     },
   },
 
@@ -47,10 +46,17 @@ export default {
     })
 
     const filteredList = computed(() =>
-      list.value.filter((i) => props.city === '' || i.city === props.city),
+      list.value.filter(
+        (i) => (props.city === '' || i.city === props.city) && i.id !== props.excludeId,
+      ),
     )
 
-    return { filteredList, selectedCityName, pluralize }
+    return { filteredList, selectedCityName }
+  },
+  methods: {
+    pluralize(n, singular, plural) {
+      return `${n} ${n === 1 ? singular : plural}`
+    },
   },
 }
 </script>
@@ -68,7 +74,6 @@ export default {
 }
 
 .filter-description {
-  text-align: center;
   margin-bottom: 1em;
   font-size: 1.125em;
 }

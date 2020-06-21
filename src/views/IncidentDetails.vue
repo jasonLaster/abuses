@@ -2,6 +2,7 @@
   <center-wrapper>
     <btn-back title="Back to the list" />
     <incident-details :incident="incident" />
+    <incident-list :city="incident.city" :exclude-id="incident.id" />
   </center-wrapper>
 </template>
 
@@ -10,6 +11,7 @@ import IncidentDetails from '@/components/IncidentDetails.vue'
 import useIncidents from '@/use/incidents'
 import CenterWrapper from '@/components/CenterWrapper.vue'
 import BtnBack from '@/components/BtnBack.vue'
+import IncidentList from '@/components/IncidentList.vue'
 
 export default {
   setup() {
@@ -20,6 +22,7 @@ export default {
     BtnBack,
     IncidentDetails,
     CenterWrapper,
+    IncidentList,
   },
 
   computed: {
