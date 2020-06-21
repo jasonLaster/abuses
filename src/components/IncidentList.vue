@@ -1,12 +1,9 @@
 <template>
   <div>
     <div :class="$style['filter-description']">
-      Showing
-      {{ pluralize(filteredList.length, 'incident', 'incidents') }}
-      in
-      {{ selectedCityName }}
+      {{ title }}
     </div>
-    <ul :class="$style.list">
+    <ul v-if="filteredList.length" :class="$style.list">
       <incident-list-item
         v-for="incident in filteredList"
         :key="incident.id"
@@ -37,6 +34,16 @@ export default {
       default: 0,
     },
   },
+  computed: {
+    title() {
+      return `Showing
+      ${this.filteredList.length}
+      ${this.excludeId ? 'other' : ''}
+      ${this.pluralize(this.filteredList.length, 'incident', 'incidents')}
+      in
+      ${this.selectedCityName}`
+    },
+  },
 
   setup(props) {
     const { list } = useIncidents()
@@ -55,7 +62,7 @@ export default {
   },
   methods: {
     pluralize(n, singular, plural) {
-      return `${n} ${n === 1 ? singular : plural}`
+      return `${n === 1 ? singular : plural}`
     },
   },
 }
