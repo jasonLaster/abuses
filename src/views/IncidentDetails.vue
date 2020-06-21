@@ -1,6 +1,6 @@
 <template>
   <center-wrapper>
-    <btn-back :to="{ name: 'Root' }" title="Back to the list" />
+    <btn-back title="Back to the list" />
     <incident-details :incident="incident" />
   </center-wrapper>
 </template>

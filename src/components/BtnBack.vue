@@ -1,6 +1,6 @@
 <template>
   <div :class="$style.wrapper">
-    <router-link :to="to" :class="$style.link">
+    <a :class="$style.link" @click="$router.go(-1)">
       <svg
         :class="$style.icon"
         width="16"
@@ -14,18 +14,14 @@
         />
       </svg>
 
-      {{ title }}</router-link
-    >
+      {{ title }}
+    </a>
   </div>
 </template>
 
 <script>
 export default {
   props: {
-    to: {
-      type: Object,
-      required: true,
-    },
     title: {
       type: String,
       required: true,
