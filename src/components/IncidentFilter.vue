@@ -22,12 +22,6 @@ export default {
 
     return { total, options }
   },
-  props: {
-    value: {
-      type: String,
-      default: '',
-    },
-  },
 
   computed: {
     city() {
