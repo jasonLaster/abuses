@@ -35,6 +35,7 @@ export default {
 }
 
 .main {
+  padding-top: 2em;
   flex: 1 1 auto;
   background: var(--color-white);
 }

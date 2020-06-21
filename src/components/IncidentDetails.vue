@@ -1,51 +1,44 @@
 <template>
-  <div v-if="incident">
-    <center-wrapper>
-      <article>
-        <h1>Incident #{{ incident.id }}</h1>
-        <div class="location">{{ incident.city }}, {{ incident.state }}</div>
-        <h2>Description</h2>
-        <p>{{ incident.text }}</p>
-      </article>
-      <div class="video-container">
-        <youtube
-          ref="youtube"
-          class="player"
-          :width="560"
-          :height="315"
-          :video-id="incident.youtube"
-          :player-vars="playerVars"
-        />
-      </div>
-      <div class="links">
-        <a :href="incident.tweet" rel="noopener" target="_blank">
-          View original tweet
-        </a>
-        |
-        <a
-          :href="`https://www.youtube.com/watch?v=${incident.youtube}`"
-          rel="noopener"
-          target="_blank"
-        >
-          Video URL
-        </a>
-      </div>
-    </center-wrapper>
+  <div>
+    <article>
+      <h1>Incident #{{ incident.id }}</h1>
+      <div class="location">{{ incident.city }}, {{ incident.state }}</div>
+      <h2>Description</h2>
+      <p>{{ incident.text }}</p>
+    </article>
+    <div class="video-container">
+      <youtube
+        ref="youtube"
+        class="player"
+        :width="560"
+        :height="315"
+        :video-id="incident.youtube"
+        :player-vars="playerVars"
+      />
+    </div>
+    <div class="links">
+      <a :href="incident.tweet" rel="noopener" target="_blank">
+        View original tweet
+      </a>
+      |
+      <a
+        :href="`https://www.youtube.com/watch?v=${incident.youtube}`"
+        rel="noopener"
+        target="_blank"
+      >
+        Video URL
+      </a>
+    </div>
   </div>
 </template>
 
 <script>
 import useIncidents from '@/use/incidents'
-import CenterWrapper from '@/components/CenterWrapper.vue'
 
 export default {
   setup() {
     const { getIncidentTitle } = useIncidents()
     return { getIncidentTitle }
-  },
-
-  components: {
-    CenterWrapper,
   },
 
   props: {

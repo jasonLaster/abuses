@@ -4,19 +4,22 @@
       <div class="leadin">A video archive of</div>
       <h1>Police Abuses</h1>
       <div class="leadout">{{ total }} Videos</div>
-      <incident-filter :value="city" :options="allCities" />
+      <incident-filter v-if="showFilter" :value="city" />
     </center-wrapper>
   </header>
 </template>
 
 <script>
-import { computed } from '@vue/composition-api'
-
 import CenterWrapper from '@/components/CenterWrapper.vue'
-import useIncidents from '@/use/incidents'
 import IncidentFilter from '@/components/IncidentFilter.vue'
+import useIncidents from '@/use/incidents'
 
 export default {
+  setup() {
+    const { total } = useIncidents()
+
+    return { total }
+  },
   components: {
     CenterWrapper,
     IncidentFilter,
@@ -29,12 +32,10 @@ export default {
     },
   },
 
-  setup() {
-    const { list, total } = useIncidents()
-
-    const allCities = computed(() => [...new Set([...list.value.map((i) => i.city)])].sort())
-
-    return { total, allCities }
+  computed: {
+    showFilter() {
+      return this.$route.name === 'City' || this.$route.name === 'Root'
+    },
   },
 }
 </script>

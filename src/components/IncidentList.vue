@@ -1,20 +1,18 @@
 <template>
-  <div :class="$style.wrapper">
-    <center-wrapper>
-      <div :class="$style['filter-description']">
-        Showing {{ pluralize(filteredList.length, 'incident', 'incidents') }} in
-        {{ selectedCityName }}
-      </div>
+  <center-wrapper>
+    <div :class="$style['filter-description']">
+      Showing {{ pluralize(filteredList.length, 'incident', 'incidents') }} in
+      {{ selectedCityName }}
+    </div>
 
-      <ul :class="$style.list">
-        <incident-list-item
-          v-for="incident in filteredList"
-          :key="incident.id"
-          :incident="incident"
-        />
-      </ul>
-    </center-wrapper>
-  </div>
+    <ul :class="$style.list">
+      <incident-list-item
+        v-for="incident in filteredList"
+        :key="incident.id"
+        :incident="incident"
+      />
+    </ul>
+  </center-wrapper>
 </template>
 
 <script>
@@ -69,15 +67,9 @@ export default {
   }
 }
 
-.wrapper {
-  background: var(--color-white);
-  padding: 1.5em 0;
-}
-
 .filter-description {
   text-align: center;
   margin-bottom: 1em;
-  margin-top: 0.75em;
   font-size: 1.125em;
 }
 </style>

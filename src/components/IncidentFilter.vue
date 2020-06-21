@@ -2,7 +2,7 @@
   <select
     :class="$style['filter-select']"
     aria-label="Filter by location"
-    :value="value"
+    :value="city"
     @input="input"
   >
     <option :value="''">FILTER BY LOCATION</option>
@@ -11,15 +11,27 @@
 </template>
 
 <script>
+import { computed } from '@vue/composition-api'
+import useIncidents from '@/use/incidents'
+
 export default {
+  setup() {
+    const { list, total } = useIncidents()
+
+    const options = computed(() => [...new Set([...list.value.map((i) => i.city)])].sort())
+
+    return { total, options }
+  },
   props: {
-    options: {
-      type: Array,
-      default: () => [],
-    },
     value: {
       type: String,
       default: '',
+    },
+  },
+
+  computed: {
+    city() {
+      return this.$route.params.city
     },
   },
   methods: {
