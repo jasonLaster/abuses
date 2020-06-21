@@ -49,10 +49,27 @@ header {
   z-index: var(--z-header);
   border-bottom: 1px solid var(--color-white);
 }
+
+h1 {
+  line-height: var(--line-height-header);
+  font-weight: var(--font-weight-bold);
+  font-family: var(--font-family-header);
+  font-size: 2rem;
+
+  @media (--viewport-xs) {
+    font-size: 2.25rem;
+  }
+
+  @media (--viewport-sm) {
+    font-size: 3rem;
+  }
+}
+
 .leadin {
   font-size: 1.125em;
   line-height: 1;
 }
+
 .leadout {
   font-size: 0.875em;
   line-height: 1;

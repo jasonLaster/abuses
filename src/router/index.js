@@ -1,7 +1,8 @@
 import Vue from 'vue'
 import VueRouter from 'vue-router'
-import Incidents from '../views/Incidents.vue'
-import IncidentDetails from '../views/IncidentDetails.vue'
+import Incidents from '@/views/Incidents.vue'
+import IncidentDetails from '@/views/IncidentDetails.vue'
+import About from '@/views/About.vue'
 
 Vue.use(VueRouter)
 
@@ -37,6 +38,11 @@ const routes = [
         ],
       },
     ],
+  },
+  {
+    path: '/about',
+    name: 'About',
+    component: About,
   },
 ]
 

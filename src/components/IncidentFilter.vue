@@ -19,7 +19,7 @@ export default {
     },
     value: {
       type: String,
-      value: '',
+      default: '',
     },
   },
   methods: {

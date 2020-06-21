@@ -1,6 +1,12 @@
 <template>
   <div v-if="incident">
     <center-wrapper>
+      <article>
+        <h1>Incident #{{ incident.id }}</h1>
+        <div class="location">{{ incident.city }}, {{ incident.state }}</div>
+        <h2>Description</h2>
+        <p>{{ incident.text }}</p>
+      </article>
       <div class="video-container">
         <youtube
           ref="youtube"
@@ -11,11 +17,17 @@
           :player-vars="playerVars"
         />
       </div>
-      <p class="text">{{ incident.text }}</p>
-
-      <div class="buttons">
-        <a ref="tweet" class="btn" :href="incident.tweet" rel="noopener" target="_blank">
+      <div class="links">
+        <a :href="incident.tweet" rel="noopener" target="_blank">
           View original tweet
+        </a>
+        |
+        <a
+          :href="`https://www.youtube.com/watch?v=${incident.youtube}`"
+          rel="noopener"
+          target="_blank"
+        >
+          Video URL
         </a>
       </div>
     </center-wrapper>
@@ -72,6 +84,10 @@ export default {
   padding-bottom: 0.5em;
 }
 
+.location {
+  margin-bottom: 0.5em;
+}
+
 .video-container {
   position: relative;
   padding-bottom: 56.25%; /* 16:9 */
@@ -85,15 +101,5 @@ export default {
   left: 0;
   width: 100%;
   height: 100%;
-}
-
-.icon {
-  width: 5em;
-  height: 5em;
-  fill: white;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  margin: -2.5em 0 0 -2.5em;
 }
 </style>
