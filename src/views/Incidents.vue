@@ -1,12 +1,9 @@
 <template>
-  <center-wrapper>
-    <incident-list :incidents="incidents" :title="listTitle" />
-  </center-wrapper>
+  <incident-list :incidents="incidents" :title="listTitle" />
 </template>
 
 <script>
 import IncidentList from '@/components/IncidentList.vue'
-import CenterWrapper from '@/components/CenterWrapper.vue'
 import useIncidents from '@/use/incidents'
 
 // temp fix while we're not using https://kazupon.github.io/vue-i18n/
@@ -21,7 +18,6 @@ export default {
   },
   components: {
     IncidentList,
-    CenterWrapper,
   },
   props: {
     city: {

@@ -1,20 +1,24 @@
 <template>
-  <section v-if="incidents.length" aria-labelledby="incident-list">
-    <h2 id="incident-list" :class="$style['filter-description']">
-      {{ title }}
-    </h2>
-    <ul :class="$style.list">
-      <incident-list-item v-for="incident in incidents" :key="incident.id" :incident="incident" />
-    </ul>
-  </section>
+  <center-wrapper>
+    <section v-if="incidents.length" aria-labelledby="incident-list">
+      <h2 id="incident-list" :class="$style['filter-description']">
+        {{ title }}
+      </h2>
+      <ul :class="$style.list">
+        <incident-list-item v-for="incident in incidents" :key="incident.id" :incident="incident" />
+      </ul>
+    </section>
+  </center-wrapper>
 </template>
 
 <script>
 import IncidentListItem from '@/components/IncidentListItem.vue'
+import CenterWrapper from '@/components/CenterWrapper.vue'
 
 export default {
   components: {
     IncidentListItem,
+    CenterWrapper,
   },
 
   props: {

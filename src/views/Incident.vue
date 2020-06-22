@@ -1,9 +1,11 @@
 <template>
-  <center-wrapper>
-    <btn-back :to="{ name: 'Root' }" title="Back to the list" />
-    <incident-details :incident="incident" />
+  <div>
+    <center-wrapper>
+      <btn-back :to="{ name: 'Root' }" title="Back to the list" />
+      <incident-details :incident="incident" />
+    </center-wrapper>
     <incident-list :incidents="incidents" :title="listTitle" />
-  </center-wrapper>
+  </div>
 </template>
 
 <script>
