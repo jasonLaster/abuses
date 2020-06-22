@@ -16,8 +16,8 @@ const pluralize = (n, singular, plural) => {
 
 export default {
   setup() {
-    const { getFilterList } = useIncidents()
-    return { getFilterList }
+    const { getFilteredList } = useIncidents()
+    return { getFilteredList }
   },
   components: {
     IncidentList,
@@ -38,7 +38,7 @@ export default {
       ${this.city ? this.city : 'all cities'}`
     },
     incidents() {
-      return this.getFilterList(this.city)
+      return this.getFilteredList(this.city)
     },
   },
 }

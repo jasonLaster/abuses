@@ -20,8 +20,8 @@ const pluralize = (n, singular, plural) => {
 
 export default {
   setup() {
-    const { getIncidentByID, getFilterList } = useIncidents()
-    return { getIncidentByID, getFilterList }
+    const { getIncidentByID, getFilteredList } = useIncidents()
+    return { getIncidentByID, getFilteredList }
   },
   components: {
     BtnBack,
@@ -40,7 +40,7 @@ export default {
       ${this.incident.city}`
     },
     incidents() {
-      return this.getFilterList(this.incident.city, this.incident.id)
+      return this.getFilteredList(this.incident.city, this.incident.id)
     },
     incident() {
       const { id } = this.$route.params

@@ -10,7 +10,7 @@ export default () => {
     return currentIncident || null
   }
 
-  const getFilterList = (city, excludeId = 0) =>
+  const getFilteredList = (city, excludeId = 0) =>
     list.value.filter(
       (incident) => (city === '' || incident.city === city) && incident.id !== excludeId,
     )
@@ -19,6 +19,6 @@ export default () => {
     list,
     total,
     getIncidentByID,
-    getFilterList,
+    getFilteredList,
   }
 }
