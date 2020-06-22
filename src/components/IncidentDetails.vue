@@ -33,14 +33,7 @@
 </template>
 
 <script>
-import useIncidents from '@/use/incidents'
-
 export default {
-  setup() {
-    const { getIncidentTitle } = useIncidents()
-    return { getIncidentTitle }
-  },
-
   props: {
     incident: {
       type: Object,
@@ -54,17 +47,6 @@ export default {
         playsinline: 1,
       },
     }
-  },
-  methods: {
-    closeModal() {
-      if (!Object.keys(this.$route.params).includes('city')) {
-        this.$router.push({ name: 'Root' })
-        return
-      }
-
-      const { city } = this.$route.params
-      this.$router.push({ name: 'City', params: { city } })
-    },
   },
 }
 </script>
