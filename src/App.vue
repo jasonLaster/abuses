@@ -15,11 +15,6 @@ export default {
   components: {
     TheHeader,
   },
-  data() {
-    return {
-      city: null,
-    }
-  },
 }
 </script>
 
