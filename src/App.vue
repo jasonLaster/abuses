@@ -30,7 +30,7 @@ export default {
 }
 
 .main {
-  padding-top: 2em;
+  padding: 2em 0 4em;
   flex: 1 1 auto;
   background: var(--color-white);
 }
