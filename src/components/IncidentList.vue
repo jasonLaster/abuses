@@ -19,6 +19,10 @@ import { computed } from '@vue/composition-api'
 import IncidentListItem from '@/components/IncidentListItem.vue'
 import useIncidents from '@/use/incidents'
 
+const pluralize = (n, singular, plural) => {
+  return `${n === 1 ? singular : plural}`
+}
+
 export default {
   components: {
     IncidentListItem,
@@ -39,7 +43,7 @@ export default {
       return `Showing
       ${this.filteredList.length}
       ${this.excludeId ? 'other' : ''}
-      ${this.pluralize(this.filteredList.length, 'incident', 'incidents')}
+      ${pluralize(this.filteredList.length, 'incident', 'incidents')}
       in
       ${this.selectedCityName}`
     },
@@ -59,11 +63,6 @@ export default {
     )
 
     return { filteredList, selectedCityName }
-  },
-  methods: {
-    pluralize(n, singular, plural) {
-      return `${n === 1 ? singular : plural}`
-    },
   },
 }
 </script>

@@ -1,6 +1,6 @@
 <template>
   <center-wrapper>
-    <btn-back title="Back to the list" />
+    <btn-back :to="{ name: 'Root' }" title="Back to the list" />
     <incident-details :incident="incident" />
     <incident-list :city="incident.city" :exclude-id="incident.id" />
   </center-wrapper>
