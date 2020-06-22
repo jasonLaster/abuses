@@ -1,27 +1,16 @@
 <template>
-  <div>
-    <div :class="$style['filter-description']">
+  <section v-if="incidents.length" aria-labelledby="incident-list">
+    <h2 id="incident-list" :class="$style['filter-description']">
       {{ title }}
-    </div>
-    <ul v-if="filteredList.length" :class="$style.list">
-      <incident-list-item
-        v-for="incident in filteredList"
-        :key="incident.id"
-        :incident="incident"
-      />
+    </h2>
+    <ul :class="$style.list">
+      <incident-list-item v-for="incident in incidents" :key="incident.id" :incident="incident" />
     </ul>
-  </div>
+  </section>
 </template>
 
 <script>
-import { computed } from '@vue/composition-api'
-
 import IncidentListItem from '@/components/IncidentListItem.vue'
-import useIncidents from '@/use/incidents'
-
-const pluralize = (n, singular, plural) => {
-  return `${n === 1 ? singular : plural}`
-}
 
 export default {
   components: {
@@ -29,40 +18,14 @@ export default {
   },
 
   props: {
-    city: {
+    title: {
       type: String,
       default: '',
     },
-    excludeId: {
-      type: Number,
-      default: 0,
+    incidents: {
+      type: Array,
+      default: () => [],
     },
-  },
-  computed: {
-    title() {
-      return `Showing
-      ${this.filteredList.length}
-      ${this.excludeId ? 'other' : ''}
-      ${pluralize(this.filteredList.length, 'incident', 'incidents')}
-      in
-      ${this.selectedCityName}`
-    },
-  },
-
-  setup(props) {
-    const { list } = useIncidents()
-
-    const selectedCityName = computed(() => {
-      return props.city === '' ? 'all cities' : props.city
-    })
-
-    const filteredList = computed(() =>
-      list.value.filter(
-        (i) => (props.city === '' || i.city === props.city) && i.id !== props.excludeId,
-      ),
-    )
-
-    return { filteredList, selectedCityName }
   },
 }
 </script>
@@ -81,6 +44,5 @@ export default {
 
 .filter-description {
   margin-bottom: 1em;
-  font-size: 1.125em;
 }
 </style>
