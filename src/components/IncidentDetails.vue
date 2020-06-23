@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="wrapper">
     <article>
       <h1>Incident #{{ incident.id }}</h1>
       <div class="location">{{ incident.city }}, {{ incident.state }}</div>
@@ -33,14 +33,7 @@
 </template>
 
 <script>
-import useIncidents from '@/use/incidents'
-
 export default {
-  setup() {
-    const { getIncidentTitle } = useIncidents()
-    return { getIncidentTitle }
-  },
-
   props: {
     incident: {
       type: Object,
@@ -54,17 +47,6 @@ export default {
         playsinline: 1,
       },
     }
-  },
-  methods: {
-    closeModal() {
-      if (!Object.keys(this.$route.params).includes('city')) {
-        this.$router.push({ name: 'Root' })
-        return
-      }
-
-      const { city } = this.$route.params
-      this.$router.push({ name: 'City', params: { city } })
-    },
   },
 }
 </script>
@@ -94,5 +76,9 @@ export default {
   left: 0;
   width: 100%;
   height: 100%;
+}
+
+.wrapper {
+  margin-bottom: 2em;
 }
 </style>
