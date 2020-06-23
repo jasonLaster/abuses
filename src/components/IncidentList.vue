@@ -40,10 +40,7 @@ export default {
 
   display: grid;
   grid-gap: var(--gutter);
-
-  @media (--viewport-xs) {
-    grid-template-columns: repeat(2, 1fr);
-  }
+  grid-template-columns: repeat(auto-fill, minmax(10em, 1fr));
 
   @media (--viewport-sm) {
     grid-template-columns: repeat(auto-fill, minmax(15em, 1fr));
