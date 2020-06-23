@@ -1,43 +1,44 @@
 <template>
-  <app-modal
-    :show="incident !== null"
-    :large="true"
-    :title="getIncidentTitle(incident)"
-    @close="closeModal"
-  >
-    <div v-if="incident">
-      <div class="video-container">
-        <youtube
-          ref="youtube"
-          class="player"
-          :width="560"
-          :height="315"
-          :video-id="incident.youtube"
-          :player-vars="playerVars"
-        />
-      </div>
-      <p class="text">{{ incident.text }}</p>
-
-      <div class="buttons">
-        <a ref="tweet" class="btn" :href="incident.tweet" rel="noopener" target="_blank">
-          View original tweet
-        </a>
-      </div>
+  <div class="wrapper">
+    <article>
+      <h1>Incident #{{ incident.id }}</h1>
+      <div class="location">{{ incident.city }}, {{ incident.state }}</div>
+      <h2>Description</h2>
+      <p>{{ incident.text }}</p>
+    </article>
+    <div class="video-container">
+      <youtube
+        ref="youtube"
+        class="player"
+        :width="560"
+        :height="315"
+        :video-id="incident.youtube"
+        :player-vars="playerVars"
+      />
     </div>
-  </app-modal>
+    <div class="links">
+      <a :href="incident.tweet" rel="noopener" target="_blank">
+        View original tweet
+      </a>
+      |
+      <a
+        :href="`https://www.youtube.com/watch?v=${incident.youtube}`"
+        rel="noopener"
+        target="_blank"
+      >
+        Video URL
+      </a>
+    </div>
+  </div>
 </template>
 
 <script>
-import AppModal from '@/components/AppModal.vue'
-import useIncidents from '@/use/incidents'
-
 export default {
-  setup() {
-    const { getIncidentTitle, getIncidentByID } = useIncidents()
-    return { getIncidentTitle, getIncidentByID }
-  },
-  components: {
-    AppModal,
+  props: {
+    incident: {
+      type: Object,
+      required: true,
+    },
   },
   data() {
     return {
@@ -46,24 +47,6 @@ export default {
         playsinline: 1,
       },
     }
-  },
-
-  computed: {
-    incident() {
-      const { id } = this.$route.params
-      return this.getIncidentByID(id)
-    },
-  },
-  methods: {
-    closeModal() {
-      if (!Object.keys(this.$route.params).includes('city')) {
-        this.$router.push({ name: 'Root' })
-        return
-      }
-
-      const { city } = this.$route.params
-      this.$router.push({ name: 'City', params: { city } })
-    },
   },
 }
 </script>
@@ -74,6 +57,10 @@ export default {
   justify-content: space-around;
   align-items: flex-start;
   padding-bottom: 0.5em;
+}
+
+.location {
+  margin-bottom: 0.5em;
 }
 
 .video-container {
@@ -91,13 +78,7 @@ export default {
   height: 100%;
 }
 
-.icon {
-  width: 5em;
-  height: 5em;
-  fill: white;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  margin: -2.5em 0 0 -2.5em;
+.wrapper {
+  margin-bottom: 2em;
 }
 </style>

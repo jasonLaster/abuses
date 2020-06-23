@@ -22,6 +22,7 @@ button {
 
 .read-more,
 a {
+  cursor: pointer;
   color: inherit;
   text-decoration: none;
   box-shadow: 0 1px 0 0 currentColor;
@@ -52,16 +53,16 @@ a {
   padding: var(--spacing-xs) var(--spacing-s);
   font-family: var(--font-family-headings);
   transition: background-color 0.1s ease-in-out;
-  border: 1px solid var(--color-white);
+  border: 1px solid var(--color-primary);
   background: transparent;
   max-width: 20em;
-  color: var(--color-white);
+  color: var(--color-primary);
   box-shadow: none;
 
-  &:active,
+  &:focus,
   &:hover {
-    background: var(--color-white);
-    color: var(--color-primary);
+    background: var(--color-primary);
+    color: var(--color-white);
     text-decoration: none;
   }
 

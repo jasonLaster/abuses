@@ -1,23 +1,23 @@
 <template>
-  <div id="app">
-    <the-header :city="city" />
-    <div class="wrapper">
-      <incident-details />
-      <incident-list :city="city" />
-    </div>
-  </div>
+  <incident-list :incidents="incidents" :title="listTitle" />
 </template>
 
 <script>
-import IncidentDetails from '@/components/IncidentDetails.vue'
 import IncidentList from '@/components/IncidentList.vue'
-import TheHeader from '@/components/TheHeader.vue'
+import useIncidents from '@/use/incidents'
+
+// temp fix while we're not using https://kazupon.github.io/vue-i18n/
+const pluralize = (n, singular, plural) => {
+  return `${n === 1 ? singular : plural}`
+}
 
 export default {
+  setup() {
+    const { getFilteredList } = useIncidents()
+    return { getFilteredList }
+  },
   components: {
-    IncidentDetails,
     IncidentList,
-    TheHeader,
   },
   props: {
     city: {
@@ -25,5 +25,25 @@ export default {
       default: '',
     },
   },
+  computed: {
+    listTitle() {
+      return `Showing
+      ${this.incidents.length}
+      ${pluralize(this.incidents.length, 'incident', 'incidents')}
+      in
+      ${this.city ? this.city : 'all cities'}`
+    },
+    incidents() {
+      return this.getFilteredList(this.city)
+    },
+  },
 }
 </script>
+
+<style module lang="postcss">
+.filter-description {
+  text-align: center;
+  margin-bottom: 1em;
+  font-size: 1.125em;
+}
+</style>
