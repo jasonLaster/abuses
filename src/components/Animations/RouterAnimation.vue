@@ -1,7 +1,14 @@
 <template>
-  <transition :name="transitionName" class="pink">
-    <slot />
-  </transition>
+  <div :class="{ 'is-animating': isAnimating }">
+    <transition
+      :name="transitionName"
+      @beforeLeave="animationStart"
+      @beforeEnter="animationStart"
+      @after-enter="animationEnd"
+    >
+      <slot />
+    </transition>
+  </div>
 </template>
 
 <script>
@@ -12,13 +19,33 @@ export default {
       required: true,
     },
   },
+
+  data() {
+    return {
+      isAnimating: false,
+    }
+  },
   computed: {
     transitionName() {
       return `slide-${this.direction}`
     },
   },
+  methods: {
+    animationStart() {
+      this.isAnimating = true
+    },
+    animationEnd() {
+      this.isAnimating = false
+    },
+  },
 }
 </script>
+
+<style lang="postcss" scoped>
+.is-animating {
+  overflow-x: hidden;
+}
+</style>
 
 <style lang="postcss">
 :root {
@@ -31,7 +58,6 @@ export default {
 .slide-right-enter-active,
 .slide-right-leave-active {
   transition: all var(--router-animation-duration);
-  overflow-x: hidden;
 }
 
 .slide-left-enter-active,
@@ -44,6 +70,7 @@ export default {
 .slide-right-enter,
 .slide-right-leave-active {
   opacity: 0;
+  overflow-x: hidden;
 }
 
 .slide-right-leave-active,
