@@ -1,10 +1,23 @@
 import Vue from 'vue'
 import VueRouter from 'vue-router'
-import Incidents from '../views/Incidents.vue'
+import Incidents from '@/views/Incidents.vue'
 
 Vue.use(VueRouter)
 
 const routes = [
+  {
+    path: '/incident/:id',
+    name: 'IncidentDetails',
+    // route level code-splitting
+    // this generates a separate chunk ([page].[hash].js) for these routes
+    // which is lazy-loaded when the route is visited.
+    component: () => import(/* webpackChunkName: "Incident" */ '@/views/Incident.vue'),
+  },
+  {
+    path: '/about',
+    name: 'About',
+    component: () => import(/* webpackChunkName: "about" */ '@/views/About.vue'),
+  },
   {
     path: '/',
     name: 'Root',
@@ -15,25 +28,6 @@ const routes = [
         path: 'city/:city',
         name: 'City',
         component: Incidents,
-        props: (route) => ({ city: route.params.city }),
-        children: [
-          // This route exists only because vue-router cannot persist non-url
-          // state. See https://github.com/vuejs/vue-router/issues/2243. When
-          // the incident modal is closed, we want the user to return to the
-          // filtered list they were previously looking at. An unfortunate side
-          // effect of defining a new route for this is that we have two urls
-          // for each incident.
-          {
-            path: 'incident/:id',
-            name: 'CityIncident',
-            component: Incidents,
-          },
-        ],
-      },
-      {
-        path: 'incident/:id',
-        name: 'Incident',
-        component: Incidents,
       },
     ],
   },
@@ -41,6 +35,9 @@ const routes = [
 
 const router = new VueRouter({
   routes,
+  scrollBehavior() {
+    return { x: 0, y: 0 }
+  },
 })
 
 export default router

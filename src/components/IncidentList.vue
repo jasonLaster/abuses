@@ -1,32 +1,19 @@
 <template>
-  <div :class="$style.wrapper">
-    <center-wrapper>
-      <div :class="$style['filter-description']">
-        Showing {{ pluralize(filteredList.length, 'incident', 'incidents') }} in
-        {{ selectedCityName }}
-      </div>
-
+  <center-wrapper>
+    <section v-if="incidents.length" aria-labelledby="incident-list">
+      <h2 id="incident-list" :class="$style['filter-description']">
+        {{ title }}
+      </h2>
       <ul :class="$style.list">
-        <incident-list-item
-          v-for="incident in filteredList"
-          :key="incident.id"
-          :incident="incident"
-        />
+        <incident-list-item v-for="incident in incidents" :key="incident.id" :incident="incident" />
       </ul>
-    </center-wrapper>
-  </div>
+    </section>
+  </center-wrapper>
 </template>
 
 <script>
-import { computed } from '@vue/composition-api'
-
 import IncidentListItem from '@/components/IncidentListItem.vue'
 import CenterWrapper from '@/components/CenterWrapper.vue'
-import useIncidents from '@/use/incidents'
-
-function pluralize(n, singular, plural) {
-  return `${n} ${n === 1 ? singular : plural}`
-}
 
 export default {
   components: {
@@ -35,24 +22,14 @@ export default {
   },
 
   props: {
-    city: {
+    title: {
       type: String,
       default: '',
     },
-  },
-
-  setup(props) {
-    const { list } = useIncidents()
-
-    const selectedCityName = computed(() => {
-      return props.city === '' ? 'all cities' : props.city
-    })
-
-    const filteredList = computed(() =>
-      list.value.filter((i) => props.city === '' || i.city === props.city),
-    )
-
-    return { filteredList, selectedCityName, pluralize }
+    incidents: {
+      type: Array,
+      default: () => [],
+    },
   },
 }
 </script>
@@ -69,15 +46,7 @@ export default {
   }
 }
 
-.wrapper {
-  background: var(--color-white);
-  padding: 1.5em 0;
-}
-
 .filter-description {
-  text-align: center;
   margin-bottom: 1em;
-  margin-top: 0.75em;
-  font-size: 1.125em;
 }
 </style>
