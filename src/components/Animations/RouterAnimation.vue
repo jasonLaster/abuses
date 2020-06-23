@@ -1,5 +1,5 @@
 <template>
-  <transition :name="transitionName">
+  <transition :name="transitionName" class="pink">
     <slot />
   </transition>
 </template>
@@ -31,6 +31,7 @@ export default {
 .slide-right-enter-active,
 .slide-right-leave-active {
   transition: all var(--router-animation-duration);
+  overflow-x: hidden;
 }
 
 .slide-left-enter-active,
