@@ -39,7 +39,8 @@ export default {
   @mixin list-reset;
 
   display: grid;
-  grid-gap: var(--spacing-m);
+  grid-gap: var(--gutter);
+  grid-template-columns: repeat(auto-fill, minmax(10em, 1fr));
 
   @media (--viewport-sm) {
     grid-template-columns: repeat(auto-fill, minmax(15em, 1fr));

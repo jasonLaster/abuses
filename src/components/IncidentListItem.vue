@@ -1,20 +1,22 @@
 <template>
   <li class="item" @mousedown.left="mouseDown" @mouseup.left="mouseUp">
-    <router-link
-      ref="link"
-      class="link"
-      :to="{
-        name: 'IncidentDetails',
-        params: {
-          id: incident.youtube,
-        },
-      }"
-    >
-      <span class="title"> Incident #{{ incident.id }}</span>
-      <span class="location">{{ incident.city }}, {{ incident.state }}</span>
-    </router-link>
-    <div class="text">
-      {{ incident.text }}
+    <div class="content">
+      <router-link
+        ref="link"
+        class="link"
+        :to="{
+          name: 'IncidentDetails',
+          params: {
+            id: incident.youtube,
+          },
+        }"
+      >
+        <span class="title"> Incident #{{ incident.id }}</span>
+        <span class="location">{{ incident.city }}, {{ incident.state }}</span>
+      </router-link>
+      <div class="text">
+        {{ incident.text }}
+      </div>
     </div>
 
     <div class="image-wrapper">
@@ -96,7 +98,6 @@ export default {
   transition: border-color 0.2s ease-out;
   cursor: pointer;
   border: 1px solid var(--color-gray);
-  padding: var(--spacing-s);
   display: flex;
   flex-direction: column;
   border-radius: 0.25em;
@@ -110,14 +111,18 @@ export default {
   }
 }
 
+.content {
+  padding: var(--spacing-xs);
+}
+
 .image-wrapper {
   order: -1;
   position: relative;
   align-self: flex-start;
-  margin-bottom: var(--spacing-xs);
 }
 
 .image {
+  border-radius: 0.25em 0.25em 0 0;
   width: 100%;
   display: block;
   height: auto;
