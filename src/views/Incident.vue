@@ -1,14 +1,18 @@
 <template>
   <div>
-    <center-wrapper>
-      <btn-back :to="{ name: 'Root' }" title="Back to the list" />
-      <incident-details :incident="incident" />
-    </center-wrapper>
-    <incident-list :incidents="incidents" :title="listTitle" />
+    <div v-if="incident != null">
+      <center-wrapper>
+        <btn-back :to="{ name: 'Root' }" title="Back to the list" />
+        <incident-details :incident="incident" />
+      </center-wrapper>
+      <incident-list :incidents="incidents" :title="listTitle" />
+    </div>
+    <not-found v-if="incident == null" />
   </div>
 </template>
 
 <script>
+import NotFound from '@/views/NotFound.vue'
 import IncidentDetails from '@/components/IncidentDetails.vue'
 import useIncidents from '@/use/incidents'
 import CenterWrapper from '@/components/CenterWrapper.vue'
@@ -30,19 +34,22 @@ export default {
     IncidentDetails,
     CenterWrapper,
     IncidentList,
+    NotFound,
   },
 
   computed: {
     listTitle() {
-      return `Showing
+      return this.incident != null
+        ? `Showing
       ${this.incidents.length}
       other
       ${pluralize(this.incidents.length, 'incident', 'incidents')}
       in
       ${this.incident.city}`
+        : ''
     },
     incidents() {
-      return this.getFilteredList(this.incident.city, this.incident.id)
+      return this.incident != null ? this.getFilteredList(this.incident.city, this.incident.id) : []
     },
     incident() {
       const { id } = this.$route.params
