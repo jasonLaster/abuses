@@ -2,7 +2,7 @@ import { ref, computed } from '@vue/composition-api'
 import incidents from '@/data/incidents.json'
 
 export default () => {
-  const list = ref(incidents.filter((incident) => incident.youtube.length))
+  const list = ref(incidents.filter((incident) => incident.youtube != null))
   const total = computed(() => list.value.length)
 
   const getIncidentByID = (ID) => {
@@ -10,7 +10,7 @@ export default () => {
     return currentIncident || null
   }
 
-  const getFilteredList = (city, excludeId = 0) =>
+  const getFilteredList = (city, excludeId) =>
     list.value.filter(
       (incident) => (city === '' || incident.city === city) && incident.id !== excludeId,
     )
