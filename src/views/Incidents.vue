@@ -1,9 +1,9 @@
 <template>
-  <incident-list :incidents="incidents" :title="listTitle" />
+  <incidents-list :incidents="incidents" :title="listTitle" />
 </template>
 
 <script>
-import IncidentList from '@/components/IncidentList.vue'
+import IncidentsList from '@/components/IncidentsList/IncidentsList.vue'
 import useIncidents from '@/use/incidents'
 
 // temp fix while we're not using https://kazupon.github.io/vue-i18n/
@@ -17,7 +17,7 @@ export default {
     return { getFilteredList }
   },
   components: {
-    IncidentList,
+    IncidentsList,
   },
   props: {
     city: {

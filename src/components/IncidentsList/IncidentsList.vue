@@ -5,19 +5,23 @@
         {{ title }}
       </h2>
       <ul :class="$style.list">
-        <incident-list-item v-for="incident in incidents" :key="incident.id" :incident="incident" />
+        <incidents-list-item
+          v-for="incident in incidents"
+          :key="incident.id"
+          :incident="incident"
+        />
       </ul>
     </section>
   </center-wrapper>
 </template>
 
 <script>
-import IncidentListItem from '@/components/IncidentListItem.vue'
-import CenterWrapper from '@/components/CenterWrapper.vue'
+import IncidentsListItem from '@/components/IncidentsList/IncidentsListItem.vue'
+import CenterWrapper from '@/components/Layout/CenterWrapper.vue'
 
 export default {
   components: {
-    IncidentListItem,
+    IncidentsListItem,
     CenterWrapper,
   },
 

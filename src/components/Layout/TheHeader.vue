@@ -10,8 +10,8 @@
 </template>
 
 <script>
-import CenterWrapper from '@/components/CenterWrapper.vue'
-import IncidentFilter from '@/components/IncidentFilter.vue'
+import CenterWrapper from '@/components/Layout/CenterWrapper.vue'
+import IncidentFilter from '@/components/IncidentsList/IncidentsFilter.vue'
 import useIncidents from '@/use/incidents'
 
 export default {
