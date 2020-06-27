@@ -1,7 +1,7 @@
 <template>
   <div>
     <incident-list v-if="incidents.length > 0" :incidents="incidents" :title="listTitle" />
-    <not-found v-if="incidents.length === 0" />
+    <not-found v-else noun="city" />
   </div>
 </template>
 

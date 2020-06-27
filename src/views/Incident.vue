@@ -7,7 +7,7 @@
       </center-wrapper>
       <incident-list :incidents="incidents" :title="listTitle" />
     </div>
-    <not-found v-if="incident == null" />
+    <not-found v-else noun="incident" />
   </div>
 </template>
 
