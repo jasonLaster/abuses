@@ -2,7 +2,7 @@
   <header>
     <center-wrapper :top="true">
       <div class="leadin">A video archive of</div>
-      <h1>Police Abuses</h1>
+      <h1><router-link to="/">Police Abuses</router-link></h1>
       <div class="leadout">{{ total }} Videos</div>
       <incident-filter v-if="showFilter" :value="city" />
     </center-wrapper>
@@ -64,6 +64,10 @@ h1 {
   @media (--viewport-sm) {
     font-size: 3rem;
   }
+}
+
+h1 > a {
+  box-shadow: none;
 }
 
 .leadin {
