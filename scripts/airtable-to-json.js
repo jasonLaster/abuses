@@ -3,6 +3,10 @@ const fs = require('fs')
 
 const Airtable = require('airtable')
 
+function extractField(s) {
+  return s?.trim() ?? null
+}
+
 Airtable.configure({
   endpointUrl: 'https://api.airtable.com',
   apiKey: process.env.AIRTABLE_API_KEY,
@@ -20,19 +24,23 @@ base('GeorgeFloyd')
       records.forEach((record) => {
         const f = record.fields
         recs.push({
-          id: f['TGD number'] || null,
-          city: f.City || null,
-          state: f.State || null,
-          tweet: f['Tweet URL'],
-          youtube: f.YouTube,
-          text: f['Doucette Text'],
+          id: extractField(f['TGD number']),
+          city: extractField(f.City),
+          state: extractField(f.State),
+          tweet: extractField(f['Tweet URL']),
+          youtube: extractField(f.YouTube),
+          text: extractField(f['Doucette Text']),
         })
       })
       fetchNextPage()
     },
     function done(err) {
-      if (err) { console.error(err); return; }
-      const filename = `videos-${Date.now()}.json`
+      if (err) {
+        console.error(err)
+        process.exit(1)
+      }
+      const filename = 'videos.json'
       const result = { list: recs }
       fs.writeFileSync(filename, JSON.stringify(result, null, 2))
-  })
+    },
+  )
