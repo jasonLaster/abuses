@@ -1,10 +1,5 @@
 <template>
-  <select
-    :class="$style['filter-select']"
-    aria-label="Filter by location"
-    :value="city"
-    @input="input"
-  >
+  <select class="filter-select" aria-label="Filter by location" :value="city" @input="input">
     <option :value="''">FILTER BY LOCATION</option>
     <option v-for="option in options" :key="option" :value="option">{{ option }}</option>
   </select>
@@ -41,7 +36,7 @@ export default {
 }
 </script>
 
-<style module lang="postcss">
+<style lang="postcss" scoped>
 select {
   position: absolute;
   margin-top: 1em;

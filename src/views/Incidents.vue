@@ -40,7 +40,7 @@ export default {
 }
 </script>
 
-<style module lang="postcss">
+<style lang="postcss" scoped>
 .filter-description {
   text-align: center;
   margin-bottom: 1em;

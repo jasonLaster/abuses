@@ -1,7 +1,7 @@
 <template>
-  <div id="app" :class="$style.page">
+  <div id="app" class="page">
     <the-header />
-    <main :class="$style.main">
+    <main class="main">
       <router-view />
     </main>
   </div>
@@ -22,7 +22,7 @@ export default {
 @import './styles/base.css';
 </style>
 
-<style module lang="postcss">
+<style lang="postcss" scoped>
 .page {
   display: flex;
   flex-direction: column;
