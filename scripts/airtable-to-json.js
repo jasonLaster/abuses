@@ -30,6 +30,28 @@ function extractYouTubeField(s) {
   return null
 }
 
+function extractDateTime(dateField, timeField) {
+  date = extractField(dateField)
+  time = extractField(timeField)
+  const nulls = [date, time].filter((x) => x == null).length
+  if (nulls > 0) {
+    if (nulls === 1) {
+      console.error('Skipping partial date', dateField, timeField)
+    }
+    return null
+  }
+
+  const [year, month, day] = date.match(/../g)
+  const s = `20${year}-${month}-${day} ${time} PDT`
+  try {
+    const result = new Date(s)
+    return result.toISOString()
+  } catch (e) {
+    console.error(`Skipping bad datetime ${dateField} ${timeField}`)
+    return null
+  }
+}
+
 Airtable.configure({
   endpointUrl: 'https://api.airtable.com',
   apiKey: process.env.AIRTABLE_API_KEY,
@@ -51,6 +73,7 @@ base('GeorgeFloyd')
           city: extractField(f.City),
           state: extractField(f.State),
           tweet: extractField(f['Tweet URL']),
+          tweetDateTime: extractDateTime(f['Twitter Date'], f['Twitter Time (PDT)']),
           file: extractField(f['Video/Image Filename']),
           youtube: extractYouTubeField(f.YouTube),
           text: extractField(f['Doucette Text']),
