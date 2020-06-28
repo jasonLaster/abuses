@@ -1,8 +1,12 @@
 <template>
-  <incident-list :incidents="incidents" :title="listTitle" />
+  <div>
+    <incident-list v-if="incidents.length > 0" :incidents="incidents" :title="listTitle" />
+    <not-found v-else noun="city" />
+  </div>
 </template>
 
 <script>
+import NotFound from '@/views/NotFound.vue'
 import IncidentList from '@/components/IncidentList.vue'
 import useIncidents from '@/use/incidents'
 
@@ -18,6 +22,7 @@ export default {
   },
   components: {
     IncidentList,
+    NotFound,
   },
   props: {
     city: {
@@ -39,11 +44,3 @@ export default {
   },
 }
 </script>
-
-<style lang="postcss" scoped>
-.filter-description {
-  text-align: center;
-  margin-bottom: 1em;
-  font-size: 1.125em;
-}
-</style>
