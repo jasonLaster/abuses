@@ -1,6 +1,6 @@
 <template>
-  <div :class="[$style.notch, { [$style.top]: top }]">
-    <div :class="$style.wrapper">
+  <div class="notch" :class="{ top }">
+    <div class="wrapper">
       <slot />
     </div>
   </div>
@@ -17,7 +17,7 @@ export default {
 }
 </script>
 
-<style lang="postcss" module>
+<style lang="postcss" scoped>
 .notch {
   padding-left: var(--notch-left);
   padding-right: var(--notch-right);
