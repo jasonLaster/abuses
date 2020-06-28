@@ -5,19 +5,19 @@
         <btn-back :to="{ name: 'Root' }" title="Back to the list" />
         <incident-details :incident="incident" />
       </center-wrapper>
-      <incident-list :incidents="incidents" :title="listTitle" />
+      <incidents-list :incidents="incidents" :title="listTitle" />
     </div>
     <not-found v-else noun="incident" />
   </div>
 </template>
 
 <script>
-import NotFound from '@/views/NotFound.vue'
-import IncidentDetails from '@/components/IncidentDetails.vue'
 import useIncidents from '@/use/incidents'
-import CenterWrapper from '@/components/CenterWrapper.vue'
-import BtnBack from '@/components/BtnBack.vue'
-import IncidentList from '@/components/IncidentList.vue'
+import NotFound from '@/components/Shared/NotFound.vue'
+import IncidentDetails from '@/components/IncidentDetails/IncidentDetails.vue'
+import CenterWrapper from '@/components/Layout/CenterWrapper.vue'
+import BtnBack from '@/components/Shared/BtnBack.vue'
+import IncidentsList from '@/components/IncidentsList/IncidentsList.vue'
 
 // temp fix while we're not using https://kazupon.github.io/vue-i18n/
 const pluralize = (n, singular, plural) => {
@@ -33,7 +33,7 @@ export default {
     BtnBack,
     IncidentDetails,
     CenterWrapper,
-    IncidentList,
+    IncidentsList,
     NotFound,
   },
 

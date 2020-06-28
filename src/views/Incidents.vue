@@ -1,13 +1,13 @@
 <template>
   <div>
-    <incident-list v-if="incidents.length > 0" :incidents="incidents" :title="listTitle" />
+    <incidents-list v-if="incidents.length > 0" :incidents="incidents" :title="listTitle" />
     <not-found v-else noun="city" />
   </div>
 </template>
 
 <script>
-import NotFound from '@/views/NotFound.vue'
-import IncidentList from '@/components/IncidentList.vue'
+import NotFound from '@/components/Shared/NotFound.vue'
+import IncidentsList from '@/components/IncidentsList/IncidentsList.vue'
 import useIncidents from '@/use/incidents'
 
 // temp fix while we're not using https://kazupon.github.io/vue-i18n/
@@ -21,7 +21,7 @@ export default {
     return { getFilteredList }
   },
   components: {
-    IncidentList,
+    IncidentsList,
     NotFound,
   },
   props: {
