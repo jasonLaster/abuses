@@ -1,7 +1,9 @@
 <template>
   <select class="filter-select" aria-label="Filter by location" :value="city" @input="input">
     <option :value="''">FILTER BY LOCATION</option>
-    <option v-for="option in options" :key="option" :value="option">{{ option }}</option>
+    <option v-for="option in options" :key="option.key" :value="option.value">{{
+      option.display
+    }}</option>
   </select>
 </template>
 
@@ -13,7 +15,33 @@ export default {
   setup() {
     const { list, total } = useIncidents()
 
-    const options = computed(() => [...new Set([...list.value.map((i) => i.city)])].sort())
+    const options = computed(() => {
+      const hist = new Map()
+      list.value.forEach(({ city }) => {
+        const n = hist.get(city) ?? 0
+        hist.set(city, n + 1)
+      })
+
+      return [...hist.entries()]
+        .map(([city, count]) => ({
+          key: city,
+          value: city,
+          display: `${city} (${count})`,
+          count,
+        }))
+        .sort((a, b) => {
+          if (a.count !== b.count) {
+            return b.count - a.count
+          }
+          if (a.value < b.value) {
+            return -1
+          }
+          if (b.value < a.value) {
+            return 1
+          }
+          return 0
+        })
+    })
 
     return { total, options }
   },
