@@ -4,11 +4,9 @@
   --container-width-md: 36rem;
   --container-width-lg: 52rem;
   --container-width-xlg: 72rem;
-  --height-navigation-sm: var(--spacing-xl);
-  --width-navigation-left: 20rem;
-  --gutter: var(--spacing-m);
+  --gutter: var(--spacing-s);
 
-  @media (--navigation-position-left) {
-    --gutter: var(--spacing-l);
+  @media (--viewport-sm) {
+    --gutter: var(--spacing-m);
   }
 }

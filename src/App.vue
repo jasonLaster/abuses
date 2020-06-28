@@ -1,7 +1,7 @@
 <template>
-  <div id="app" :class="$style.page">
+  <div id="app" class="page">
     <the-header />
-    <main :class="$style.main">
+    <main class="main">
       <router-animation :direction="direction">
         <router-view />
       </router-animation>
@@ -10,8 +10,8 @@
 </template>
 
 <script>
-import TheHeader from '@/components/TheHeader.vue'
 import RouterAnimation from '@/components/Animations/RouterAnimation.vue'
+import TheHeader from '@/components/Layout/TheHeader.vue'
 
 export default {
   name: 'App',
@@ -41,7 +41,12 @@ export default {
   mounted() {
     // detect if user is using a back/forward button from the browser
     window.addEventListener('popstate', () => {
-      this.popStateDetected = true
+      this.setPopStateDetectEvent()
+    })
+  },
+  beforeDestroy() {
+    window.removeEventListener('popstate', () => {
+      this.setPopStateDetectEvent()
     })
   },
 }
@@ -51,7 +56,7 @@ export default {
 @import './styles/base.css';
 </style>
 
-<style module lang="postcss">
+<style lang="postcss" scoped>
 .page {
   display: flex;
   flex-direction: column;

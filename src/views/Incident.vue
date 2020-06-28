@@ -1,19 +1,23 @@
 <template>
   <div>
-    <center-wrapper>
-      <btn-back :to="{ name: 'Root' }" title="Back to the list" />
-      <incident-details :incident="incident" />
-    </center-wrapper>
-    <incident-list :incidents="incidents" :title="listTitle" />
+    <div v-if="incident != null">
+      <center-wrapper>
+        <btn-back :to="{ name: 'Root' }" title="Back to the list" />
+        <incident-details :incident="incident" />
+      </center-wrapper>
+      <incidents-list :incidents="incidents" :title="listTitle" />
+    </div>
+    <not-found v-else noun="incident" />
   </div>
 </template>
 
 <script>
-import IncidentDetails from '@/components/IncidentDetails.vue'
 import useIncidents from '@/use/incidents'
-import CenterWrapper from '@/components/CenterWrapper.vue'
-import BtnBack from '@/components/BtnBack.vue'
-import IncidentList from '@/components/IncidentList.vue'
+import NotFound from '@/components/Shared/NotFound.vue'
+import IncidentDetails from '@/components/IncidentDetails/IncidentDetails.vue'
+import CenterWrapper from '@/components/Layout/CenterWrapper.vue'
+import BtnBack from '@/components/Shared/BtnBack.vue'
+import IncidentsList from '@/components/IncidentsList/IncidentsList.vue'
 
 // temp fix while we're not using https://kazupon.github.io/vue-i18n/
 const pluralize = (n, singular, plural) => {
@@ -29,20 +33,23 @@ export default {
     BtnBack,
     IncidentDetails,
     CenterWrapper,
-    IncidentList,
+    IncidentsList,
+    NotFound,
   },
 
   computed: {
     listTitle() {
-      return `Showing
+      return this.incident != null
+        ? `Showing
       ${this.incidents.length}
       other
       ${pluralize(this.incidents.length, 'incident', 'incidents')}
       in
       ${this.incident.city}`
+        : ''
     },
     incidents() {
-      return this.getFilteredList(this.incident.city, this.incident.id)
+      return this.incident != null ? this.getFilteredList(this.incident.city, this.incident.id) : []
     },
     incident() {
       const { id } = this.$route.params
