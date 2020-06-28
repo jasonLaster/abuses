@@ -1,8 +1,8 @@
 <template>
-  <div :class="$style.wrapper">
-    <router-link :to="to" :class="$style.link">
+  <div class="wrapper">
+    <router-link :to="to" class="link">
       <svg
-        :class="$style.icon"
+        class="icon"
         width="16"
         height="16"
         viewBox="0 0 1792 1792"
@@ -34,7 +34,7 @@ export default {
 }
 </script>
 
-<style module lang="postcss">
+<style lang="postcss" scoped>
 .wrapper {
   margin-bottom: 0.5em;
 }

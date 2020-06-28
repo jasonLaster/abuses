@@ -1,10 +1,10 @@
 <template>
   <center-wrapper>
     <section v-if="incidents.length" aria-labelledby="incident-list">
-      <h2 id="incident-list" :class="$style['filter-description']">
+      <h2 id="incident-list" class="filter-description">
         {{ title }}
       </h2>
-      <ul :class="$style.list">
+      <ul class="list">
         <incident-list-item v-for="incident in incidents" :key="incident.id" :incident="incident" />
       </ul>
     </section>
@@ -34,7 +34,7 @@ export default {
 }
 </script>
 
-<style module lang="postcss">
+<style lang="postcss" scoped>
 .list {
   @mixin list-reset;
 
