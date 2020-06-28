@@ -16,7 +16,7 @@ const routes = [
   {
     path: '/about',
     name: 'About',
-    component: () => import(/* webpackChunkName: "about" */ '@/views/About.vue'),
+    component: () => import(/* webpackChunkName: "About" */ '@/views/About.vue'),
   },
   {
     path: '/',
@@ -31,9 +31,14 @@ const routes = [
       },
     ],
   },
+  {
+    path: '*',
+    component: () => import(/* webpackChunkName: "NotFound" */ '@/views/NotFound.vue'),
+  },
 ]
 
 const router = new VueRouter({
+  mode: 'history',
   routes,
   scrollBehavior() {
     return { x: 0, y: 0 }
