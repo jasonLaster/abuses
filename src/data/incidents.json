@@ -316,7 +316,7 @@
     "tweet": "https://twitter.com/greg_doucette/status/1271281449912676352",
     "tweetDateTime": "2020-06-12T03:21:00.000Z",
     "file": "Greg Doucette #22.4 - San Jose CA.mp4",
-    "youtube": null,
+    "youtube": "lxqB00e5Qq0",
     "text": "Looks like another angle on 22 above out of San Jose CA. Notice how a cop pushes another one out of the way *just* so he can take a turn putting his knee on someone's neck [@DeadByDawn101]"
   },
   {
@@ -946,7 +946,7 @@
     "tweet": "https://twitter.com/greg_doucette/status/1274738424302485504",
     "tweetDateTime": null,
     "file": "Greg Doucette #70.1 - Los Angeles CA.mp4",
-    "youtube": null,
+    "youtube": "NtLeRUtYGwA",
     "text": "A 3rd angle of 70 above in Los Angeles, CA. [@chadloder]"
   },
   {
@@ -1086,7 +1086,7 @@
     "tweet": "https://twitter.com/greg_doucette/status/1275245192619180033",
     "tweetDateTime": null,
     "file": "Greg Doucette #78.1 - Charleston SC.png",
-    "youtube": null,
+    "youtube": "iGzUrk9ty9I",
     "text": "police arrested an unarmed black man for talking to them. Notice this same thing happened at 78 in Charleston SC and 80 in Kansas City MO. 31 May 2020. [@chadloder]  https://twitter.com/chadloder/status/1275243567812771840/video/1"
   },
   {
@@ -1383,7 +1383,7 @@
     "id": "105",
     "city": "Los Angeles",
     "state": "CA",
-    "tweet": "https://twitter.com/greg_doucette/status/1267586631084752896",
+    "tweet": "https://twitter.com/greg_doucette/status/1267582414878105600",
     "tweetDateTime": null,
     "file": "LosAngeles-CKdpcLQl5C5cmC6Q.mp4",
     "youtube": "E-X7ZNN0zwo",
@@ -1550,6 +1550,16 @@
     "text": "More on 113 in Philadelphia PA, where Philly cops intentionally herded protestors up an embankment where they would be trapped as PPD teargassed them repeatedly.  Link to story:  https://www.nytimes.com/video/us/100000007174941/philadelphia-tear-gas-george-floyd-protests.html"
   },
   {
+    "id": "113.5",
+    "city": "Philadelphia",
+    "state": "PA",
+    "tweet": "https://twitter.com/greg_doucette/status/1277270094914215937",
+    "tweetDateTime": null,
+    "file": "Greg Doucette #113.5 - Philadelphia PA.png",
+    "youtube": null,
+    "text": "More on 113 / 618 about Philly PD's teargas terrorism on I-676 in Philadelphia earlier this month. Link to story:    https://www.inquirer.com/opinion/tear-gas-highway-676-protests-police-philadelphia-kenney-outlaw-helen-ubinas-20200626.html. [@NotesFromHeL]"
+  },
+  {
     "id": "114",
     "city": "Chicago",
     "state": "IL",
@@ -1626,7 +1636,7 @@
     "tweet": "https://twitter.com/greg_doucette/status/1274750851496714240",
     "tweetDateTime": null,
     "file": "Greg Doucette #119.2 - Los Angeles CA.mp4",
-    "youtube": null,
+    "youtube": "ma1Lz1tYIKM",
     "text": "Looks like a 3rd camera angle of 119 in Los Angeles CA.  (First was a 1st-person POV from @kendrick38, second looked like it was on the line, this one is across the street) [@ElieTWMayniac]"
   },
   {
@@ -1896,7 +1906,7 @@
     "tweet": "https://twitter.com/greg_doucette/status/1272026687929298944",
     "tweetDateTime": null,
     "file": "Greg Doucette #136.1 - Washington DC.mp4",
-    "youtube": null,
+    "youtube": "R-58VJPYppg",
     "text": "Looks like another angle on 136 in Washington DC, with police pushing and pepper-spraying protestors before the 7pm curfew [@LiteraryMouse]"
   },
   {
@@ -2078,6 +2088,16 @@
     "file": "Philadelphia-ulpGZFUAvZCsCbw6.mp4",
     "youtube": "z-LeO5hRrZg",
     "text": "cop pulls down a protestor's mask to pepper-spray her in the face as she's kneeling with her hands up, then the cop sprays another one, then he pushes over a third to make sure he can pepper-spray them in the face too"
+  },
+  {
+    "id": "150.1",
+    "city": "Philadelphia",
+    "state": "PA",
+    "tweet": "https://twitter.com/greg_doucette/status/1277270569302589442",
+    "tweetDateTime": null,
+    "file": "Greg Doucette #150.1 - Philadelphia PA.png",
+    "youtube": null,
+    "text": "More on 150 + 658 on Philly PD's teargas terrorism of West Philadelphia earlier this month.  Link to story:  https://www.inquirer.com/news/west-philadelphia-tear-gas-use-of-force-police-investigation-20200628.html"
   },
   {
     "id": "151",
@@ -2776,7 +2796,7 @@
     "tweet": "https://twitter.com/greg_doucette/status/1274752005110726656",
     "tweetDateTime": null,
     "file": "Greg Doucette #205.1 - New York City NY.mp4",
-    "youtube": null,
+    "youtube": "TAAd7p6RGvs",
     "text": "Another angle of 205 in New York City, NY where an NYPD cop flung a protestor so hard into a car it knocked them out cold [@adventuresofazi]"
   },
   {
@@ -2986,7 +3006,7 @@
     "tweet": "https://twitter.com/greg_doucette/status/1274462861138505730",
     "tweetDateTime": null,
     "file": "Greg Doucette #222.1 - Bentonville AR.mp4",
-    "youtube": null,
+    "youtube": "0A6Q1j9imvE",
     "text": "Another angle on 222 in Bentonville AR, as police open fire on unarmed protestors chanting \"we want peace\". [@courtenay_roche]"
   },
   {
@@ -3616,7 +3636,7 @@
     "tweet": "https://twitter.com/greg_doucette/status/1275277165341429770",
     "tweetDateTime": null,
     "file": "Greg Doucette #273.1 - Dallas TX.mp4",
-    "youtube": null,
+    "youtube": "8kORLISuYII",
     "text": null
   },
   {
@@ -4056,7 +4076,7 @@
     "tweet": "https://twitter.com/greg_doucette/status/1272207980247814145",
     "tweetDateTime": null,
     "file": "Greg Doucette #294.5 - Philadelphia PA.mp4",
-    "youtube": null,
+    "youtube": "ak7rmFWtJbM",
     "text": "Another angle on 294 in Philadelphia PA"
   },
   {
@@ -5986,7 +6006,7 @@
     "tweet": "https://twitter.com/greg_doucette/status/1270048582192836609",
     "tweetDateTime": null,
     "file": "Greg Doucette #420.4 - Seattle WA.mp4",
-    "youtube": null,
+    "youtube": "eXVflxboMsA",
     "text": "\"But T. Greg,\" you ask, \"he's not a cop so why did this get assigned number 420?\" Because after a week of police indiscriminately shooting unarmed and peaceful protestors, take a wild guess how they handled this guy? [@luvmemuch]"
   },
   {
@@ -6206,7 +6226,7 @@
     "tweet": "https://twitter.com/greg_doucette/status/1271288686303301635",
     "tweetDateTime": null,
     "file": "Greg Doucette #432.1 - Houston TX.mp4",
-    "youtube": null,
+    "youtube": "W0PzxmqKC4I",
     "text": "Another angle on 432 in Houston TX. [@martimag19]"
   },
   {
@@ -6256,7 +6276,7 @@
     "tweet": "https://twitter.com/greg_doucette/status/1270383224905248768",
     "tweetDateTime": null,
     "file": "Greg Doucette #436 - Beavercreek OH.mp4",
-    "youtube": null,
+    "youtube": "cOsDv5UAGi8",
     "text": "police fire teargas into a peaceful protest. Afterward, they had the audacity to kneel with the people they'd just gassed for a photo op [@b0ywxnder]"
   },
   {
@@ -6316,7 +6336,7 @@
     "tweet": "https://twitter.com/greg_doucette/status/1270487994571673600",
     "tweetDateTime": null,
     "file": "Greg Doucette #440 - Atlanta GA.mp4",
-    "youtube": null,
+    "youtube": "K4_FzmhZMLQ",
     "text": "National Guard shoving protestors over a retaining wall for sport. (Can't read the cross street, looks like Paces Ferry Road NW and Glen Arden Drive NW?)[Anonymous]"
   },
   {
@@ -6386,7 +6406,7 @@
     "tweet": "https://twitter.com/greg_doucette/status/1270709955310559232",
     "tweetDateTime": null,
     "file": "Greg Doucette #446 - Cinciatti OH.mp4",
-    "youtube": null,
+    "youtube": "jvDfb9Db-o8",
     "text": "police arrest a black business owner for painting on the windows of his own business. Cincinnati's curfew included an exemption for work-related activity) [@gwstoulouse]"
   },
   {
@@ -6396,7 +6416,7 @@
     "tweet": "https://twitter.com/greg_doucette/status/1271112426709225472",
     "tweetDateTime": null,
     "file": "Greg Doucette #446.1 - Cinciatti OH.mp4",
-    "youtube": null,
+    "youtube": "7DMBnxDNolQ",
     "text": "More footage of 446 out of Cincinnati OH, where police arrested a black business owner for a curfew violation while he was working (an exemption to curfew).  Turns out a cop blocked him from going back inside as they demanded"
   },
   {
@@ -6406,7 +6426,7 @@
     "tweet": "https://twitter.com/greg_doucette/status/1271113081909903361",
     "tweetDateTime": null,
     "file": "Greg Doucette #446.2 - Cinciatti OH.mp4",
-    "youtube": null,
+    "youtube": "5L1yiptDcSo",
     "text": "Still more footage of 446 out of Cincinnati OH. How many Cincinnati cops does it take to taze and arrest one man who's not doing anything wrong? Looks like at least a dozen here..."
   },
   {
@@ -6436,7 +6456,7 @@
     "tweet": "https://twitter.com/greg_doucette/status/1270763788493561856",
     "tweetDateTime": null,
     "file": "Greg Doucette #448 - Denver CO.mp4",
-    "youtube": null,
+    "youtube": "hy3Xeoe8HB8",
     "text": "protestors move out of the street so an ambulance can get past. With them bunched into a confined space on the sidewalk, police use it as an opportune time to open fire on them without warning. The cameraman takes a bullet to the arm. [CW: blood] [Anonymous]"
   },
   {
@@ -6476,7 +6496,7 @@
     "tweet": "https://twitter.com/greg_doucette/status/1270872682872164352",
     "tweetDateTime": null,
     "file": "Greg Doucette #450.1 - Detroit MI.mp4",
-    "youtube": null,
+    "youtube": "yZAFFa0EUnw",
     "text": "Video of the aftermath of 450 above out of Detroit MI. [@PullupPete]"
   },
   {
@@ -6546,7 +6566,7 @@
     "tweet": "https://twitter.com/greg_doucette/status/1271105341539917825",
     "tweetDateTime": null,
     "file": "Greg Doucette #454 - Smithtown NY.mp4",
-    "youtube": null,
+    "youtube": "M8ixj-USK2M",
     "text": "off-duty police harass protestors. Cops:  \"Go get some breast milk from your mommy, you n*gger-lover\" [@maricath12]"
   },
   {
@@ -6616,7 +6636,7 @@
     "tweet": "https://twitter.com/greg_doucette/status/1271265335778447361",
     "tweetDateTime": null,
     "file": "Greg Doucette #460 - Los Angeles CA.mp4",
-    "youtube": null,
+    "youtube": "9SdMeK9GM7A",
     "text": "police slice open a woman's hand while trying to cut the zip tie they've used to restrain her. [IG: https://instagram.com/p/CBB2mn6A8pi/]"
   },
   {
@@ -6626,7 +6646,7 @@
     "tweet": "https://twitter.com/greg_doucette/status/1271265447825072129",
     "tweetDateTime": null,
     "file": "Greg Doucette #461 - Los Angeles CA.mp4",
-    "youtube": null,
+    "youtube": "fx79QCWuQCU",
     "text": "same moment as 460 above, but numbered separately because they also sliced the everlasting sh*t out of *another* woman's hand while trying to cut zip ties. (Pics in next tweet) [IG: https://instagram.com/p/CBEFX7wlWFa/]"
   },
   {
@@ -6646,7 +6666,7 @@
     "tweet": "https://twitter.com/greg_doucette/status/1271270273669570560",
     "tweetDateTime": null,
     "file": "Greg Doucette #462 - New Orleans LA.mp4",
-    "youtube": null,
+    "youtube": "8z1a5QbvAmc",
     "text": "some good news, as a woman arrested by police (reason officially unknown but likely for protesting) is released as hundreds of volunteers surround the patrol car and refuse to budge [@chris_granger]"
   },
   {
@@ -6656,7 +6676,7 @@
     "tweet": "https://twitter.com/greg_doucette/status/1271276341325975552",
     "tweetDateTime": null,
     "file": "Greg Doucette #463 - New York City NY.mp4",
-    "youtube": null,
+    "youtube": "Mn6lQUKYxF0",
     "text": "NYPD beat a man for sport then steal his bike [@mingum]"
   },
   {
@@ -6666,7 +6686,7 @@
     "tweet": "https://twitter.com/greg_doucette/status/1271279276810211329",
     "tweetDateTime": null,
     "file": "Greg Doucette #464 - Madison WI.mp4",
-    "youtube": null,
+    "youtube": "l8dC2mjZCYY",
     "text": "police block the exits of a local park. Activists then raise their hands and stand still, and police appear to fall back. Protestors cheer at the apparent retreat – then the police start throwing teargas. [TT: https://vm.tiktok.com/J111vu4/]"
   },
   {
@@ -6676,7 +6696,7 @@
     "tweet": "https://twitter.com/greg_doucette/status/1271287088755834880",
     "tweetDateTime": null,
     "file": "Greg Doucette #465 - Seattle WA.mp4",
-    "youtube": null,
+    "youtube": "w8kh8r9SdqQ",
     "text": "Seattle PD shows up to the #CHAZ, pepper-sprays a protestor with their hands up, then leaves. [FB: https://m.facebook.com/story.php?story_fbid=949526905485027&id=100012831786262&_rdr]"
   },
   {
@@ -6746,7 +6766,7 @@
     "tweet": "https://twitter.com/greg_doucette/status/1271620502977761286",
     "tweetDateTime": null,
     "file": "Greg Doucette #470 - Miami FL.mp4",
-    "youtube": null,
+    "youtube": "gz7Db-LI2yQ",
     "text": "police incite a full-on street brawl [@grantstern]"
   },
   {
@@ -6776,7 +6796,7 @@
     "tweet": "https://twitter.com/greg_doucette/status/1271632038727241728",
     "tweetDateTime": null,
     "file": "Greg Doucette #472 - Milwaukee WI.mp4",
-    "youtube": null,
+    "youtube": "JSnP4aoO16U",
     "text": "a bike cop pins a protestor by putting his knee on the guy's neck, and repeatedly kneeing him in the side with the other one, as another bike cop helps hold him down for the beating. [YT: https://youtu.be/-YQvtYnGB_k]"
   },
   {
@@ -6786,7 +6806,7 @@
     "tweet": "https://twitter.com/greg_doucette/status/1271634693465792513",
     "tweetDateTime": null,
     "file": "Greg Doucette #473 - Tampa FL.mp4",
-    "youtube": null,
+    "youtube": "g3yGCUlxNFw",
     "text": "how many Tampa cops does it take to beat down one protestor? I count 3 Thinking face. [@Sensationshawty]"
   },
   {
@@ -6796,7 +6816,7 @@
     "tweet": "https://twitter.com/greg_doucette/status/1271637576642945025",
     "tweetDateTime": null,
     "file": "Greg Doucette #474 - Salt Lake City UT.mp4",
-    "youtube": null,
+    "youtube": "9TQU5RAh96o",
     "text": "when police decide it's time to start making curfew arrests, they pluck a black guy from the crowd as several pin him to the ground and at least one keeps his knee on the guy's neck. [@Leashie3]"
   },
   {
@@ -6806,7 +6826,7 @@
     "tweet": "https://twitter.com/greg_doucette/status/1271638988206604289",
     "tweetDateTime": null,
     "file": "Greg Doucette #475 - East Meadow NY.mp4",
-    "youtube": null,
+    "youtube": "XurrK39xVYQ",
     "text": "a police officer abruptly stops walking so a protestor walking behind him will bump into him, so the other police can attack and arrest him. At least 3 officers pin him down, with one keeping a knee on his neck. [@MarisaKabas]  <next tweet> I'm told 475 was filmed today, 12 June 2020"
   },
   {
@@ -6816,7 +6836,7 @@
     "tweet": "https://twitter.com/greg_doucette/status/1271669660803575808",
     "tweetDateTime": null,
     "file": "Greg Doucette #475.1 - East Meadow NY.mp4",
-    "youtube": null,
+    "youtube": "_v1ZjEY5GMg",
     "text": "Several more videos of 475 on Instagram at https://instagram.com/p/CBWzXV2naI_/?igshid=787wqjdvqspt"
   },
   {
@@ -6836,7 +6856,7 @@
     "tweet": "https://twitter.com/greg_doucette/status/1271816486366126080",
     "tweetDateTime": null,
     "file": "Greg Doucette #478 - Philadelphia PA.mp4",
-    "youtube": null,
+    "youtube": "EvMmrrhw5rY",
     "text": "cops get a man onto the ground and handcuff him, then everyone backs up so one officer can get a running start before kicking him in the side. This was last week. [@_juliatr]"
   },
   {
@@ -6856,7 +6876,7 @@
     "tweet": "https://twitter.com/greg_doucette/status/1271817729205587969",
     "tweetDateTime": null,
     "file": "Greg Doucette #479 - Philadelphia PA.mp4",
-    "youtube": null,
+    "youtube": "ne6Aon6o8Eo",
     "text": "cops enthusiastically clubbing someone in a car.  [@_juliatr]"
   },
   {
@@ -6866,7 +6886,7 @@
     "tweet": "https://twitter.com/greg_doucette/status/1271819114772824065",
     "tweetDateTime": null,
     "file": "Greg Doucette #480 - Atlanta GA.mp4",
-    "youtube": null,
+    "youtube": "O9kKXVtVOK0",
     "text": "police shoot and kill an unarmed black man for running away. The Supreme Court of the United States, in Tennessee v Garner (471 US 1 (1985)), banned the use of lethal force on an unarmed escapee. That was 35 years ago"
   },
   {
@@ -6886,7 +6906,7 @@
     "tweet": "https://twitter.com/greg_doucette/status/1271822227848265732",
     "tweetDateTime": null,
     "file": "Greg Doucette #480.2 - Atlanta GA.mp4",
-    "youtube": null,
+    "youtube": "cTeZrovjlZQ",
     "text": "Another angle on 480 at an Atlanta GA Wendy's. Picks up after the unarmed black man has already been summarily executed for sport [@hbs14n]"
   },
   {
@@ -6896,7 +6916,7 @@
     "tweet": "https://twitter.com/greg_doucette/status/1271823595870789632",
     "tweetDateTime": null,
     "file": "Greg Doucette #480.3 - Atlanta GA.mp4",
-    "youtube": null,
+    "youtube": "PbGwaHozp8w",
     "text": "Yet another angle on 480 in Atlanta GA, as the unarmed man is bleeding out in the Wendy's parking lot. [FB: https://m.facebook.com/629408354/posts/10157889410533355/?d=n]"
   },
   {
@@ -7026,7 +7046,7 @@
     "tweet": "https://twitter.com/greg_doucette/status/1271827907455877120",
     "tweetDateTime": null,
     "file": "Greg Doucette #481 - Des Moines IA.mp4",
-    "youtube": null,
+    "youtube": "J4gVgPW8qTE",
     "text": "a cop is caught on a security camera stealing cases of water that a 17-year-old had put out for protestors. This is unlawful theft of private property without due process, and violates the 4th / 5th / 14th Amendments. [https://desmoinesregister.com/story/news/crime-and-courts/2020/06/12/des-moines-black-lives-matter-teen-discouraged-after-police-confiscate-water-left-protesters/3163595001/]"
   },
   {
@@ -7036,7 +7056,7 @@
     "tweet": "https://twitter.com/greg_doucette/status/1271836142711775235",
     "tweetDateTime": null,
     "file": "Greg Doucette #482 - Beverly Hills CA.mp4",
-    "youtube": null,
+    "youtube": "kUjZGQ98xOs",
     "text": "police turn a rich neighborhood into a teargas-soaked war zone. [@J7_TreeOfLibrty]"
   },
   {
@@ -7056,7 +7076,7 @@
     "tweet": "https://twitter.com/greg_doucette/status/1272009432730202112",
     "tweetDateTime": null,
     "file": "Greg Doucette #484 - Philadelphia PA.mp4",
-    "youtube": null,
+    "youtube": "pHwEyoVZAwk",
     "text": "a white vigilante mob shows up at Marconi Plaza, shaking hands with the cops, assaults a journalist – and then a cop here tells the journalist they have to leave. This is a violation of the First Amendment.[@UR_Ninja]"
   },
   {
@@ -7066,7 +7086,7 @@
     "tweet": "https://twitter.com/greg_doucette/status/1272009795680325632",
     "tweetDateTime": null,
     "file": "Greg Doucette #484.1 - Philadelphia PA.mp4",
-    "youtube": null,
+    "youtube": "e5R7n0-beYs",
     "text": "More of 484 in Philadelphia PA at Marconi Plaza.  \"Shortly before @PhillyPolice  ordered us to cease our on-site reporting under threat of arrest, the crowd was cheering as a man with a Trump 2020 flag arrived. Police were also shaking hands with some of the white vigilantes as this was happening.\""
   },
   {
@@ -7096,7 +7116,7 @@
     "tweet": "https://twitter.com/greg_doucette/status/1272393137978310657",
     "tweetDateTime": null,
     "file": "Greg Doucette #484.4 - Philadelphia PA.mp4",
-    "youtube": null,
+    "youtube": "i_so3KR59oE",
     "text": "More video of 484 in Philadelphia PA, with another angle of the all-white vigilante mob attacking the journalist with no intervention from police. Lawlessness. [@GeorgeSolis]"
   },
   {
@@ -7106,7 +7126,7 @@
     "tweet": "https://twitter.com/greg_doucette/status/1272011877111996417",
     "tweetDateTime": null,
     "file": "Greg Doucette #485 - Portland OR.mp4",
-    "youtube": null,
+    "youtube": "Ukw3yY8VE3c",
     "text": "Running of the Bulls, PDX Style. Police bull rush protestors while shooting them as they run away. [@MrOlmos]"
   },
   {
@@ -7126,7 +7146,7 @@
     "tweet": "https://twitter.com/greg_doucette/status/1272012526260273153",
     "tweetDateTime": null,
     "file": "Greg Doucette #486 - Richmond VA.mp4",
-    "youtube": null,
+    "youtube": "mrpqqINSUuU",
     "text": "police jumping the curb to do a Tiananmen Square in his SUV [@BreRVA]"
   },
   {
@@ -7136,7 +7156,7 @@
     "tweet": "https://twitter.com/greg_doucette/status/1272012728589324288",
     "tweetDateTime": null,
     "file": "Greg Doucette #486.1 - Richmond VA.mp4",
-    "youtube": null,
+    "youtube": "bl4tpTGRwb8",
     "text": "Another angle on 486 in Richmond VA [@tiagoswoons]"
   },
   {
@@ -7146,7 +7166,7 @@
     "tweet": "https://twitter.com/greg_doucette/status/1272014796507013122",
     "tweetDateTime": null,
     "file": "Greg Doucette #487 - Palmdale CA.mp4",
-    "youtube": null,
+    "youtube": "EmWcNe3dnAk",
     "text": "an officer casually aiming at unarmed and peaceful protestors demonstrating over the \"suicide\" of Robert Fuller [@rebelalliance76]"
   },
   {
@@ -7166,7 +7186,7 @@
     "tweet": "https://twitter.com/greg_doucette/status/1272022633979273217",
     "tweetDateTime": null,
     "file": "Greg Doucette #489 - Woodlynne NJ.mp4",
-    "youtube": null,
+    "youtube": "hnrLMXyii0Y",
     "text": "a police officer is charged for pepper-spraying an innocent black teen for sport. The crime? Telling the cop he was going to call his guardian rather than answer questions. Bonus: cop bounced around *8* different PDs before Woodlynne. https://phillymag.com/news/2020/06/11/woodlynne-cop-ryan-dubiel/"
   },
   {
@@ -7186,7 +7206,7 @@
     "tweet": "https://twitter.com/greg_doucette/status/1272036559517290496",
     "tweetDateTime": null,
     "file": "Greg Doucette #490 - Atlanda GA.mp4",
-    "youtube": null,
+    "youtube": "NGpu213HPyc",
     "text": "police fire tear gas and flashbang grenades into an unarmed and peaceful crowd [@Georgia_NAACP]"
   },
   {
@@ -7196,7 +7216,7 @@
     "tweet": "https://twitter.com/greg_doucette/status/1272159730191011840",
     "tweetDateTime": null,
     "file": "Greg Doucette #491 - Portland OR.mp4",
-    "youtube": null,
+    "youtube": "9lvsk0Y_x0U",
     "text": "another night of Portland's Running of the Swine, this time attacking a journalist with the Portland Tribune; \"Portland Police charge protesters tonight. Officer: Move!  Me: MEDIA!  Officer: I don’t give a shit! Go! ; I was shoved into the wall, then hit in the heel by some sort of crowd control munition. I’m fine\""
   },
   {
@@ -7206,7 +7226,7 @@
     "tweet": "https://twitter.com/greg_doucette/status/1272176406106079236",
     "tweetDateTime": null,
     "file": "Greg Doucette #491.1 - Portland OR.mp4",
-    "youtube": null,
+    "youtube": "72MtYkq5ANU",
     "text": "More of 491 in Portland OR, as police shoot at protestors while they're walking away as commanded. [@alex_zee]"
   },
   {
@@ -7216,7 +7236,7 @@
     "tweet": "https://twitter.com/greg_doucette/status/1272200653222359049",
     "tweetDateTime": null,
     "file": "Greg Doucette #491.2 - Portland OR.mp4",
-    "youtube": null,
+    "youtube": "rO1Oqp9fGrM",
     "text": "More of 491 in Portland OR, as you hear a woman screaming while she's being groped by a cop, just before Portland police light people up with tear gas and flash-bang grenades [@mapthep]"
   },
   {
@@ -7236,7 +7256,7 @@
     "tweet": "https://twitter.com/greg_doucette/status/1272172146454925312",
     "tweetDateTime": null,
     "file": "Greg Doucette #493 - Atlanta GA.mp4",
-    "youtube": null,
+    "youtube": "Mi2xvruf4QY",
     "text": "ATL tries to one-up PDX with their own Running of the Swine [@douglasblackmon]"
   },
   {
@@ -7246,7 +7266,7 @@
     "tweet": "https://twitter.com/greg_doucette/status/1272172633757552641",
     "tweetDateTime": null,
     "file": "Greg Doucette #494 - Seattle WA.mp4",
-    "youtube": null,
+    "youtube": "R6gthHXCxc4",
     "text": "not brutality-related; turns out crimes can be addressed without lethal force Face screaming in fear The protestors occupying the Capitol Hill Autonomous Zone eject a white guy who broke a window of the East Precinct police station [@NaveedAJamali]"
   },
   {
@@ -7296,7 +7316,7 @@
     "tweet": "https://twitter.com/greg_doucette/status/1272227738053681153",
     "tweetDateTime": null,
     "file": "Greg Doucette #498 - Chicago IL.mp4",
-    "youtube": null,
+    "youtube": "QP6SytsXE2M",
     "text": "cops practically pulling a kids pants off to yank him out of the backseat of a car. Notice badge numbers are blocked by \"thin blue line\" ribbons. [@leolaroux]"
   },
   {
@@ -7306,7 +7326,7 @@
     "tweet": "https://twitter.com/greg_doucette/status/1272283368185565184",
     "tweetDateTime": null,
     "file": "Greg Doucette #499 - New York City NY.mp4",
-    "youtube": null,
+    "youtube": "HfHLz-TfzlI",
     "text": "police trying to use barricades to bowl over protestors and stop them from assembling at Times Square [@RosalindZAdams]"
   },
   {
@@ -7316,7 +7336,7 @@
     "tweet": "https://twitter.com/greg_doucette/status/1272283765176504320",
     "tweetDateTime": null,
     "file": "Greg Doucette #499.1 - New York City NY.mp4",
-    "youtube": null,
+    "youtube": "cwinPqk8wL0",
     "text": "The police-initiated violence in 499 was, of course, utterly pointless given the size of the crowd. So instead NYPD eventually carried away the barricades [@RosalindZAdams]"
   },
   {
@@ -7326,7 +7346,7 @@
     "tweet": "https://twitter.com/greg_doucette/status/1272300055849054208",
     "tweetDateTime": null,
     "file": "Greg Doucette #500 - Little Rock AR.mp4",
-    "youtube": null,
+    "youtube": "-d12CBBlcgA",
     "text": "police open fire on unarmed peaceful protestors with their hands raised. [FB: https://m.facebook.com/jennifer.d.lewis.16/posts/1021785350863471"
   },
   {
@@ -7346,7 +7366,7 @@
     "tweet": "https://twitter.com/greg_doucette/status/1272301072774823936",
     "tweetDateTime": null,
     "file": "Greg Doucette #502 - Portland OR.mp4",
-    "youtube": null,
+    "youtube": "xk8-uDx6p7Y",
     "text": "separate from the Running of the Swine, here PDX cops tell a protestor to get on their bike – but then instantly arrest them when they attempt to do so [@mossyrocc]"
   },
   {
@@ -7356,8 +7376,8 @@
     "tweet": "https://twitter.com/greg_doucette/status/1272369813516619776",
     "tweetDateTime": null,
     "file": "Greg Doucette #503 - Portland OR.mp4",
-    "youtube": null,
-    "text": null
+    "youtube": "bqf0jVy32xM",
+    "text": "an elderly gentleman falls to the ground. A protector tries to help him up, but is instead shoved away by police. [@tuckwoodstock]"
   },
   {
     "id": "504",
@@ -7366,7 +7386,7 @@
     "tweet": "https://twitter.com/greg_doucette/status/1272369818117853184",
     "tweetDateTime": null,
     "file": "Greg Doucette #504 - Richmond VA.mp4",
-    "youtube": null,
+    "youtube": "-3f4S1ND84U",
     "text": "police set up a vehicle barricade outside their HQ. Protestors gather outside the perimeter and protest peacefully – so police arrest someone with a bullhorn and start spraying pepper-spray everywhere. [@GoadGatsby]"
   },
   {
@@ -7376,7 +7396,7 @@
     "tweet": "https://twitter.com/greg_doucette/status/1272370249342636032",
     "tweetDateTime": null,
     "file": "Greg Doucette #504.1 - Richmond VA.mp4",
-    "youtube": null,
+    "youtube": "GkCQRGz2-5I",
     "text": "Another angle of 504 in Richmond VA [@hannaheason_]"
   },
   {
@@ -7386,7 +7406,7 @@
     "tweet": "https://twitter.com/greg_doucette/status/1272370548996259840",
     "tweetDateTime": null,
     "file": "Greg Doucette #504.2 - Richmond VA.mp4",
-    "youtube": null,
+    "youtube": "JxCIooDL_xA",
     "text": "Yet another angle of 504 in Richmond VA. [@JLJLovesRVA]"
   },
   {
@@ -7396,7 +7416,7 @@
     "tweet": "https://twitter.com/greg_doucette/status/1272386250058727425",
     "tweetDateTime": null,
     "file": "Greg Doucette #505 - Austin TX.mp4",
-    "youtube": null,
+    "youtube": "FUa2m85NaGM",
     "text": "police shoot an unarmed protestor in the face. [CW: gore] The rubber bullet gets lodged into the side of her face and is bleeding everywhere. [@randomjhovall]. -- CLARIFICATION: I'm told that's the remnants of a beanbag round lodged in the protestor's face, not a rubber bullet"
   },
   {
@@ -7426,7 +7446,7 @@
     "tweet": "https://twitter.com/greg_doucette/status/1272702145821843456",
     "tweetDateTime": null,
     "file": "Greg Doucette #506.2 - Minneapolis MN.aau",
-    "youtube": null,
+    "youtube": "kP7WkdI8Z5U",
     "text": "Audio from 506 in Minneapolis MN: [@dphiffer]"
   },
   {
@@ -7436,7 +7456,7 @@
     "tweet": "https://twitter.com/greg_doucette/status/1272700895688605697",
     "tweetDateTime": null,
     "file": "Greg Doucette #507 - New York City NY.mp4",
-    "youtube": null,
+    "youtube": "8G6d7V53H-c",
     "text": "cops rush a small group of peaceful protestors on Franklin Avenue and promptly beat the ones they catch. 11 June 2020. [@luketracy]"
   },
   {
@@ -7456,7 +7476,7 @@
     "tweet": "https://twitter.com/greg_doucette/status/1272716714535518219",
     "tweetDateTime": null,
     "file": "Greg Doucette #509 - Portland OR.mp4",
-    "youtube": null,
+    "youtube": "NS_oL0Ovtvg",
     "text": "the police casually declare themselves to be above the First Amendment. But do give a very close listen starting at the [1:53] mark Winking faces"
   },
   {
@@ -7466,7 +7486,7 @@
     "tweet": "https://twitter.com/greg_doucette/status/1272719937967185920",
     "tweetDateTime": null,
     "file": "Greg Doucette #510 - Fort Wayne IN.mp4",
-    "youtube": null,
+    "youtube": "N9uC6rtCVUs",
     "text": "police pepper spray unarmed protestors as they peacefully kneel. [FB: https://facebook.com/100013539161524/posts/927655561029074/?d=n]"
   },
   {
@@ -7486,7 +7506,7 @@
     "tweet": "https://twitter.com/greg_doucette/status/1272721333927972864",
     "tweetDateTime": null,
     "file": "Greg Doucette #512 - Fort Wayne IN.mp4",
-    "youtube": null,
+    "youtube": "sAmAXAwxYh8",
     "text": "police ordering peaceful protestors to disperse from public walkways. There is no curfew in Fort Wayne. This violates the First Amendment. 14 June 2020. [@stoneyydope_24]"
   },
   {
@@ -7496,7 +7516,7 @@
     "tweet": "https://twitter.com/greg_doucette/status/1272722067696345088",
     "tweetDateTime": null,
     "file": "Greg Doucette #513 - Fort Wayne IN.mp4",
-    "youtube": null,
+    "youtube": "M5dQMA0b2fw",
     "text": "another example of police dousing peaceful protestors in pepper spray [@ErinFogg5]"
   },
   {
@@ -7516,7 +7536,7 @@
     "tweet": "https://twitter.com/greg_doucette/status/1272725946915749888",
     "tweetDateTime": null,
     "file": "Greg Doucette #515 - Pittsburgh PA.mp4",
-    "youtube": null,
+    "youtube": "PONJC2pChiY",
     "text": "multiple officers arrest and pin a woman to the ground, while another grabs a teargas canister to throw at people recording the arrest. The cops are rioting. [@RyanDeto]"
   },
   {
@@ -7526,7 +7546,7 @@
     "tweet": "https://twitter.com/greg_doucette/status/1272730765625831424",
     "tweetDateTime": null,
     "file": "Greg Doucette #516 - Bethel OH.mp4",
-    "youtube": null,
+    "youtube": "0KUGGRtbyWs",
     "text": "police stand around and do nothing as a protestor is assaulted by a cop fetishist. Remember this when people tell you (falsely) that cops provide safety and prevent violence. 14 June 2020. [@whiskeyrodent]"
   },
   {
@@ -7536,7 +7556,7 @@
     "tweet": "https://twitter.com/greg_doucette/status/1272734468382523392",
     "tweetDateTime": null,
     "file": "Greg Doucette #517 - Philadelphia PA.mp4",
-    "youtube": null,
+    "youtube": "RfGFBDnD_9c",
     "text": "police stand around doing nothing as a white mob pushes an Asian guy into oncoming traffic. Remember this next time someone tells you (falsely) that police provide safety and prevent violence. [@UR_Ninja]"
   },
   {
@@ -7546,7 +7566,7 @@
     "tweet": "https://twitter.com/greg_doucette/status/1272738460261023745",
     "tweetDateTime": null,
     "file": "Greg Doucette #518 - Albeuerque NM.mp4",
-    "youtube": null,
+    "youtube": "45k5E-SqZrE",
     "text": "police launch teargas, flash bangs, rubber bullets after a member of the New Mexico Civil Guard – a white nationalist militia group – shoots a protestor. [@meganrabundis]"
   },
   {
@@ -7556,7 +7576,7 @@
     "tweet": "https://twitter.com/greg_doucette/status/1272738938151743488",
     "tweetDateTime": null,
     "file": "Greg Doucette #518.1 - Albeuerque NM.mp4",
-    "youtube": null,
+    "youtube": "DsY-mu5kZcA",
     "text": "More of 518 in Albuquerque NM, where the 4 gunshots from the New Mexico Civil Guard member are heard on video. [@meganrabundis]"
   },
   {
@@ -7576,7 +7596,7 @@
     "tweet": "https://twitter.com/greg_doucette/status/1272740687356866560",
     "tweetDateTime": null,
     "file": "Greg Doucette #518.3 - Albeuerque NM.mp4",
-    "youtube": null,
+    "youtube": "wgCkXFWtGxw",
     "text": "More on 518 after the shooting in Albuquerque NM. Keep in mind: ABQ police has been coordinating with the New Mexico Civil Guard militia in earlier protests. [@nick_w_estes]"
   },
   {
@@ -7596,7 +7616,7 @@
     "tweet": "https://twitter.com/greg_doucette/status/1272741568127123457",
     "tweetDateTime": null,
     "file": "Greg Doucette #518.5 - Albequerque NM.mp4",
-    "youtube": null,
+    "youtube": "k4-ifs6-4u0",
     "text": "More on 518 in Albuquerque NM on the police response, gassing peaceful protestors because a white nationalist militia member tried to kill somebody for sport. [@meganrabundis]"
   },
   {
@@ -7636,7 +7656,7 @@
     "tweet": "https://twitter.com/greg_doucette/status/1272759296418332678",
     "tweetDateTime": null,
     "file": "Greg Doucette #518.8 - Albequerque NM.mp4",
-    "youtube": null,
+    "youtube": "VX-12efFHhk",
     "text": "More of 518 in Albuquerque NM, showing the eventual shooter doing something to the young woman he's standing behind.  \"Demonstrators clap as one contingent of the armed “militia” group removes themselves from the crowd. Blue shirt guy seems to have something in his hand (taken from his chest rig?). He appears to hit (or spray?) a young woman; she goes down. LOTS of phones filming. Shots fired.\""
   },
   {
@@ -7696,7 +7716,7 @@
     "tweet": "https://twitter.com/greg_doucette/status/1272865880846852096",
     "tweetDateTime": null,
     "file": "Greg Doucette #520 - Richmond VA.mp4",
-    "youtube": null,
+    "youtube": "NHcUw8W7rp8",
     "text": "another night of police firing indiscriminately on peaceful protestors outside the RPD headquarters. [@aeringle]"
   },
   {
@@ -7706,7 +7726,7 @@
     "tweet": "https://twitter.com/greg_doucette/status/1272866062829305866",
     "tweetDateTime": null,
     "file": "Greg Doucette #520.1 - Richmond VA.mp4",
-    "youtube": null,
+    "youtube": "R64eqsnKlW0",
     "text": "More of 520 in Richmond VA. [@aeringle]"
   },
   {
@@ -7726,7 +7746,7 @@
     "tweet": "https://twitter.com/greg_doucette/status/1272870745589284864",
     "tweetDateTime": null,
     "file": "Greg Doucette #522 - Portland OR.mp4",
-    "youtube": null,
+    "youtube": "jVzjFPIKlOE",
     "text": "police threaten to arrest an @OPB reporter if he doesn't run.  Reporter: \"We're moving\".  Cop: \"You've been given warnings, so if you don't move faster you're gonna go to jail.\" Reporter: \"So you want us to run?\"  Cop:  \"Yes I do\" [@MrOlmos]"
   },
   {
@@ -7736,7 +7756,7 @@
     "tweet": "https://twitter.com/greg_doucette/status/1272871143435878407",
     "tweetDateTime": null,
     "file": "Greg Doucette #522.1 - Portland OR.mp4",
-    "youtube": null,
+    "youtube": "Rb9Vvh4ZzSU",
     "text": "Another angle on 522 of PDX cops threatening a reporter with arrest if he doesn't literally run away from them [@MrOlmos]"
   },
   {
@@ -7796,7 +7816,7 @@
     "tweet": "https://twitter.com/greg_doucette/status/1272916710148968448",
     "tweetDateTime": null,
     "file": "Greg Doucette #524 - Portland OR.mp4",
-    "youtube": null,
+    "youtube": "2qlqxYNe21I",
     "text": "another night of the PDX Running of the Swine, as ~30 cops chase after 2 unarmed teenagers. Looks like at least 28 positions that can be defunded... [@tuckwoodstock]"
   },
   {
@@ -7806,7 +7826,7 @@
     "tweet": "https://twitter.com/greg_doucette/status/1272920075876675590",
     "tweetDateTime": null,
     "file": "Greg Doucette #525 - Portland OR.mp4",
-    "youtube": null,
+    "youtube": "sky8m-keYq4",
     "text": "cop threatening a journalist with arrest and positioning himself to prevent any video of another cop mistreating an arrestee. [@AlexMilanTracy]"
   },
   {
@@ -7816,7 +7836,7 @@
     "tweet": "https://twitter.com/greg_doucette/status/1272924502314360836",
     "tweetDateTime": null,
     "file": "Greg Doucette #526 - Jonesboro GA.mp4",
-    "youtube": null,
+    "youtube": "73sHMVR2c-4",
     "text": "an officer holds 5 black teens at gunpoint. Story: https://news-daily.com/news/clayton-county-police-to-release-body-cam-footage-incident-report-after-video-of-officer-holding/article_f07ce9e2-afe3-11ea-aa85-b30a2ad71d7d.html [@EaglesFanOnly]"
   },
   {
@@ -7826,7 +7846,7 @@
     "tweet": "https://twitter.com/greg_doucette/status/1273840165262426114",
     "tweetDateTime": null,
     "file": "Greg Doucette #526.1 - Jonesboro GA.mp4",
-    "youtube": null,
+    "youtube": "M0CWPDY0dYI",
     "text": "Another view of 526 in Jonesboro GA, as bodycam footage has been released. [@EaglesFanOnly]"
   },
   {
@@ -7836,7 +7856,7 @@
     "tweet": "https://twitter.com/greg_doucette/status/1272929135283916802",
     "tweetDateTime": null,
     "file": "Greg Doucette #527 - Portland OR.mp4",
-    "youtube": null,
+    "youtube": "aciYDk1ydWo",
     "text": null
   },
   {
@@ -7846,7 +7866,7 @@
     "tweet": "https://twitter.com/greg_doucette/status/1273057627111600132",
     "tweetDateTime": null,
     "file": "Greg Doucette #528 - Louisville KY.mp4",
-    "youtube": null,
+    "youtube": "X5ZaPQPcCXM",
     "text": "a guy records a half-dozen cops dogpiling a protestor – and then one of the cops shoots the window to stop him from recording. Lawlessness. [@kenjiboijoi]"
   },
   {
@@ -7876,7 +7896,7 @@
     "tweet": "https://twitter.com/greg_doucette/status/1273106235911520258",
     "tweetDateTime": null,
     "file": "Greg Doucette #530 - Everett WA.mp4",
-    "youtube": null,
+    "youtube": "uqds6V3hL6c",
     "text": "cops yank a guy out of a van, then two hold him down while a third repeatedly punches the sh*t out of him for sport. Bonus: cop doing the punching had previously been fired, reinstated.  Story: https://heraldnet.com/news/deputy-seen-in-video-punching-man-was-previously-fired/ [@patrickcook28]"
   },
   {
@@ -7896,7 +7916,7 @@
     "tweet": "https://twitter.com/greg_doucette/status/1273126080157753348",
     "tweetDateTime": null,
     "file": "Greg Doucette #532 - Louisville KY.mp4",
-    "youtube": null,
+    "youtube": "HnUkvlHqOLU",
     "text": "police push down a protestor who was lawfully on the sidewalk, then shoot at people who come to help her up. 15 June 2020. The cops are rioting"
   },
   {
@@ -7906,7 +7926,7 @@
     "tweet": "https://twitter.com/greg_doucette/status/1273127612546678786",
     "tweetDateTime": null,
     "file": "Greg Doucette #532.1 - Louisville KY.mp4",
-    "youtube": null,
+    "youtube": "kq6Rq6iJBe4",
     "text": "First-person view of 532 in Louisville KY by the woman assaulted by police for engaging in First Amendment-protected conduct on the sidewalk"
   },
   {
@@ -7936,18 +7956,8 @@
     "tweet": "https://twitter.com/greg_doucette/status/1273304638981275656",
     "tweetDateTime": null,
     "file": "Greg Doucette #534 - Syracuse NY.mp4",
-    "youtube": null,
+    "youtube": "TCMKQpVMYO0",
     "text": "police officer shoves a journalist to the ground so he'll stop recording them.  The cops are rioting. Story: https://syracuse.com/news/2020/06/syracuse-police-officer-shoves-news-photographer-to-the-ground-during-protest-video.html"
-  },
-  {
-    "id": "534",
-    "city": null,
-    "state": null,
-    "tweet": null,
-    "tweetDateTime": null,
-    "file": "Greg Doucette #534 -  .mp4",
-    "youtube": null,
-    "text": null
   },
   {
     "id": "535",
@@ -7956,18 +7966,8 @@
     "tweet": "https://twitter.com/greg_doucette/status/1273308853396963330",
     "tweetDateTime": null,
     "file": "Greg Doucette #535 - St. Louis MO.mp4",
-    "youtube": null,
+    "youtube": "UyxEyDhWt24",
     "text": "police have started posting one-day \"emergency\" no-parking signs in areas where parking is normally allowed. By undoubtedly pure coincidence, the signs are going up where protests are expected. [@joelcurrier]"
-  },
-  {
-    "id": "535",
-    "city": null,
-    "state": null,
-    "tweet": null,
-    "tweetDateTime": null,
-    "file": "Greg Doucette #535 -  .mp4",
-    "youtube": null,
-    "text": null
   },
   {
     "id": "535.1",
@@ -7996,7 +7996,7 @@
     "tweet": "https://twitter.com/greg_doucette/status/1273324480438337536",
     "tweetDateTime": null,
     "file": "Greg Doucette #536 - Los Angeles CA.mp4",
-    "youtube": null,
+    "youtube": "p3DDc0N-mII",
     "text": "an officer takes aim at a non-protestor peacefully recording in their apartment [@AsToldBySam]"
   },
   {
@@ -8006,7 +8006,7 @@
     "tweet": "https://twitter.com/greg_doucette/status/1273324963504762881",
     "tweetDateTime": null,
     "file": "Greg Doucette #537 - Los Angeles CA.mp4",
-    "youtube": null,
+    "youtube": "icrKQIHE8a0",
     "text": "police shoot at a non-protestor in their apartment. Recall they did something similar in 87 as well. [@tracemeYo]"
   },
   {
@@ -8076,7 +8076,7 @@
     "tweet": "https://twitter.com/greg_doucette/status/1273442002219208705",
     "tweetDateTime": null,
     "file": "Greg Doucette #541 - Portland OR.mp4",
-    "youtube": null,
+    "youtube": "iPVT4Xp8Fmg",
     "text": "police repeatedly shoot protestors in the back as they're walking away – complying with police orders to leave. Lawlessness. [IG: https://instagram.com/tv/CA9pRwWpXwR/?utm_source=ig_web_copy_link; full video is 4min+]"
   },
   {
@@ -8086,7 +8086,7 @@
     "tweet": "https://twitter.com/greg_doucette/status/1273660682479820801",
     "tweetDateTime": null,
     "file": "Greg Doucette #542 - New York City NY.mp4",
-    "youtube": null,
+    "youtube": "vDbKuD-3UoU",
     "text": "NYPD sends an entire riot squad into Flatbush because someone reported fireworks. [@carolineha_]"
   },
   {
@@ -8808,6 +8808,16 @@
     "file": "Greg Doucette #588.2 - New York City NY.png",
     "youtube": null,
     "text": "Update on 588 in New York City NY, where an NYPD cop is on video choking out an unarmed black man for sport. The officer has been suspended pending the outcome of an investigation. Also: \"It's not clear what precipitated the arrest.\" (no sh*t)"
+  },
+  {
+    "id": "588.3",
+    "city": "New York City",
+    "state": "NY",
+    "tweet": "https://twitter.com/greg_doucette/status/1277263005630283776",
+    "tweetDateTime": null,
+    "file": "Greg Doucette #588.3 - New York City NY.png",
+    "youtube": null,
+    "text": "Another update on 588 out of New York City, NY: the NYPD suspended for choking the sh*t out of a black guy for sport has now been criminally charged.  Link to story:  https://www.washingtonpost.com/nation/2020/06/26/new-york-officer-charged-chokehold/"
   },
   {
     "id": "589",
@@ -9546,7 +9556,7 @@
     "tweet": "https://twitter.com/greg_doucette/status/1275981982447685634",
     "tweetDateTime": "2020-06-25T02:39:00.000Z",
     "file": "Greg Doucette #631 - Portland OR.png",
-    "youtube": null,
+    "youtube": "oprqZ2pSLvg",
     "text": "the PPB has determined that their nightly Running of the Swine and related cop-rioting has cost Portland taxpayers $6,200,000.00+ in just a few weeks. Insanity.  Link to story:  https://www.portlandoregon.gov/police/news/read.cfm?id=250912"
   },
   {
@@ -9826,7 +9836,7 @@
     "tweet": "https://twitter.com/greg_doucette/status/1276700990952091650",
     "tweetDateTime": null,
     "file": "Greg Doucette #647 - St. Louis  MO.mp4",
-    "youtube": null,
+    "youtube": "AA2s4hN7G8w",
     "text": "the mayor is offended by people sharing their opinions on police funding with elected officials, so the mayor gives their name and home addresses on a livestream so others can harass them. [@CopWatchSTL]"
   },
   {
@@ -9846,7 +9856,7 @@
     "tweet": "https://twitter.com/greg_doucette/status/1276888501154467845",
     "tweetDateTime": null,
     "file": "Greg Doucette #647.2 - St. Louis MO.mp4",
-    "youtube": null,
+    "youtube": "DZ8CqwHgS8s",
     "text": "More on 647 in St. Louis MO, as Mayor Lyda Krewson (@LydaKrewson) attempts to explain why she intentionally doxxed her own citizens on a livestream [@theMARCHstl]"
   },
   {
@@ -9856,7 +9866,7 @@
     "tweet": "https://twitter.com/greg_doucette/status/1276881926687776768",
     "tweetDateTime": null,
     "file": "Greg Doucette #648 - Richmond VA.mp4",
-    "youtube": null,
+    "youtube": "TmSI-taGjPE",
     "text": "another nightly warzone in downtown Richmond, as police deliberately launch a flash-bang at a journalist and shoot at least one protestor in the face for sport. 26 June 2020. [@JLJLovesRVA]"
   },
   {
@@ -9866,7 +9876,7 @@
     "tweet": "https://twitter.com/greg_doucette/status/1276882249896656899",
     "tweetDateTime": null,
     "file": "Greg Doucette #648.1 - Richmond VA.mp4",
-    "youtube": null,
+    "youtube": "DS0WZG6QoF0",
     "text": "Another camera angle on 648 in Richmond VA. [@woznyphoto]"
   },
   {
@@ -9876,7 +9886,7 @@
     "tweet": "https://twitter.com/greg_doucette/status/1276882905214713857",
     "tweetDateTime": null,
     "file": "Greg Doucette #648.2 - Richmond VA.mp4",
-    "youtube": null,
+    "youtube": "UeSX6ebVCeg",
     "text": "More of last night's warzone in Richmond VA at 648. I'm sure the neighboring residences appreciate being saturated with teargas by police. [@JLJLovesRVA]"
   },
   {
@@ -9886,7 +9896,7 @@
     "tweet": "https://twitter.com/greg_doucette/status/1276916720251305992",
     "tweetDateTime": null,
     "file": "Greg Doucette #648.3 - Richmond VA.mp4",
-    "youtube": null,
+    "youtube": "Od9eKyS6ess",
     "text": "More on the Richmond VA warzone last night at 648. Police deploying teargas, firing flash-bang grenades, etc – including into the cars of non-protestors just trying to get through downtown [@aeringle]"
   },
   {
@@ -9926,7 +9936,7 @@
     "tweet": "https://twitter.com/greg_doucette/status/1276887651371700227",
     "tweetDateTime": null,
     "file": "Greg Doucette #652 - Nashville TN.mp4",
-    "youtube": null,
+    "youtube": "I98UW35yKes",
     "text": "police deliberately target a protest organizer for arrest for the heinous crime of ::checks notes:: singing the old spiritual \"Wade in the Water\". Charged with trespass and inciting a riot. [@plaza_tn]"
   },
   {
@@ -9956,7 +9966,7 @@
     "tweet": "https://twitter.com/greg_doucette/status/1276904063129526273",
     "tweetDateTime": null,
     "file": "Greg Doucette #653 - Portland OR.mp4",
-    "youtube": null,
+    "youtube": "bCbfgDbohCw",
     "text": "another nightly Running of the Swine. I particularly enjoy the cops shouting \"GET OUT OF HERE!\"... while shoving people to the ground so they can't leave. It's almost like brutalizing ppl is more important to them? Thinking face. [@KohzKah]. Date is 26-27 June 2020."
   },
   {
@@ -9966,7 +9976,7 @@
     "tweet": "https://twitter.com/greg_doucette/status/1276906174324117505",
     "tweetDateTime": null,
     "file": "Greg Doucette #654 - Nashville TN.mp4",
-    "youtube": null,
+    "youtube": "qquaexPeW18",
     "text": "state police confiscating and destroying private property without due process. [@TheTNHoller]"
   },
   {
@@ -9976,7 +9986,7 @@
     "tweet": "https://twitter.com/greg_doucette/status/1276906790215651336",
     "tweetDateTime": null,
     "file": "Greg Doucette #655 - Nashville TN.mp4",
-    "youtube": null,
+    "youtube": "yRF6YXi3Mv4",
     "text": "initially thought this was another camera angle on 619, but turns out it's actually another separate day of police illegally confiscating private property without due process. [@brotherjones_]"
   },
   {
@@ -9986,7 +9996,7 @@
     "tweet": "https://twitter.com/greg_doucette/status/1276909071065636864",
     "tweetDateTime": null,
     "file": "Greg Doucette #656 - Nashville TN.mp4",
-    "youtube": null,
+    "youtube": "vTKtIsbKsGk",
     "text": "power-washing protestors. (Seriously) [@brotherjones_]"
   },
   {
@@ -9996,7 +10006,7 @@
     "tweet": "https://twitter.com/greg_doucette/status/1276909728749289474",
     "tweetDateTime": null,
     "file": "Greg Doucette #657 - Richmond VA.mp4",
-    "youtube": null,
+    "youtube": "7J-O41TOeEA",
     "text": "you hear police yelling among themselves \"Grab somebody! Get ahold of somebody!\"  Then an officer runs across the street and shoves a guy on a bike to the ground [@woznyphoto]"
   },
   {
@@ -10006,7 +10016,7 @@
     "tweet": "https://twitter.com/greg_doucette/status/1276910842525519872",
     "tweetDateTime": null,
     "file": "Greg Doucette #658 - Philadelphia PA.mp4",
-    "youtube": null,
+    "youtube": "EUoAn4AHByU",
     "text": "a compilation of videos of Philly cops teargassing everyone in West Philadelphia from the comfort of their APC [@pennsylinger]"
   },
   {
@@ -10026,7 +10036,7 @@
     "tweet": "https://twitter.com/greg_doucette/status/1276920791116980225",
     "tweetDateTime": null,
     "file": "Greg Doucette #660 - Portland OR.mp4",
-    "youtube": null,
+    "youtube": "IJ2qUqUaXCk",
     "text": "police bathing unarmed non-violent protestors in pepper spray for sport. 27 June 2020. [@KohzKah]"
   },
   {
@@ -10048,6 +10058,196 @@
     "file": "Greg Doucette #662 - Portland OR.png",
     "youtube": null,
     "text": "PDX cops shoot a guy in the eye for sport, sending him to the emergency room. Looks like a rubber ball from a stinger grenade. Photos are further down this thread: https://twitter.com/ghostmobpdx/status/1276779889685757953"
+  },
+  {
+    "id": "663",
+    "city": "San Jose",
+    "state": "CA",
+    "tweet": "https://twitter.com/greg_doucette/status/1277036952919977986",
+    "tweetDateTime": null,
+    "file": "Greg Doucette #663 - San Jose CA.png",
+    "youtube": null,
+    "text": "at least 4 active duty SJPD cops have been given paid vacation after they were exposed posting racist sh*t in a private Facebook group. It was so bad that even the head of the local police union is calling for them to be fired Eyes.  Link to story:  https://www.mercurynews.com/2020/06/26/san-jose-police-officers-racist-facebook-posts-exposed-by-blogger/"
+  },
+  {
+    "id": "663.1",
+    "city": "San Jose",
+    "state": "CA",
+    "tweet": "https://twitter.com/greg_doucette/status/1277037750747791360",
+    "tweetDateTime": null,
+    "file": "Greg Doucette #663.1 - San Jose CA.png",
+    "youtube": null,
+    "text": "More on the \"online ring of hate\" at 663 in San Jose, CA.  Link to story:  https://www.kron4.com/news/bay-area/sam-liccardo-calls-for-firing-of-san-jose-police-officers-involved-in-online-ring-of-hate/"
+  },
+  {
+    "id": "663.2",
+    "city": "San Jose",
+    "state": "CA",
+    "tweet": "https://twitter.com/greg_doucette/status/1277038673616416768",
+    "tweetDateTime": null,
+    "file": "Greg Doucette #663.2 - San Jose CA.png",
+    "youtube": null,
+    "text": "The initial exposé on 663 in San Jose, CA.  Link to story:  https://medium.com/@charliepaulsen5/racism-and-hate-behind-the-blue-wall-exposing-secret-law-enforcement-facebook-groups-6cf23a596a98"
+  },
+  {
+    "id": "664",
+    "city": "Washington",
+    "state": "DC",
+    "tweet": "https://twitter.com/greg_doucette/status/1277227335721398273",
+    "tweetDateTime": null,
+    "file": "Greg Doucette #664 - Washington DC.mp4",
+    "youtube": null,
+    "text": "ops again destroying private property without due process, and assaulting protestors for sport along the way. 27 June 2020. [@wyattreed13]"
+  },
+  {
+    "id": "665",
+    "city": "Austin",
+    "state": "TX",
+    "tweet": "https://twitter.com/greg_doucette/status/1277228129103249409",
+    "tweetDateTime": null,
+    "file": "Greg Doucette #665 - Austin TX.mp4",
+    "youtube": null,
+    "text": "how many APD officers does it take to brutalize one protestor? Thinking face I count 4, including one who punches the guy repeatedly while he's pinned to the ground. 27 June 2020. [@AltUniverseWash]"
+  },
+  {
+    "id": "666",
+    "city": "Columbus",
+    "state": "OH",
+    "tweet": "https://twitter.com/greg_doucette/status/1277230671874920448",
+    "tweetDateTime": null,
+    "file": "Greg Doucette #666 - Columbus OH.png",
+    "youtube": null,
+    "text": "thought about saving a video for this one, but the sight of having CPD cops pull out a tape measure so they can have protestors' cars towed just seemed a better fit. Lots to be safely defunded in Columbus apparently... 27 June 2020."
+  },
+  {
+    "id": "667",
+    "city": "Portland",
+    "state": "OR",
+    "tweet": "https://twitter.com/greg_doucette/status/1277233959303368706",
+    "tweetDateTime": null,
+    "file": "Greg Doucette #667 - Portland OR.mp4",
+    "youtube": null,
+    "text": "yet another nightly Running of the Swine. I truly don't understand the purpose of bullrushing people who are already leaving... 27-28 June 2020. [@KohzKah]"
+  },
+  {
+    "id": "667.1",
+    "city": "Portland",
+    "state": "OR",
+    "tweet": "https://twitter.com/greg_doucette/status/1277235528727957504",
+    "tweetDateTime": null,
+    "file": "Greg Doucette #667.1 - Portland OR.mp4",
+    "youtube": null,
+    "text": "More of 667 in Portland, OR: police fire off a few canisters and then randomly leave.  [Subsequent reporting has confirmed there were teargas canisters mixed amid the plain smoke grenades, a violation of a federal court order on CS use] [@hungrybowtie]"
+  },
+  {
+    "id": "667.2",
+    "city": "Portland",
+    "state": "OR",
+    "tweet": "https://twitter.com/greg_doucette/status/1277242169506631681",
+    "tweetDateTime": null,
+    "file": "Greg Doucette #667.2 - Portland OR.mp4",
+    "youtube": null,
+    "text": "More of 667 in Portland OR: police burst out of the station to go after people spraypainting the building and blocking them in... ...so of course the first thing cops do is attack someone who wasn't involved [@hungrybowtie]"
+  },
+  {
+    "id": "667.3",
+    "city": "Portland",
+    "state": "OR",
+    "tweet": "https://twitter.com/greg_doucette/status/1277242440576008194",
+    "tweetDateTime": null,
+    "file": "Greg Doucette #667.3 - Portland OR.mp4",
+    "youtube": null,
+    "text": "More of the nightly Running of the Swine at 667 in Portland OR. [@hungrybowtie]"
+  },
+  {
+    "id": "668",
+    "city": "Aurora",
+    "state": "CO",
+    "tweet": "https://twitter.com/greg_doucette/status/1277236374895296512",
+    "tweetDateTime": null,
+    "file": "Greg Doucette #668 - Aurora CO.mp4",
+    "youtube": null,
+    "text": "riot cops have decided they've had enough First Amendment for the day, so they start assaulting protestors. 27 June 2020. [@MarcSallinger]"
+  },
+  {
+    "id": "668.1",
+    "city": "Aurora",
+    "state": "CO",
+    "tweet": "https://twitter.com/greg_doucette/status/1277236618655682565",
+    "tweetDateTime": null,
+    "file": "Greg Doucette #668.1 - Aurora CO.mp4",
+    "youtube": null,
+    "text": "More of 668 in Aurora, CO: police deliberately target journalists with pepper spray. [@MarcSallinger]"
+  },
+  {
+    "id": "668.2",
+    "city": "Aurora",
+    "state": "CO",
+    "tweet": "https://twitter.com/greg_doucette/status/1277237130838839296",
+    "tweetDateTime": null,
+    "file": "Greg Doucette #668.2 - Aurora CO.mp4",
+    "youtube": null,
+    "text": "Still more of 668 in Aurora CO, bathing protestors in pepper spray. [@MarcSallinger]"
+  },
+  {
+    "id": "668.3",
+    "city": "Aurora",
+    "state": "CO",
+    "tweet": "https://twitter.com/greg_doucette/status/1277237748655677440",
+    "tweetDateTime": null,
+    "file": "Greg Doucette #668.3 - Aurora CO.mp4",
+    "youtube": null,
+    "text": "More of 668 in Aurora CO: a man started playing the violin, which apparently calms savage beasts and such"
+  },
+  {
+    "id": "668.4",
+    "city": "Aurora",
+    "state": "CO",
+    "tweet": "https://twitter.com/greg_doucette/status/1277238255004639233",
+    "tweetDateTime": null,
+    "file": "Greg Doucette #668.4 - Aurora CO.mp4",
+    "youtube": null,
+    "text": "More of Violin Man in 668 out of Aurora CO. Police evidently had the self-awareness to realize it would look bad on TV to pepper spray someone playing music? [@marcsallinger]"
+  },
+  {
+    "id": "669",
+    "city": "Minneapolis",
+    "state": "MN",
+    "tweet": "https://twitter.com/greg_doucette/status/1277267538490134530",
+    "tweetDateTime": null,
+    "file": "Greg Doucette #669 - Minneapolis MN.mp4",
+    "youtube": null,
+    "text": "not sure of the date on this footage, looks like 27 May 2020? Police shoot an unarmed black man who's not even doing anything, from the roof of the 3rd Precinct. It was this conduct (and #8 & #9) that triggered Fire. [@JaredGoyette]"
+  },
+  {
+    "id": "670",
+    "city": "Austin",
+    "state": "TX",
+    "tweet": "https://twitter.com/greg_doucette/status/1277256693689266176",
+    "tweetDateTime": null,
+    "file": "Greg Doucette #670 - Austin TX.mp4",
+    "youtube": null,
+    "text": "Man drives into crowd, pulls a gun on protestors, police politely escort him to a parking deck and stand guard. More videos in the thread. [@CandiceBernd]"
+  },
+  {
+    "id": "668.5",
+    "city": "Aurora",
+    "state": "CO",
+    "tweet": "https://twitter.com/greg_doucette/status/1277281140961882115",
+    "tweetDateTime": null,
+    "file": "Greg Doucette #668.5 - Aurora CO.mp4",
+    "youtube": null,
+    "text": "it wasn't just one man playing the violin, they had a full violin vigil... ...so of course APD sent in the riot squad to break it up [@jessiedesigngir]"
+  },
+  {
+    "id": "671",
+    "city": "Miami",
+    "state": "FL",
+    "tweet": "https://twitter.com/greg_doucette/status/1277287704997310465",
+    "tweetDateTime": null,
+    "file": "Greg Doucette #671 - Miami FL.mp4",
+    "youtube": null,
+    "text": "police deploy teargas, shoot at unarmed protestors. At least 2+ injured. 27 June 2020. [@inaminorkey]"
   },
   {
     "id": "0.01",
@@ -10476,7 +10676,7 @@
     "tweet": "https://twitter.com/greg_doucette/status/1275065836852572170",
     "tweetDateTime": "2020-06-22T13:59:00.000Z",
     "file": "Greg Doucette #0.40 - Seaside Heights NJ.mp4",
-    "youtube": null,
+    "youtube": "Vr7UO3u0QG8",
     "text": "pre-protest so not assigning a number to this 2018 video. Man approached for \"suspicious operation of a bicycle,\" he notes he doesn't have to talk to cops, then is arrested for no bell on bike. Story: https://nj.com/ocean/2018/09/watch_bicyclist_cited_for_no_bell_on_bike_in_seasi.html .Video:"
   },
   {
@@ -10556,7 +10756,7 @@
     "tweet": "https://twitter.com/greg_doucette/status/1275979831457583104",
     "tweetDateTime": null,
     "file": "Greg Doucette #0.46 - Hamilton County TN.mp4",
-    "youtube": null,
+    "youtube": "hZfjaYOhEQ8",
     "text": "4 deputies take turns clubbing the everlasting sh*t out of Reginald Arrington Jr, for the truly heinous crime of ::checks notes:: walking on the wrong side of the road. [@TravisWRCB]"
   },
   {
@@ -10586,7 +10786,7 @@
     "tweet": "https://twitter.com/greg_doucette/status/1276274109207502849",
     "tweetDateTime": null,
     "file": "Greg Doucette #0.47 - Miami Gardens FL.mp4",
-    "youtube": null,
+    "youtube": "JUUZHpHIttU",
     "text": "pre-protests so no number, but a MGPD officer has been arrested after video is released showing him kneeling on an unarmed black woman's neck while also tasing her. She was pregnant, and lost the baby because of this. [@DavidOvalle305]"
   },
   {
@@ -10606,7 +10806,7 @@
     "tweet": "https://twitter.com/greg_doucette/status/1276550125515673603",
     "tweetDateTime": null,
     "file": "Greg Doucette #0.472 - Miami Gardens FL.mp4",
-    "youtube": null,
+    "youtube": "HafBXShSpRM",
     "text": "[REPOST] [Original tweet deleted] Miami Gardens, FL: a MGPD cop has been fired and charged with battery, after bystander video shows him kneeling on a black woman's throat and tasing her belly 2x. Story: https://miamiherald.com/news/local/crime/article243794517.html Video: [@DavidOvalle305]"
   },
   {
@@ -10626,7 +10826,7 @@
     "tweet": "https://twitter.com/greg_doucette/status/1276160363445223430",
     "tweetDateTime": null,
     "file": "Greg Doucette #0.48 - Tuscon AZ.png",
-    "youtube": null,
+    "youtube": "hhYH4kyTkbk",
     "text": "pre-protest so no number. TPD summarily executed a Latino man by restraining him – handcuffed, face down – for 12 minutes. 27yo Carlos Lopez went into cardiac arrest & died at the scene, caught on bodycam. Cops then hid the video for 2 months.  Link to story:  https://www.nytimes.com/2020/06/24/us/tucson-police-carlos-ingram-lopez-death.html?referringSource=articleShare"
   },
   {
@@ -10658,5 +10858,25 @@
     "file": "Greg Doucette #0.51 - Buffalo NY.png",
     "youtube": null,
     "text": "pre-protest so no number. Buffalo PD officers are on bystander video beating the everlasting sh*t out of a guy last month for weed possession. Earlier this week he notified the city he will be filing an excessive force lawsuit. Video here:  https://www.wkbw.com/news/local-news/buffalo-man-punched-in-head-repeatedly-by-officer-plans-to-sue-city-bpd-and-arresting-officershttps://www.wkbw.com/news/local-news/buffalo-man-punched-in-head-repeatedly-by-officer-plans-to-sue-city-bpd-and-arresting-officers"
+  },
+  {
+    "id": "0.52",
+    "city": "Louisville",
+    "state": "KY",
+    "tweet": "https://twitter.com/greg_doucette/status/1277240176868294656",
+    "tweetDateTime": null,
+    "file": "Greg Doucette #0.52 - Louisville KY.mp4",
+    "youtube": "5gPGErZp5bI",
+    "text": "non-police action so no number, but a man opens fire on peaceful protestors for sport. 1 person was killed at the scene, another injured. No arrests yet based on most recent reporting.[@JBernardBoyle / @0000maxwell / @Maxwellsounds]"
+  },
+  {
+    "id": "0.53",
+    "city": "Wilmington",
+    "state": "DE",
+    "tweet": "https://twitter.com/greg_doucette/status/1277290752444334080",
+    "tweetDateTime": null,
+    "file": "Greg Doucette #0.53 - Wilmington DE.mp4",
+    "youtube": null,
+    "text": "pre-protest so not assigning a number, but got several DMs of this 2015 video. [CW: death] A woman calls 911 to report the guy in the wheelchair was wounded by a gunshot. Police show up and blow him away. $1.5M payout. [@trueAFICIONADO]"
   }
 ]
