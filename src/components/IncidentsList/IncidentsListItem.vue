@@ -112,6 +112,7 @@ export default {
 }
 
 .content {
+  overflow-x: hidden;
   padding: var(--spacing-xs);
 }
 
