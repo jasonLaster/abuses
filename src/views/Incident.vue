@@ -18,6 +18,7 @@ import IncidentDetails from '@/components/IncidentDetails/IncidentDetails.vue'
 import CenterWrapper from '@/components/Layout/CenterWrapper.vue'
 import BtnBack from '@/components/Shared/BtnBack.vue'
 import IncidentsList from '@/components/IncidentsList/IncidentsList.vue'
+import metaData from '@/utils/metaData'
 
 // temp fix while we're not using https://kazupon.github.io/vue-i18n/
 const pluralize = (n, singular, plural) => {
@@ -55,6 +56,17 @@ export default {
       const { id } = this.$route.params
       return this.getIncidentByID(id)
     },
+  },
+
+  metaInfo() {
+    if (this.incident != null) {
+      return metaData({
+        title: `Incident #${this.incident.id}`,
+        text: this.incident.text,
+        url: `${process.env.VUE_APP_BASE_URL}${this.$route.path}`,
+      })
+    }
+    return null
   },
 }
 </script>

@@ -15,6 +15,10 @@ export default {
   components: {
     TheHeader,
   },
+  metaInfo: {
+    title: process.env.VUE_APP_TITLE,
+    titleTemplate: `%s | ${process.env.VUE_APP_SHORT_TITLE}`,
+  },
 }
 </script>
 
