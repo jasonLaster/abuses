@@ -2,18 +2,53 @@
   <div id="app" class="page">
     <the-header />
     <main class="main">
-      <router-view />
+      <router-animation :direction="direction">
+        <router-view />
+      </router-animation>
     </main>
   </div>
 </template>
 
 <script>
+import RouterAnimation from '@/components/Animations/RouterAnimation.vue'
 import TheHeader from '@/components/Layout/TheHeader.vue'
 
 export default {
   name: 'App',
   components: {
+    RouterAnimation,
     TheHeader,
+  },
+  data() {
+    return {
+      direction: '',
+      popStateDetected: false,
+    }
+  },
+  watch: {
+    // watch the `$route` to determine the transition to use
+    $route(to) {
+      // only animate by app navigation
+      if (!this.popStateDetected) {
+        const isListPage = to.name === 'Root' || to.name === 'City'
+        this.direction = isListPage ? 'left' : 'right'
+      } else {
+        this.direction = 'none'
+      }
+      this.popStateDetected = false
+    },
+  },
+  mounted() {
+    // detect if user is using a back/forward button from the browser
+    window.addEventListener('popstate', this.setPopState)
+  },
+  beforeDestroy() {
+    window.removeEventListener('popstate', this.setPopState)
+  },
+  methods: {
+    setPopState() {
+      this.popStateDetected = true
+    },
   },
 }
 </script>
