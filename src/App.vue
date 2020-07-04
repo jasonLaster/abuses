@@ -40,12 +40,15 @@ export default {
   },
   mounted() {
     // detect if user is using a back/forward button from the browser
-    window.addEventListener('popstate', () => {
-      this.popStateDetected = true
-    })
+    window.addEventListener('popstate', this.setPopState)
   },
   beforeDestroy() {
-    window.removeEventListener('popstate')
+    window.removeEventListener('popstate', this.setPopState)
+  },
+  methods: {
+    setPopState() {
+      this.popStateDetected = true
+    },
   },
 }
 </script>
