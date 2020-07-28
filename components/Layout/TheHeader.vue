@@ -34,7 +34,6 @@ export default {
 
   computed: {
     showFilter() {
-      console.log(this.$route.name)
       return this.$route.name === 'City-city' || this.$route.name === 'index'
     },
   },

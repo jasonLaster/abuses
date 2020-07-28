@@ -1,16 +1,14 @@
 import splashscreens from './config/splashscreens'
 import googleAnalytics from './config/googleAnalytics'
 import pwa from './config/pwa'
+import generate from './config/generate'
 import { baseUrl, title } from './data/siteDetails'
+import sitemap from './config/sitemap'
 
 export default {
   mode: 'universal',
   env: {
     baseUrl,
-  },
-  server: {
-    port: 3333,
-    host: '0.0.0.0',
   },
   /*
    ** Headers of the page
@@ -130,4 +128,6 @@ export default {
       },
     },
   },
+  generate,
+  sitemap,
 }

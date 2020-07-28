@@ -3,7 +3,7 @@ import VueAnalytics from 'vue-analytics'
 
 export default async (ctx, inject) => {
   const runtimeConfig = ctx.$config && ctx.$config.googleAnalytics || {}
-  const moduleOptions = {"dev":true,"debug":{"sendHitTask":false},"id":undefined,"set":[{"field":"anonymizeIp","value":true}],"disabled":() => {
+  const moduleOptions = {"dev":true,"debug":{"sendHitTask":true},"id":undefined,"set":[{"field":"anonymizeIp","value":true}],"disabled":() => {
     if (!process.env.NUXT_ENV_GOOGLE_ANALYTICS_KEY) return true
 
     const doNotTrack =
