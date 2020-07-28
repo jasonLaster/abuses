@@ -1,41 +1,29 @@
 [
   {
-    "name": "1index",
-    "path": "/1index",
-    "component": "/Users/michielkoning/Sites/abuses/pages/1index.vue",
-    "chunkName": "pages/1index",
-    "url": "/1index",
-    "_name": "_01f4393b"
-  },
-  {
     "name": "About",
     "path": "/About",
     "component": "/Users/michielkoning/Sites/abuses/pages/About.vue",
     "chunkName": "pages/About",
-    "url": "/About",
-    "_name": "_4edf193a"
+    "url": "/About"
   },
   {
     "name": "NotFound",
     "path": "/NotFound",
     "component": "/Users/michielkoning/Sites/abuses/pages/NotFound.vue",
     "chunkName": "pages/NotFound",
-    "url": "/NotFound",
-    "_name": "_2fa801ee"
+    "url": "/NotFound"
   },
   {
     "name": "incidents-id",
     "path": "/incidents/:id?",
     "component": "/Users/michielkoning/Sites/abuses/pages/incidents/_id.vue",
-    "chunkName": "pages/incidents/_id",
-    "_name": "_696c2702"
+    "chunkName": "pages/incidents/_id"
   },
   {
     "name": "index",
     "path": "/",
     "component": "/Users/michielkoning/Sites/abuses/pages/index.vue",
     "chunkName": "pages/index",
-    "url": "/",
-    "_name": "_fe53a370"
+    "url": "/"
   }
 ]
