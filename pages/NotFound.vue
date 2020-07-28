@@ -3,8 +3,8 @@
 </template>
 
 <script>
-import NotFound from '@/components/Shared/NotFound.vue'
-import metaData from '@/utils/metaData'
+import NotFound from '~/components/Shared/NotFound.vue'
+import metaData from '~/utils/metaData'
 
 export default {
   components: {

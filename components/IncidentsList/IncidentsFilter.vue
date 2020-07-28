@@ -9,7 +9,7 @@
 
 <script>
 import { computed } from '@vue/composition-api'
-import useIncidents from '@/use/incidents'
+import useIncidents from '~/use/incidents'
 
 export default {
   setup() {

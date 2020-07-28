@@ -7,7 +7,7 @@
 </template>
 
 <script>
-import CenterWrapper from '@/components/Layout/CenterWrapper.vue'
+import CenterWrapper from '~/components/Layout/CenterWrapper.vue'
 
 export default {
   components: { CenterWrapper },

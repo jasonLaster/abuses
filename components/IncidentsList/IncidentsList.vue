@@ -16,8 +16,8 @@
 </template>
 
 <script>
-import IncidentsListItem from '@/components/IncidentsList/IncidentsListItem.vue'
-import CenterWrapper from '@/components/Layout/CenterWrapper.vue'
+import IncidentsListItem from '~/components/IncidentsList/IncidentsListItem.vue'
+import CenterWrapper from '~/components/Layout/CenterWrapper.vue'
 
 export default {
   components: {

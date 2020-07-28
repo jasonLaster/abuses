@@ -10,12 +10,12 @@
 </template>
 
 <script>
-import useIncidents from '@/use/incidents'
-import NotFound from '@/components/Shared/NotFound.vue'
-import IncidentDetails from '@/components/IncidentDetails/IncidentDetails.vue'
-import CenterWrapper from '@/components/Layout/CenterWrapper.vue'
-import BtnBack from '@/components/Shared/BtnBack.vue'
-import IncidentsList from '@/components/IncidentsList/IncidentsList.vue'
+import useIncidents from '~/use/incidents'
+import NotFound from '~/components/Shared/NotFound.vue'
+import IncidentDetails from '~/components/IncidentDetails/IncidentDetails.vue'
+import CenterWrapper from '~/components/Layout/CenterWrapper.vue'
+import BtnBack from '~/components/Shared/BtnBack.vue'
+import IncidentsList from '~/components/IncidentsList/IncidentsList.vue'
 import getSeoMetaData from '~/helpers/seo'
 
 // temp fix while we're not using https://kazupon.github.io/vue-i18n/
