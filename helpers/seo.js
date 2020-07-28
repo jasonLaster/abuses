@@ -1,4 +1,8 @@
-export default ({ title, text, url, image }) => {
+import { baseUrl } from '~/data/siteDetails'
+
+export default ({ title, text, path, image }) => {
+  const url = `${baseUrl}${path}`
+  console.log(url)
   return {
     title,
     meta: [

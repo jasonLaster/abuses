@@ -4,17 +4,17 @@
 
 <script>
 import NotFound from '~/components/Shared/NotFound.vue'
-import metaData from '~/utils/metaData'
+import getSeoMetaData from '~/helpers/seo'
 
 export default {
   components: {
     NotFound,
   },
-  metaInfo() {
-    return metaData({
+  head() {
+    return getSeoMetaData({
       title: 'Page not found',
       text: '',
-      url: `${process.env.VUE_APP_BASE_URL}${this.$route.path}`,
+      path: this.$route.path,
     })
   },
 }

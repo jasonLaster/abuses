@@ -61,7 +61,7 @@ export default {
       title: `Incident #${this.incident.id}`,
       text: this.incident.text,
       image: `https://img.youtube.com/vi/${this.incident.youtube}/hqdefault.jpg`,
-      url: `${process.env.VUE_APP_BASE_URL}${this.$route.path}`,
+      path: this.$route.path,
     })
   },
 }
