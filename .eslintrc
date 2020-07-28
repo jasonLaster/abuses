@@ -8,8 +8,8 @@
     "parser": "babel-eslint"
   },
   "extends": [
-    "plugin:vue/recommended",
-    "@vue/airbnb",
+    "@nuxtjs",
+    "plugin:nuxt/recommended",
     "plugin:prettier/recommended",
     "prettier/vue"
   ],

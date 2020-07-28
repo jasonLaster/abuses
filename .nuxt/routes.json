@@ -1,0 +1,16 @@
+[
+  {
+    "name": "Incidents",
+    "path": "/Incidents",
+    "component": "/Users/michielkoning/Sites/abuses/pages/Incidents.vue",
+    "chunkName": "pages/Incidents",
+    "_name": "_31e34cb7"
+  },
+  {
+    "name": "index",
+    "path": "/",
+    "component": "/Users/michielkoning/Sites/abuses/pages/index.vue",
+    "chunkName": "pages/index",
+    "_name": "_fe53a370"
+  }
+]
