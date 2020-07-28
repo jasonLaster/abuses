@@ -105,6 +105,7 @@ export default {
   &:focus-within,
   &:hover {
     border-color: var(--color-black);
+
     & .title {
       text-decoration: underline;
     }
@@ -136,6 +137,7 @@ export default {
   margin-bottom: var(--spacing-xs);
 }
 
+/* stylelint-disable */
 .location,
 .title {
   display: block;

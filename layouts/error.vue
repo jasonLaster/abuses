@@ -1,56 +1,16 @@
 <template>
-  <app-page :page="page" />
+  <center-wrapper>
+    <h2>Invalid {{ noun }}</h2>
+    <p>Uh-oh, this {{ noun }} does not exist.</p>
+    <router-link to="/">Return home</router-link>
+  </center-wrapper>
 </template>
 
 <script>
-import AppPage from '~/components/Layout/AppPage.vue'
+import CenterWrapper from '@/components/Layout/CenterWrapper.vue'
 
 export default {
-  components: {
-    AppPage,
-  },
-  props: {
-    error: {
-      type: Object,
-      required: true,
-    },
-  },
-
-  computed: {
-    page() {
-      return {
-        title: this.title,
-        content: this.error.message,
-      }
-    },
-    title() {
-      if (this.error.statusCode === 404) {
-        return this.$t('title404')
-      }
-      return this.$t('title500')
-    },
-  },
-  head() {
-    return {
-      title: this.title,
-    }
-  },
+  components: { CenterWrapper },
+  props: { noun: { type: String, default: 'URL' } },
 }
 </script>
-
-<i18n>
-{
-  "nl": {
-    "title404": "Pagina niet gevonden",
-    "title500": "Er is een fout opgetreden"
-  },
-  "de": {
-    "title404": "Seite nicht gefunden",
-    "title500": "Ein Fehler ist aufgetreten"
-  },
-  "en": {
-    "title404": "Page not found",
-    "title500": "An error occured"
-  }
-}
-</i18n>

@@ -47,7 +47,6 @@ export default {
         name: 'twitter:card',
         content: 'summary',
       },
-
     ],
     link: [
       ...splashscreens,
@@ -78,15 +77,8 @@ export default {
   /*
    ** Nuxt.js modules
    */
-  modules: [
-    '@nuxtjs/pwa',
-    'nuxt-svg-loader',
-    '@nuxtjs/sitemap',
-  ],
-  buildModules: [
-    '@nuxtjs/google-analytics',
-    '@nuxtjs/stylelint-module',
-  ],
+  modules: ['@nuxtjs/pwa', '@nuxtjs/sitemap'],
+  buildModules: ['@nuxtjs/google-analytics', '@nuxtjs/stylelint-module'],
   googleAnalytics,
   pwa,
   /*

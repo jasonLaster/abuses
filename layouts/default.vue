@@ -1,40 +1,27 @@
 <template>
-  <div class="page">
+  <div id="app" class="page">
     <the-header />
-    <main>
+    <main class="main">
       <nuxt />
     </main>
-
-    <the-footer />
-    <error-handler />
-    <cookie-wall />
   </div>
 </template>
 
 <script>
-import TheHeader from '~/components/Layout/TheHeader.vue'
-import TheFooter from '~/components/Layout/TheFooter.vue'
-import ErrorHandler from '~/components/Layout/ErrorHandler.vue'
-import CookieWall from '~/components/Layout/CookieWall.vue'
+import TheHeader from '@/components/Layout/TheHeader.vue'
 
 export default {
+  name: 'App',
   components: {
     TheHeader,
-    TheFooter,
-    ErrorHandler,
-    CookieWall,
   },
-  head() {
-    return this.$nuxtI18nSeo()
+  metaInfo: {
+    title: process.env.VUE_APP_TITLE,
+    titleTemplate: `%s | ${process.env.VUE_APP_SHORT_TITLE}`,
   },
 }
 </script>
 
-<style lang="postcss" scoped>
-.page {
-  background: var(--color-background);
-  display: flex;
-  min-height: 100vh;
-  flex-direction: column;
-}
+<style>
+@import './../styles/base.css';
 </style>

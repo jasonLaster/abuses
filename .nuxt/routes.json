@@ -4,6 +4,7 @@
     "path": "/Incidents",
     "component": "/Users/michielkoning/Sites/abuses/pages/Incidents.vue",
     "chunkName": "pages/Incidents",
+    "url": "/Incidents",
     "_name": "_31e34cb7"
   },
   {
@@ -11,6 +12,7 @@
     "path": "/",
     "component": "/Users/michielkoning/Sites/abuses/pages/index.vue",
     "chunkName": "pages/index",
+    "url": "/",
     "_name": "_fe53a370"
   }
 ]
