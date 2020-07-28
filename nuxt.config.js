@@ -15,6 +15,7 @@ export default {
    */
   head: {
     title,
+
     titleTemplate: `%s | ${title}`,
     meta: [
       { charset: 'utf-8' },
@@ -47,6 +48,10 @@ export default {
     ],
     link: [
       ...splashscreens,
+     {
+        rel: 'stylesheet',
+        href: 'https://fonts.googleapis.com/css2?family=Bungee&family=Open+Sans&display=swap'
+      },
       {
         rel: 'dns-prefetch',
         href: 'https://www.google-analytics.com/analytics.js',
