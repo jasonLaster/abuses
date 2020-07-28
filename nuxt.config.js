@@ -17,7 +17,7 @@ export default {
    */
   head: {
     title,
-    titleTemplate: '%s | Police Abuses',
+    titleTemplate: `%s | ${title}`,
     meta: [
       { charset: 'utf-8' },
       {
@@ -64,7 +64,7 @@ export default {
   /*
    ** Customize the progress-bar color
    */
-  loading: { color: 'var(--nuxt-loader-color)', height: '2px' },
+  loading: { color: 'var(--color-white)', height: '2px' },
 
   /*
    ** Global CSS
