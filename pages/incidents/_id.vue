@@ -16,7 +16,7 @@ import IncidentDetails from '@/components/IncidentDetails/IncidentDetails.vue'
 import CenterWrapper from '@/components/Layout/CenterWrapper.vue'
 import BtnBack from '@/components/Shared/BtnBack.vue'
 import IncidentsList from '@/components/IncidentsList/IncidentsList.vue'
-import metaData from '@/utils/metaData'
+import getSeoMetaData from '~/helpers/seo'
 
 // temp fix while we're not using https://kazupon.github.io/vue-i18n/
 const pluralize = (n, singular, plural) => {
@@ -56,15 +56,13 @@ export default {
     },
   },
 
-  metaInfo() {
-    if (this.incident != null) {
-      return metaData({
-        title: `Incident #${this.incident.id}`,
-        text: this.incident.text,
-        url: `${process.env.VUE_APP_BASE_URL}${this.$route.path}`,
-      })
-    }
-    return null
+  head() {
+    return getSeoMetaData({
+      title: `Incident #${this.incident.id}`,
+      text: this.incident.text,
+      image: `https://img.youtube.com/vi/${this.incident.youtube}/hqdefault.jpg`,
+      url: `${process.env.VUE_APP_BASE_URL}${this.$route.path}`,
+    })
   },
 }
 </script>

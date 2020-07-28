@@ -1,6 +1,5 @@
 import splashscreens from './config/splashscreens'
 import googleAnalytics from './config/googleAnalytics'
-import facebookPixel from './config/facebookPixel'
 import pwa from './config/pwa'
 import { baseUrl, title } from './data/siteDetails'
 
@@ -18,7 +17,7 @@ export default {
    */
   head: {
     title,
-    titleTemplate: '%s',
+    titleTemplate: '%s | Police Abuses',
     meta: [
       { charset: 'utf-8' },
       {
