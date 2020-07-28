@@ -1,11 +1,34 @@
 [
   {
-    "name": "Incidents",
-    "path": "/Incidents",
-    "component": "/Users/michielkoning/Sites/abuses/pages/Incidents.vue",
-    "chunkName": "pages/Incidents",
-    "url": "/Incidents",
-    "_name": "_31e34cb7"
+    "name": "1index",
+    "path": "/1index",
+    "component": "/Users/michielkoning/Sites/abuses/pages/1index.vue",
+    "chunkName": "pages/1index",
+    "url": "/1index",
+    "_name": "_01f4393b"
+  },
+  {
+    "name": "About",
+    "path": "/About",
+    "component": "/Users/michielkoning/Sites/abuses/pages/About.vue",
+    "chunkName": "pages/About",
+    "url": "/About",
+    "_name": "_4edf193a"
+  },
+  {
+    "name": "NotFound",
+    "path": "/NotFound",
+    "component": "/Users/michielkoning/Sites/abuses/pages/NotFound.vue",
+    "chunkName": "pages/NotFound",
+    "url": "/NotFound",
+    "_name": "_2fa801ee"
+  },
+  {
+    "name": "incidents-id",
+    "path": "/incidents/:id?",
+    "component": "/Users/michielkoning/Sites/abuses/pages/incidents/_id.vue",
+    "chunkName": "pages/incidents/_id",
+    "_name": "_696c2702"
   },
   {
     "name": "index",

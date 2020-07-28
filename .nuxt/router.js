@@ -3,7 +3,10 @@ import Router from 'vue-router'
 import { interopDefault } from './utils'
 import scrollBehavior from './router.scrollBehavior.js'
 
-const _31e34cb7 = () => interopDefault(import('../pages/Incidents.vue' /* webpackChunkName: "pages/Incidents" */))
+const _01f4393b = () => interopDefault(import('../pages/1index.vue' /* webpackChunkName: "pages/1index" */))
+const _4edf193a = () => interopDefault(import('../pages/About.vue' /* webpackChunkName: "pages/About" */))
+const _2fa801ee = () => interopDefault(import('../pages/NotFound.vue' /* webpackChunkName: "pages/NotFound" */))
+const _696c2702 = () => interopDefault(import('../pages/incidents/_id.vue' /* webpackChunkName: "pages/incidents/_id" */))
 const _fe53a370 = () => interopDefault(import('../pages/index.vue' /* webpackChunkName: "pages/index" */))
 
 // TODO: remove in Nuxt 3
@@ -23,9 +26,21 @@ export const routerOptions = {
   scrollBehavior,
 
   routes: [{
-    path: "/Incidents",
-    component: _31e34cb7,
-    name: "Incidents"
+    path: "/1index",
+    component: _01f4393b,
+    name: "1index"
+  }, {
+    path: "/About",
+    component: _4edf193a,
+    name: "About"
+  }, {
+    path: "/NotFound",
+    component: _2fa801ee,
+    name: "NotFound"
+  }, {
+    path: "/incidents/:id?",
+    component: _696c2702,
+    name: "incidents-id"
   }, {
     path: "/",
     component: _fe53a370,

@@ -73,7 +73,10 @@ export default {
   css: ['~/styles/base.css'],
   /*
    ** Plugins to load before mounting the App
+
    */
+  plugins: ['~/plugins/composition-api', '~/plugins/vue-youtube'],
+
   /*
    ** Nuxt.js modules
    */

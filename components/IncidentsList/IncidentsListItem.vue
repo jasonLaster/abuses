@@ -1,22 +1,11 @@
 <template>
   <li class="item" @mousedown.left="mouseDown" @mouseup.left="mouseUp">
     <div class="content">
-      <router-link
-        ref="link"
-        class="link"
-        :to="{
-          name: 'IncidentDetails',
-          params: {
-            id: incident.youtube,
-          },
-        }"
-      >
-        <span class="title"> Incident #{{ incident.id }}</span>
+      <nuxt-link ref="link" class="link" :to="link">
+        <span class="title">Incident #{{ incident.id }}</span>
         <span class="location">{{ incident.city }}, {{ incident.state }}</span>
-      </router-link>
-      <div class="text">
-        {{ incident.text }}
-      </div>
+      </nuxt-link>
+      <div class="text">{{ incident.text }}</div>
     </div>
 
     <div class="image-wrapper">
@@ -69,6 +58,12 @@ export default {
     }
   },
 
+  computed: {
+    link() {
+      return `/incidents/${this.incident.youtube}`
+    },
+  },
+
   methods: {
     mouseUp(event) {
       if (isChildOf(event.target, this.$refs.link.$el)) return
@@ -82,12 +77,7 @@ export default {
       this.down = +new Date()
     },
     showIncidentDetails() {
-      this.$router.push({
-        name: 'IncidentDetails',
-        params: {
-          id: this.incident.youtube,
-        },
-      })
+      this.$router.push(this.link)
     },
   },
 }

@@ -1,6 +1,6 @@
 <template>
   <div class="wrapper">
-    <router-link :to="to" class="link">
+    <nuxt-link :to="to" class="link">
       <svg
         class="icon"
         width="16"
@@ -15,7 +15,7 @@
       </svg>
 
       {{ title }}
-    </router-link>
+    </nuxt-link>
   </div>
 </template>
 

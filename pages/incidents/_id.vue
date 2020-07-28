@@ -1,14 +1,12 @@
 <template>
-  <div>
-    <div v-if="incident != null">
-      <center-wrapper>
-        <btn-back :to="{ name: 'Root' }" title="Back to the list" />
-        <incident-details :incident="incident" />
-      </center-wrapper>
-      <incidents-list :incidents="incidents" :title="listTitle" />
-    </div>
-    <not-found v-else noun="incident" />
+  <div v-if="incident != null">
+    <center-wrapper>
+      <btn-back :to="{ name: 'index' }" title="Back to the list" />
+      <incident-details :incident="incident" />
+    </center-wrapper>
+    <incidents-list :incidents="incidents" :title="listTitle" />
   </div>
+  <not-found v-else noun="incident" />
 </template>
 
 <script>

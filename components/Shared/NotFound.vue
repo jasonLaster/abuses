@@ -2,7 +2,7 @@
   <center-wrapper>
     <h2>Invalid {{ noun }}</h2>
     <p>Uh-oh, this {{ noun }} does not exist.</p>
-    <router-link to="/">Return home</router-link>
+    <nuxt-link to="/">Return home</nuxt-link>
   </center-wrapper>
 </template>
 

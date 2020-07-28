@@ -1,14 +1,10 @@
-import { themeColor, title } from '../data/siteDetails'
-
-const lang = 'de'
-
 export default {
   manifest: {
-    name: title,
-    short_name: 'Adler',
-    description: 'Familienhotel & Gasthof Adler, in Lingenau im Bregenzerwald',
-    lang,
-    theme_color: themeColor,
-    background_color: themeColor,
+    name: 'Police Abuses',
+    lang: 'en',
+    themeColor: '#021e48',
+    msTileColor: '#021e48',
+    appleMobileWebAppCapable: 'yes',
+    appleMobileWebAppStatusBarStyle: 'black-translucent',
   },
 }

@@ -2,7 +2,7 @@
   <header>
     <center-wrapper :top="true">
       <div class="leadin">A video archive of</div>
-      <h1><router-link to="/">Police Abuses</router-link></h1>
+      <h1><nuxt-link to="/">Police Abuses</nuxt-link></h1>
       <div class="leadout">{{ total }} Videos</div>
       <incident-filter v-if="showFilter" :value="city" />
     </center-wrapper>
@@ -34,7 +34,7 @@ export default {
 
   computed: {
     showFilter() {
-      return this.$route.name === 'City' || this.$route.name === 'Root'
+      return this.$route.name === 'City' || this.$route.name === 'index'
     },
   },
 }

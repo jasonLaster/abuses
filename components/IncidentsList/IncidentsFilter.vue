@@ -55,7 +55,7 @@ export default {
     input(e) {
       const city = e.target.value
       if (city === '') {
-        this.$router.push({ name: 'Root' })
+        this.$router.push({ name: 'index' })
       } else {
         this.$router.push({ name: 'City', params: { city } })
       }
