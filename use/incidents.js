@@ -25,7 +25,9 @@ export default () => {
   const total = computed(() => list.value.length)
 
   const getIncidentByID = (ID) => {
-    const currentIncident = list.value.find((incident) => incident.youtube === ID)
+    const currentIncident = list.value.find(
+      (incident) => incident.youtube.toLowerCase() === ID.toLowerCase(),
+    )
     return currentIncident || null
   }
 
