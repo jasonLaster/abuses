@@ -81,9 +81,9 @@ export default {
 .details {
   margin-bottom: 2em;
   display: grid;
+  grid-gap: 1em;
 
   @media (--viewport-md) {
-    grid-gap: 1em;
     grid-template-columns: 1fr 2fr;
   }
 }
