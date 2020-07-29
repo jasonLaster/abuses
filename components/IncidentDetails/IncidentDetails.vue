@@ -1,5 +1,5 @@
 <template>
-  <div class="wrapper">
+  <div class="details">
     <article>
       <h1>Incident #{{ incident.id }}</h1>
       <div class="location">{{ incident.city }}, {{ incident.state }}</div>
@@ -78,7 +78,7 @@ export default {
   height: 100%;
 }
 
-.wrapper {
+.details {
   margin-bottom: 2em;
 }
 </style>
