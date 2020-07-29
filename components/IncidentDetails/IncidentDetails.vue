@@ -5,29 +5,29 @@
       <div class="location">{{ incident.city }}, {{ incident.state }}</div>
       <h2>Description</h2>
       <p>{{ incident.text }}</p>
+      <div class="links">
+        <a :href="incident.tweet" rel="noopener" target="_blank">View original tweet</a>
+        |
+        <a
+          :href="`https://www.youtube.com/watch?v=${incident.youtube}`"
+          rel="noopener"
+          target="_blank"
+        >
+          Video URL
+        </a>
+      </div>
     </article>
-    <div class="video-container">
-      <youtube
-        ref="youtube"
-        class="player"
-        :width="560"
-        :height="315"
-        :video-id="incident.youtube"
-        :player-vars="playerVars"
-      />
-    </div>
-    <div class="links">
-      <a :href="incident.tweet" rel="noopener" target="_blank">
-        View original tweet
-      </a>
-      |
-      <a
-        :href="`https://www.youtube.com/watch?v=${incident.youtube}`"
-        rel="noopener"
-        target="_blank"
-      >
-        Video URL
-      </a>
+    <div>
+      <div class="video-container">
+        <youtube
+          ref="youtube"
+          class="player"
+          :width="560"
+          :height="315"
+          :video-id="incident.youtube"
+          :player-vars="playerVars"
+        />
+      </div>
     </div>
   </div>
 </template>
@@ -80,5 +80,11 @@ export default {
 
 .details {
   margin-bottom: 2em;
+  display: grid;
+
+  @media (--viewport-md) {
+    grid-gap: 1em;
+    grid-template-columns: 1fr 2fr;
+  }
 }
 </style>
