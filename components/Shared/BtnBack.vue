@@ -1,5 +1,5 @@
 <template>
-  <div class="wrapper">
+  <div class="button-wrapper">
     <nuxt-link :to="to" class="link">
       <svg
         class="icon"
@@ -35,7 +35,7 @@ export default {
 </script>
 
 <style lang="postcss" scoped>
-.wrapper {
+.button-wrapper {
   margin-bottom: 0.5em;
 }
 
